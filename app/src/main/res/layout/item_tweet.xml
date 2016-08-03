@@ -45,5 +45,15 @@
         android:layout_toRightOf="@+id/ivProfilePhoto"
         android:text="@{tweet.text}"
         tools:text="Hello there"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="7h"
+        android:text="@{tweet.relativeTimestamp}"
+        android:id="@+id/tvTimestamp"
+        android:layout_below="@+id/tvText"
+        android:layout_alignLeft="@+id/tvText"
+        android:layout_alignStart="@+id/tvText"/>
   </RelativeLayout>
 </layout>

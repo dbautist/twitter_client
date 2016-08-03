@@ -1,12 +1,15 @@
 package com.codepath.apps.twitterclient.models;
 
+import com.codepath.apps.twitterclient.util.TwitterUtil;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class Tweet implements JSONSerializable {
   public String text;
   public long id;
-  public String createdAt;
+  private String createdAt;
+  public String relativeTimestamp;
   public User user;
 
   @Override
@@ -14,6 +17,7 @@ public class Tweet implements JSONSerializable {
     text = jsonObject.getString("text");
     id = jsonObject.getLong("id");
     createdAt = jsonObject.getString("created_at");
+    relativeTimestamp = TwitterUtil.getRelativeTimeAgo(createdAt);
     user = new User();
     user.configureFromJSON(jsonObject.getJSONObject("user"));
   }

@@ -15,6 +15,7 @@ import com.codepath.apps.twitterclient.network.TwitterClient;
 import com.codepath.apps.twitterclient.util.AppConstants;
 import com.codepath.apps.twitterclient.util.ErrorHandler;
 import com.codepath.apps.twitterclient.util.views.DividerItemDecoration;
+import com.codepath.apps.twitterclient.util.views.EndlessRecyclerViewScrollListener;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONArray;
@@ -31,12 +32,12 @@ import cz.msebera.android.httpclient.Header;
 public class TimelineActivity extends AppCompatActivity {
   private static final String TAG = TimelineActivity.class.getSimpleName();
 
+  @BindView(R.id.rvTweets)
+  RecyclerView rvTweets;
+
   private TwitterClient mClient;
   private TweetsAdapter mAdapter;
   private List<Tweet> mTweetList;
-
-  @BindView(R.id.rvTweets)
-  RecyclerView rvTweets;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -46,34 +47,48 @@ public class TimelineActivity extends AppCompatActivity {
 
     mClient = TwitterApplication.getRestClient();
     initTweetList();
-    populateTimeline();
   }
 
   private void initTweetList() {
     mTweetList = new ArrayList<>();
     mAdapter = new TweetsAdapter(this, mTweetList);
-    rvTweets.setLayoutManager(new LinearLayoutManager(this));
+    LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+    rvTweets.setLayoutManager(linearLayoutManager);
     rvTweets.setAdapter(mAdapter);
 
     RecyclerView.ItemDecoration itemDecoration = new
         DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST);
     rvTweets.addItemDecoration(itemDecoration);
+    rvTweets.addOnScrollListener(new EndlessRecyclerViewScrollListener(linearLayoutManager) {
+      @Override
+      public void onLoadMore(int page, int totalItemsCount) {
+        customLoadMoreDataFromApi(page);
+      }
+    });
+
+    populateTimeline(1);
+  }
+
+  private void customLoadMoreDataFromApi(int page) {
+    Log.d(TAG, "------ customLoadMoreDataFromApi:page=" + page);
+    populateTimeline(page);
   }
 
   // Send an API request to get the timeline JSON
   // Fill the listview by creating the tweet objects from JSON
-  private void populateTimeline() {
-    mClient.getHomeTimeline(new JsonHttpResponseHandler(){
+  private void populateTimeline(int page) {
+    mClient.getHomeTimeline(page, new JsonHttpResponseHandler(){
       @Override
       public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
         Log.d(TAG, "====== onSuccess: " + response.toString());
         try {
           JSONDeserializer<Tweet> deserializer = new JSONDeserializer<>(Tweet.class);
-          List<Tweet> tweetList = deserializer.fromJSONArrayToList(response);
-          if (tweetList != null) {
-            Log.d(TAG, "------ size: " + tweetList.size());
-            mTweetList.addAll(tweetList);
-            mAdapter.notifyItemRangeInserted(0, tweetList.size());
+          List<Tweet> tweetResponseList = deserializer.fromJSONArrayToList(response);
+          if (tweetResponseList != null) {
+            Log.d(TAG, "------ size: " + tweetResponseList.size());
+            int curSize = mTweetList.size();
+            mTweetList.addAll(tweetResponseList);
+            mAdapter.notifyItemRangeInserted(curSize, tweetResponseList.size());
           }
         } catch (JSONException e) {
           ErrorHandler.handleAppException(e, "Exception from populating Twitter timeline");

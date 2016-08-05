@@ -13,7 +13,9 @@ import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.TwitterApplication;
 import com.codepath.apps.twitterclient.adapters.TweetsAdapter;
 import com.codepath.apps.twitterclient.fragments.ComposeDialogFragment;
+import com.codepath.apps.twitterclient.models.JSONSerializable;
 import com.codepath.apps.twitterclient.models.Tweet;
+import com.codepath.apps.twitterclient.models.User;
 import com.codepath.apps.twitterclient.network.JSONDeserializer;
 import com.codepath.apps.twitterclient.network.TwitterClient;
 import com.codepath.apps.twitterclient.util.AppConstants;
@@ -45,6 +47,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
   private TwitterClient mClient;
   private TweetsAdapter mAdapter;
   private List<Tweet> mTweetList;
+  private User mCurrentUser;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -73,12 +76,44 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
       }
     });
 
+    getUser();
     populateTimeline(1);
   }
 
   private void customLoadMoreDataFromApi(int page) {
     Log.d(TAG, "------ customLoadMoreDataFromApi:page=" + page);
     //populateTimeline(page);
+  }
+
+  private void getUser() {
+    mClient.getUser(new JsonHttpResponseHandler() {
+      @Override
+      public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+        Log.d(TAG, "getUser onSuccess: " + response.toString());
+        JSONDeserializer<User> deserializer = new JSONDeserializer<>(User.class);
+        mCurrentUser = deserializer.configureJSONObject(response);
+        if (mCurrentUser == null) {
+          ErrorHandler.logAppError("current user is NULL");
+        } else {
+          Log.d(TAG, "USER: " + mCurrentUser.toString());
+        }
+      }
+
+      @Override
+      public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+        ErrorHandler.logAppError("getUser onFailure1: " + responseString);
+      }
+
+      @Override
+      public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+        ErrorHandler.logAppError("getUser onFailure2: " + errorResponse.toString());
+      }
+
+      @Override
+      public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
+        ErrorHandler.logAppError("getUser onFailure3");
+      }
+    });
   }
 
   // Send an API request to get the timeline JSON
@@ -114,7 +149,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
   public void composeTweet() {
     Log.d(TAG, "======== compose tweet");
     FragmentManager fm = getSupportFragmentManager();
-    ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance();
+    ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance(mCurrentUser);
     composeDialogFragment.show(fm, "fragment_compose");
   }
 

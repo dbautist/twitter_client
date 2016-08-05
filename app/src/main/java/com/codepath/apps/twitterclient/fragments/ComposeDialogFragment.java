@@ -4,13 +4,20 @@ import android.app.Dialog;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
+import android.support.v4.content.ContextCompat;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.TwitterApplication;
 import com.codepath.apps.twitterclient.models.Tweet;
@@ -37,8 +44,20 @@ public class ComposeDialogFragment extends DialogFragment {
   Button btTweet;
   @BindView(R.id.etMessage)
   EditText etMessage;
+  @BindView(R.id.tvCharsLeft)
+  TextView tvCharsLeft;
+  @BindView(R.id.btClose)
+  Button btClose;
+  @BindView(R.id.tvName)
+  TextView tvName;
+  @BindView(R.id.tvScreenName)
+  TextView tvScreenName;
+  @BindView(R.id.ivProfilePhoto)
+  ImageView ivProfilePhoto;
 
   private TwitterClient mClient;
+  private User mUser;
+  private int charLength;
 
   public interface ComposeDialogListener {
     void onUpdateStatusSuccess(Tweet statusTweet);
@@ -51,11 +70,11 @@ public class ComposeDialogFragment extends DialogFragment {
     mClient = TwitterApplication.getRestClient();
   }
 
-  public static ComposeDialogFragment newInstance() {
+  public static ComposeDialogFragment newInstance(User user) {
     ComposeDialogFragment frag = new ComposeDialogFragment();
-//    Bundle args = new Bundle();
-//    args.putParcelable(AppConstants.USER_EXTRA, Parcels.wrap(user));
-//    frag.setArguments(args);
+    Bundle args = new Bundle();
+    args.putParcelable(AppConstants.USER_EXTRA, Parcels.wrap(user));
+    frag.setArguments(args);
     return frag;
   }
 
@@ -71,21 +90,60 @@ public class ComposeDialogFragment extends DialogFragment {
   @Override
   public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
     super.onViewCreated(view, savedInstanceState);
+
+    charLength = Integer.parseInt(getActivity().getResources().getString(R.string.tweetLimit));
+    mUser = Parcels.unwrap(getArguments().getParcelable(AppConstants.USER_EXTRA));
+    if (mUser != null) {
+      initDialog();
+    } else {
+      ErrorHandler.logAppError("user is null");
+    }
+    etMessage.addTextChangedListener(new TextWatcher() {
+      @Override
+      public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+        // do nothing
+      }
+
+      @Override
+      public void onTextChanged(CharSequence s, int start, int before, int count) {
+        // do nothing
+      }
+
+      @Override
+      public void afterTextChanged(Editable s) {
+        int remainingChar = charLength - s.length();
+        tvCharsLeft.setText(Integer.toString(remainingChar));
+        if (remainingChar < 0) {
+          tvCharsLeft.setTextColor(ContextCompat.getColor(getActivity(), R.color.error));
+          btTweet.setEnabled(false);
+        } else {
+          tvCharsLeft.setTextColor(ContextCompat.getColor(getActivity(), R.color.dark_gray));
+          btTweet.setEnabled(true);
+        }
+      }
+    });
   }
 
   @Override
-  public void onStart()
-  {
+  public void onStart() {
     super.onStart();
     Dialog dialog = getDialog();
-    if (dialog != null)
-    {
+    if (dialog != null) {
       // DialogFragment is not taking up the whole screen
       // http://stackoverflow.com/a/26163346
       int width = ViewGroup.LayoutParams.MATCH_PARENT;
       int height = ViewGroup.LayoutParams.MATCH_PARENT;
       dialog.getWindow().setLayout(width, height);
     }
+  }
+
+  private void initDialog() {
+    tvName.setText(mUser.name);
+    tvScreenName.setText("@"+mUser.screenName);
+
+    Glide.with(getActivity()).load(mUser.profileImageUrl) // .placeholder(R.drawable.loading_placeholder)
+        .fitCenter().centerCrop()
+        .into(ivProfilePhoto);
   }
 
   @OnClick(R.id.btTweet)
@@ -120,6 +178,11 @@ public class ComposeDialogFragment extends DialogFragment {
         handleError("onFailure3");
       }
     });
+  }
+
+  @OnClick(R.id.btClose)
+  public void closeDialog() {
+    dismiss();
   }
 
   private void sendSuccess(Tweet statusTweet) {

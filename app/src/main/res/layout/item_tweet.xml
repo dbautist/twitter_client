@@ -18,8 +18,8 @@
 
     <ImageView
         android:id="@+id/ivProfilePhoto"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="@dimen/profile_size"
+        android:layout_height="@dimen/profile_size"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"

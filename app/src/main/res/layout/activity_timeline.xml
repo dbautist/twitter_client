@@ -16,11 +16,12 @@
       android:layout_alignParentTop="true"/>
 
   <android.support.design.widget.FloatingActionButton
+      android:id="@+id/fabComposeTweet"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_gravity="bottom|right"
       android:layout_margin="@dimen/fab_margin"
-      android:id="@+id/fabComposeTweet"
+      android:src="@drawable/compose"
       app:layout_anchor="@id/rvTweets"
       app:layout_anchorGravity="bottom|right|end"/>
 </android.support.design.widget.CoordinatorLayout>

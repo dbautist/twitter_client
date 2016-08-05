@@ -1,14 +1,18 @@
 package com.codepath.apps.twitterclient.activities;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.TwitterApplication;
 import com.codepath.apps.twitterclient.adapters.TweetsAdapter;
+import com.codepath.apps.twitterclient.fragments.ComposeDialogFragment;
 import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.apps.twitterclient.network.JSONDeserializer;
 import com.codepath.apps.twitterclient.network.TwitterClient;
@@ -27,13 +31,16 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cz.msebera.android.httpclient.Header;
 
-public class TimelineActivity extends AppCompatActivity {
+public class TimelineActivity extends AppCompatActivity implements ComposeDialogFragment.ComposeDialogListener {
   private static final String TAG = TimelineActivity.class.getSimpleName();
 
   @BindView(R.id.rvTweets)
   RecyclerView rvTweets;
+  @BindView(R.id.fabComposeTweet)
+  FloatingActionButton fabComposeTweet;
 
   private TwitterClient mClient;
   private TweetsAdapter mAdapter;
@@ -71,13 +78,13 @@ public class TimelineActivity extends AppCompatActivity {
 
   private void customLoadMoreDataFromApi(int page) {
     Log.d(TAG, "------ customLoadMoreDataFromApi:page=" + page);
-    populateTimeline(page);
+    //populateTimeline(page);
   }
 
   // Send an API request to get the timeline JSON
   // Fill the listview by creating the tweet objects from JSON
   private void populateTimeline(int page) {
-    mClient.getHomeTimeline(page, new JsonHttpResponseHandler(){
+    mClient.getHomeTimeline(page, new JsonHttpResponseHandler() {
       @Override
       public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
         Log.d(TAG, "====== onSuccess: " + response.toString());
@@ -101,5 +108,24 @@ public class TimelineActivity extends AppCompatActivity {
         ErrorHandler.displayError(TimelineActivity.this, AppConstants.DEFAULT_ERROR_MESSAGE);
       }
     });
+  }
+
+  @OnClick(R.id.fabComposeTweet)
+  public void composeTweet() {
+    Log.d(TAG, "======== compose tweet");
+    FragmentManager fm = getSupportFragmentManager();
+    ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance();
+    composeDialogFragment.show(fm, "fragment_compose");
+  }
+
+  @Override
+  public void onUpdateStatusSuccess(Tweet status) {
+    Log.d(TAG, "-------- compose success: " + status.text);
+    if (status != null) {
+      // Add to the beginning of the list and scroll to the top
+      mTweetList.add(0, status);
+      mAdapter.notifyItemInserted(0);
+      rvTweets.scrollToPosition(0);
+    }
   }
 }

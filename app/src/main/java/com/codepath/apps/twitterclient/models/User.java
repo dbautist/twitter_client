@@ -2,12 +2,18 @@ package com.codepath.apps.twitterclient.models;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
-public class User implements JSONSerializable{
+@Parcel
+public class User implements JSONSerializable {
   public String name;
   public long uid;
   public String screenName;
   public String profileImageUrl;
+
+  // empty constructor needed by the Parceler library
+  public User() {
+  }
 
   @Override
   public void configureFromJSON(JSONObject jsonObject) throws JSONException {

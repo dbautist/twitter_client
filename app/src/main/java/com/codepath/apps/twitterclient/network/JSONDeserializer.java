@@ -33,7 +33,7 @@ public class JSONDeserializer <T extends JSONSerializable> {
     return list;
   }
 
-  private T configureJSONObject(JSONObject json) {
+  public T configureJSONObject(JSONObject json) {
     try {
       if(json == null)
         return null;

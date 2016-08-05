@@ -4,13 +4,18 @@ import com.codepath.apps.twitterclient.util.TwitterUtil;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
+@Parcel
 public class Tweet implements JSONSerializable {
   public String text;
   public long id;
-  private String createdAt;
+  public String createdAt;
   public String relativeTimestamp;
   public User user;
+
+  // empty constructor needed by the Parceler library
+  public Tweet() { }
 
   @Override
   public void configureFromJSON(JSONObject jsonObject) throws JSONException {

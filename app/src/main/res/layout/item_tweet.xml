@@ -23,7 +23,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_margin="5dp"
+        android:layout_marginRight="10dp"
         tools:src="@drawable/ic_launcher"/>
 
     <TextView
@@ -34,7 +34,33 @@
         android:layout_toEndOf="@+id/ivProfilePhoto"
         android:layout_toRightOf="@+id/ivProfilePhoto"
         android:text="@{tweet.user.name}"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/secondary"
+        android:textStyle="bold"
         tools:text="Dianne Bautista"/>
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvName"
+        android:layout_marginLeft="7dp"
+        android:layout_toEndOf="@+id/tvName"
+        android:layout_toRightOf="@+id/tvName"
+        android:text="@{tweet.user.screenName}"
+        android:textColor="@color/light_gray"
+        tools:text="\@dianne_askew"/>
+
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvName"
+        android:text="@{tweet.relativeTimestamp}"
+        android:textColor="@color/light_gray"
+        tools:text="7h"/>
 
     <TextView
         android:id="@+id/tvText"
@@ -46,14 +72,5 @@
         android:text="@{tweet.text}"
         tools:text="Hello there"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="7h"
-        android:text="@{tweet.relativeTimestamp}"
-        android:id="@+id/tvTimestamp"
-        android:layout_below="@+id/tvText"
-        android:layout_alignLeft="@+id/tvText"
-        android:layout_alignStart="@+id/tvText"/>
   </RelativeLayout>
 </layout>

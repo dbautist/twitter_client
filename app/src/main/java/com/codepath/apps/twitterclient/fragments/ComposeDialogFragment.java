@@ -11,7 +11,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -139,7 +138,7 @@ public class ComposeDialogFragment extends DialogFragment {
 
   private void initDialog() {
     tvName.setText(mUser.name);
-    tvScreenName.setText("@"+mUser.screenName);
+    tvScreenName.setText(mUser.screenName);
 
     Glide.with(getActivity()).load(mUser.profileImageUrl) // .placeholder(R.drawable.loading_placeholder)
         .fitCenter().centerCrop()

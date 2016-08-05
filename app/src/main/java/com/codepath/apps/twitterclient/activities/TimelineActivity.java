@@ -1,5 +1,6 @@
 package com.codepath.apps.twitterclient.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
@@ -7,13 +8,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.widget.Toast;
+import android.view.View;
 
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.TwitterApplication;
 import com.codepath.apps.twitterclient.adapters.TweetsAdapter;
 import com.codepath.apps.twitterclient.fragments.ComposeDialogFragment;
-import com.codepath.apps.twitterclient.models.JSONSerializable;
 import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.apps.twitterclient.models.User;
 import com.codepath.apps.twitterclient.network.JSONDeserializer;
@@ -22,11 +22,13 @@ import com.codepath.apps.twitterclient.util.AppConstants;
 import com.codepath.apps.twitterclient.util.ErrorHandler;
 import com.codepath.apps.twitterclient.util.views.DividerItemDecoration;
 import com.codepath.apps.twitterclient.util.views.EndlessRecyclerViewScrollListener;
+import com.codepath.apps.twitterclient.util.views.ItemClickSupport;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,6 +77,16 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
         customLoadMoreDataFromApi(page);
       }
     });
+    ItemClickSupport.addTo(rvTweets).setOnItemClickListener(
+        new ItemClickSupport.OnItemClickListener() {
+          @Override
+          public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+            Tweet tweet = mTweetList.get(position);
+            Intent intent = new Intent(TimelineActivity.this, TweetDetailActivity.class);
+            intent.putExtra(AppConstants.TWEET_EXTRA, Parcels.wrap(tweet));
+            startActivity(intent);
+          }
+        });
 
     getUser();
     populateTimeline(1);

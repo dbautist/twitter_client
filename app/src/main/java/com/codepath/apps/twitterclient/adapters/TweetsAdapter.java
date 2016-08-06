@@ -12,10 +12,15 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.bumptech.glide.DrawableRequestBuilder;
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
+import com.codepath.apps.twitterclient.databinding.ItemMediaTweetBinding;
 import com.codepath.apps.twitterclient.databinding.ItemTweetBinding;
+import com.codepath.apps.twitterclient.models.Media;
 import com.codepath.apps.twitterclient.models.Tweet;
+import com.codepath.apps.twitterclient.util.DeviceDimensionsHelper;
+import com.codepath.apps.twitterclient.util.views.DividerItemDecoration;
 
 import java.util.List;
 
@@ -24,6 +29,8 @@ import butterknife.ButterKnife;
 
 public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder> {
   private static final String TAG = TweetsAdapter.class.getSimpleName();
+  public static final int TYPE_TWEET = 0;
+  public static final int TYPE_TWEET_MEDIA = 1;
 
   private List<Tweet> mTweetList;
   private Context mContext;
@@ -34,18 +41,51 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
   }
 
   @Override
+  public int getItemViewType(int position) {
+    Tweet tweet = mTweetList.get(position);
+    if (tweet.media == null) {
+      return TYPE_TWEET;
+    } else {
+      return TYPE_TWEET_MEDIA;
+    }
+  }
+
+  @Override
   public TweetsAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    View view = LayoutInflater.from(parent.getContext())
-        .inflate(R.layout.item_tweet, parent, false);
-    ViewHolder viewHolder = new ViewHolder(view);
+    ViewHolder viewHolder;
+
+    if (viewType == TYPE_TWEET) {
+      View view = LayoutInflater.from(parent.getContext())
+          .inflate(R.layout.item_tweet, parent, false);
+      viewHolder = new TweetViewHolder(view);
+    } else {
+      View view = LayoutInflater.from(parent.getContext())
+          .inflate(R.layout.item_media_tweet, parent, false);
+      viewHolder = new TweetMediaViewHolder(view);
+    }
+
     return viewHolder;
   }
 
   @Override
   public void onBindViewHolder(TweetsAdapter.ViewHolder holder, int position) {
+
     Tweet tweet = mTweetList.get(position);
     Log.d(TAG, "------------ tweet[" + position + "]:\n" + tweet.toString());
-    holder.bindTo(tweet);
+
+    int type = getItemViewType(position);
+    if (type == TYPE_TWEET) {
+      TweetViewHolder tweetViewHolder = (TweetViewHolder) holder;
+      tweetViewHolder.bindTo(tweet);
+    } else {
+      TweetMediaViewHolder tweetMediaViewHolder = (TweetMediaViewHolder) holder;
+      tweetMediaViewHolder.bindTo(tweet);
+
+      Media tweetMedia = tweet.media;
+      Glide.with(mContext).load(tweetMedia.mediaUrl) // .placeholder(R.drawable.loading_placeholder)
+          .centerCrop()
+          .into(tweetMediaViewHolder.ivMedia);
+    }
 
     if (TextUtils.isEmpty(tweet.user.profileImageUrl)) {
       holder.ivProfilePhoto.setVisibility(View.GONE);
@@ -77,8 +117,6 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
   }
 
   public static class ViewHolder extends RecyclerView.ViewHolder {
-    private ItemTweetBinding mBinding;
-
     @BindView(R.id.ivProfilePhoto)
     ImageView ivProfilePhoto;
     @BindView(R.id.btFavorite)
@@ -88,8 +126,33 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
 
     public ViewHolder(View itemView) {
       super(itemView);
-      mBinding = DataBindingUtil.bind(itemView);
       ButterKnife.bind(this, itemView);
+    }
+  }
+
+  public static class TweetViewHolder extends ViewHolder {
+    private ItemTweetBinding mBinding;
+
+    public TweetViewHolder(View itemView) {
+      super(itemView);
+      mBinding = DataBindingUtil.bind(itemView);
+    }
+
+    public void bindTo(Tweet tweet) {
+      mBinding.setTweet(tweet);
+      mBinding.executePendingBindings();
+    }
+  }
+
+  public static class TweetMediaViewHolder extends ViewHolder {
+    private ItemMediaTweetBinding mBinding;
+
+    @BindView(R.id.ivMedia)
+    ImageView ivMedia;
+
+    public TweetMediaViewHolder(View itemView) {
+      super(itemView);
+      mBinding = DataBindingUtil.bind(itemView);
     }
 
     public void bindTo(Tweet tweet) {

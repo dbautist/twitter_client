@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-  <string name="app_name">Twitter Client</string>
+  <string name="app_name">Twitter</string>
   <string name="login_label">Connect to Twitter</string>
   <string name="title_activity_timeline">Home Timeline</string>
   <string name="close">Close</string>
   <string name="tweet">Tweet</string>
   <string name="tweetLimit">140</string>
   <string name="statusHint">What\'s happening?</string>
+  <string name="reply">Reply</string>
+  <string name="replyTo">Reply to \</string>
 </resources>

@@ -2,12 +2,14 @@ package com.codepath.apps.twitterclient.adapters;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -49,6 +51,18 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
       holder.ivProfilePhoto.setVisibility(View.GONE);
     } else {
       holder.ivProfilePhoto.setVisibility(View.VISIBLE);
+      if (tweet.favorited) {
+        holder.btFavorite.setBackground(ContextCompat.getDrawable(mContext, R.drawable.favorite_on));
+      } else {
+        holder.btFavorite.setBackground(ContextCompat.getDrawable(mContext, R.drawable.favorite));
+      }
+
+      if (tweet.retweeted) {
+        holder.btRetweet.setBackground(ContextCompat.getDrawable(mContext, R.drawable.retweet_on));
+      } else {
+        holder.btRetweet.setBackground(ContextCompat.getDrawable(mContext, R.drawable.retweet));
+      }
+
       if (tweet.user != null) {
         Glide.with(mContext).load(tweet.user.profileImageUrl) // .placeholder(R.drawable.loading_placeholder)
             .fitCenter().centerCrop()
@@ -67,6 +81,10 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
 
     @BindView(R.id.ivProfilePhoto)
     ImageView ivProfilePhoto;
+    @BindView(R.id.btFavorite)
+    Button btFavorite;
+    @BindView(R.id.btRetweet)
+    Button btRetweet;
 
     public ViewHolder(View itemView) {
       super(itemView);

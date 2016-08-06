@@ -50,12 +50,19 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
   private TweetsAdapter mAdapter;
   private List<Tweet> mTweetList;
   private User mCurrentUser;
+  private long maxId = -1;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_timeline);
     ButterKnife.bind(this);
+
+    if (getSupportActionBar() != null) {
+      getSupportActionBar().setDisplayShowHomeEnabled(true);
+      getSupportActionBar().setDisplayUseLogoEnabled(true);
+      getSupportActionBar().setLogo(R.drawable.twitter_logo_white_on_blue);
+    }
 
     mClient = TwitterApplication.getRestClient();
     initTweetList();
@@ -89,12 +96,12 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
         });
 
     getUser();
-    populateTimeline(1);
+    populateTimeline();
   }
 
   private void customLoadMoreDataFromApi(int page) {
     Log.d(TAG, "------ customLoadMoreDataFromApi:page=" + page);
-    //populateTimeline(page);
+    populateTimeline();
   }
 
   private void getUser() {
@@ -130,8 +137,8 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
 
   // Send an API request to get the timeline JSON
   // Fill the listview by creating the tweet objects from JSON
-  private void populateTimeline(int page) {
-    mClient.getHomeTimeline(page, new JsonHttpResponseHandler() {
+  private void populateTimeline() {
+    mClient.getHomeTimeline(maxId, new JsonHttpResponseHandler() {
       @Override
       public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
         Log.d(TAG, "====== onSuccess: " + response.toString());
@@ -140,6 +147,8 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
           List<Tweet> tweetResponseList = deserializer.fromJSONArrayToList(response);
           if (tweetResponseList != null) {
             Log.d(TAG, "------ size: " + tweetResponseList.size());
+            setMaxId(tweetResponseList);
+
             int curSize = mTweetList.size();
             mTweetList.addAll(tweetResponseList);
             mAdapter.notifyItemRangeInserted(curSize, tweetResponseList.size());
@@ -155,6 +164,15 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
         ErrorHandler.displayError(TimelineActivity.this, AppConstants.DEFAULT_ERROR_MESSAGE);
       }
     });
+  }
+
+  private void setMaxId(List<Tweet> tweetList) {
+    for(Tweet tweet : tweetList) {
+      // max_id - Returns results with an ID less than (that is, older than) or equal to the specified ID.
+      if (maxId < tweet.id) {
+        maxId = tweet.id;
+      }
+    }
   }
 
   @OnClick(R.id.fabComposeTweet)

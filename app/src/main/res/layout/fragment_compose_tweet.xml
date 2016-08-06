@@ -17,37 +17,21 @@
 
   <Button
       android:id="@+id/btTweet"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      style="@style/TweetButton"
       android:layout_alignParentBottom="true"
       android:layout_alignParentEnd="true"
       android:layout_alignParentRight="true"
-      android:background="@drawable/button_tweet"
-      android:minHeight="0dp"
-      android:minWidth="0dp"
-      android:paddingBottom="7dp"
-      android:paddingLeft="15dp"
-      android:paddingRight="15dp"
-      android:paddingTop="7dp"
-      android:text="@string/tweet"
-      android:textAllCaps="false"
-      android:textColor="@android:color/white"/>
+      android:text="@string/tweet"/>
 
   <EditText
       android:id="@+id/etMessage"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      style="@style/TweetComposeText"
+      android:layout_above="@+id/textView"
       android:layout_alignParentLeft="true"
       android:layout_alignParentStart="true"
       android:layout_below="@+id/btClose"
       android:layout_marginTop="40dp"
-      android:background="@null"
-      android:gravity="top|left"
-      android:hint="@string/statusHint"
-      android:textColor="@color/dark_gray"
-      android:inputType="textMultiLine"
-      android:scrollHorizontally="false"
-      android:layout_above="@+id/textView"/>
+      android:hint="@string/statusHint"/>
 
   <Button
       android:id="@+id/btClose"
@@ -60,31 +44,26 @@
 
   <TextView
       android:id="@+id/tvName"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      style="@style/SecondaryText"
       android:layout_above="@+id/tvScreenName"
       android:layout_toLeftOf="@+id/ivProfilePhoto"
       android:layout_toStartOf="@+id/ivProfilePhoto"
-      android:textAppearance="?android:attr/textAppearanceSmall"
-      android:textColor="@color/light_gray"
       tools:text="Dianne Askew"/>
 
   <TextView
+      style="@style/SecondaryText"
       android:id="@+id/tvScreenName"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:textAppearance="?android:attr/textAppearanceSmall"
-      android:textColor="@color/light_gray"
-      tools:text="\@dianne_askew"
       android:layout_alignBottom="@+id/ivProfilePhoto"
+      android:layout_alignEnd="@+id/tvName"
       android:layout_alignRight="@+id/tvName"
       android:layout_marginBottom="10dp"
-      android:layout_alignEnd="@+id/tvName"/>
+      tools:text="\@dianne_askew"/>
 
   <TextView
       android:id="@+id/tvCharsLeft"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
+      style="@style/InfoText"
       android:layout_alignBaseline="@+id/btTweet"
       android:layout_alignBottom="@+id/btTweet"
       android:layout_marginRight="10dp"
@@ -94,14 +73,14 @@
       android:textColor="@color/dark_gray"/>
 
   <View
-      android:layout_width="match_parent"
-      android:background="@color/extra_light_gray"
-      android:layout_marginBottom="10dp"
-      android:layout_marginTop="10dp"
-      android:layout_height="1dp"
       android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
       android:layout_above="@+id/btTweet"
       android:layout_alignParentLeft="true"
-      android:layout_alignParentStart="true"/>
+      android:layout_alignParentStart="true"
+      android:layout_marginBottom="10dp"
+      android:layout_marginTop="10dp"
+      android:background="@color/extra_light_gray"/>
 
 </RelativeLayout>

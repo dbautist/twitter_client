@@ -6,6 +6,8 @@
 
     <import type="android.view.View"/>
 
+    <import type="android.text.TextUtils"/>
+
     <variable
         name="tweet"
         type="com.codepath.apps.twitterclient.models.Tweet"/>
@@ -13,68 +15,81 @@
 
   <RelativeLayout
       android:layout_width="match_parent"
-      android:layout_height="match_parent">
+      android:layout_height="match_parent"
+      android:focusable="true"
+      android:focusableInTouchMode="true"
+      android:padding="10dp">
+    <!-- hack to remove focus from edittext when the activity loads -->
 
     <ImageButton
         android:id="@+id/ivProfilePhoto"
-        android:layout_width="@dimen/profile_size"
-        android:layout_height="@dimen/profile_size"
-        android:layout_margin="10dp"
+        style="@style/ProfilePhoto"
+        android:layout_marginRight="10dp"
         tools:src="@drawable/ic_launcher"/>
 
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/BoldPrimaryText"
         android:layout_alignTop="@+id/ivProfilePhoto"
         android:layout_toEndOf="@+id/ivProfilePhoto"
         android:layout_toRightOf="@+id/ivProfilePhoto"
         android:text="@{tweet.user.name}"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         tools:text="Dianne Askew"/>
 
     <TextView
         android:id="@+id/tvScreenName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/SecondaryText"
         android:layout_alignLeft="@+id/tvName"
         android:layout_alignStart="@+id/tvName"
         android:layout_below="@+id/tvName"
         android:text="@{tweet.user.screenName}"
-        android:textAppearance="?android:attr/textAppearanceSmall"
         tools:text="\@dianne_askew"/>
 
     <TextView
         android:id="@+id/tvText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/TweetText"
         android:layout_alignLeft="@+id/ivProfilePhoto"
         android:layout_alignStart="@+id/ivProfilePhoto"
         android:layout_below="@+id/ivProfilePhoto"
         android:text="@{tweet.text}"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         tools:text="New Text"/>
 
     <TextView
         android:id="@+id/tvTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/InfoText"
         android:layout_alignLeft="@+id/tvText"
         android:layout_alignStart="@+id/tvText"
         android:layout_below="@+id/tvText"
         android:text="@{tweet.createdAt}"
-        android:textAppearance="?android:attr/textAppearanceSmall"
         tools:text="7:53PM"/>
 
     <TextView
         android:id="@+id/tvDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/InfoText"
         android:layout_below="@+id/tvText"
         android:layout_marginLeft="10dp"
         android:layout_toEndOf="@+id/tvTime"
         android:layout_toRightOf="@+id/tvTime"
-        android:text="04 Aug 16"
-        android:textAppearance="?android:attr/textAppearanceSmall"/>
+        android:text="04 Aug 16"/>
+
+    <Button
+        android:id="@+id/btReply"
+        style="@style/TweetButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:enabled="false"
+        android:text="@string/reply"/>
+    <!--         android:enabled="@{TextUtils.isEmpty(tweet.replyTweet) ? false : true}" -->
+
+    <EditText
+        android:id="@+id/etReplyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btReply"
+        android:layout_toLeftOf="@+id/btReply"
+        android:layout_toStartOf="@+id/btReply"
+        android:hint="@{@string/replyTo + tweet.user.name}"
+        tools:text="Reply to Dianne Askew"/>
   </RelativeLayout>
 </layout>

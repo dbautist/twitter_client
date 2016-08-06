@@ -5,6 +5,7 @@ import org.scribe.builder.api.FlickrApi;
 import org.scribe.builder.api.TwitterApi;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.codepath.oauth.OAuthBaseClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -23,6 +24,8 @@ import com.loopj.android.http.RequestParams;
  * 
  */
 public class TwitterClient extends OAuthBaseClient {
+  private static final String TAG = TwitterClient.class.getSimpleName();
+
   public static final Class<? extends Api> REST_API_CLASS = TwitterApi.class; // Change this
   public static final String REST_URL = "https://api.twitter.com/1.1"; // Change this, base API URL
   public static final String REST_CONSUMER_KEY = "1WceQOumDb6Tb6hVAdx5s2uLB";       // Change this
@@ -46,20 +49,27 @@ public class TwitterClient extends OAuthBaseClient {
 
   // HomeTimeline - Gets us the home timeline
   // GET statuses/home_timeline.json
-  public void getHomeTimeline(int page, AsyncHttpResponseHandler handler) {
+  public void getHomeTimeline(long maxId, AsyncHttpResponseHandler handler) {
+    Log.d(TAG, "------getHomeTimeline = max_id: " + maxId);
+
     String apiUrl = getApiUrl("statuses/home_timeline.json");
     RequestParams params = new RequestParams();
-    params.put("count", 5);
-    params.put("since_id", page);
+    params.put("count", 6);
+    if (maxId != -1) {
+      params.put("max_id", maxId);
+    }
     getClient().get(apiUrl, params, handler);
   }
 
-  // post status
   // POST statuses/update.json
-  public void postStatus(String status, AsyncHttpResponseHandler handler) {
+  // post status or reply to tweet when `in_reply_to_status_id` is set
+  public void postStatus(String status, long replyStatusId, AsyncHttpResponseHandler handler) {
     String apiUrl = getApiUrl("statuses/update.json");
     RequestParams params = new RequestParams();
     params.put("status", status);
+    if (replyStatusId != -1) {
+      params.put("in_reply_to_status_id", replyStatusId);
+    }
     getClient().post(apiUrl, params, handler);
   }
 

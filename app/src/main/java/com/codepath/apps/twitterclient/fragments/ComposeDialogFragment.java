@@ -149,7 +149,7 @@ public class ComposeDialogFragment extends DialogFragment {
   public void postTweet() {
     // TODO: Check if tweet is empty or exceeded 140chars
 
-    mClient.postStatus(etMessage.getText().toString(), new JsonHttpResponseHandler() {
+    mClient.postStatus(etMessage.getText().toString(), -1, new JsonHttpResponseHandler() {
       @Override
       public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
         Log.d(TAG, "----- tweet successful: " + response.toString());

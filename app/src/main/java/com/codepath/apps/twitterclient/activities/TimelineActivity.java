@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -41,6 +42,8 @@ import cz.msebera.android.httpclient.Header;
 public class TimelineActivity extends AppCompatActivity implements ComposeDialogFragment.ComposeDialogListener {
   private static final String TAG = TimelineActivity.class.getSimpleName();
 
+  @BindView(R.id.swipeContainer)
+  SwipeRefreshLayout swipeContainer;
   @BindView(R.id.rvTweets)
   RecyclerView rvTweets;
   @BindView(R.id.fabComposeTweet)
@@ -50,7 +53,6 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
   private TweetsAdapter mAdapter;
   private List<Tweet> mTweetList;
   private User mCurrentUser;
-  private long maxId = -1;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +67,24 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
     }
 
     mClient = TwitterApplication.getRestClient();
+    initSwipeRefreshLayout();
     initTweetList();
+  }
+
+  private void initSwipeRefreshLayout() {
+    swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+      @Override
+      public void onRefresh() {
+        populateTimeline(-1);
+      }
+    });
+
+    // Configure the refreshing colors
+    swipeContainer.setColorSchemeResources(R.color.primary,
+        R.color.primary,
+        R.color.light_gray,
+        R.color.extra_light_gray);
+
   }
 
   private void initTweetList() {
@@ -96,12 +115,14 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
         });
 
     getUser();
-    populateTimeline();
+    populateTimeline(-1);
   }
 
   private void customLoadMoreDataFromApi(int page) {
     Log.d(TAG, "------ customLoadMoreDataFromApi:page=" + page);
-    populateTimeline();
+    // Returns results with an ID less than (that is, older than) or equal to the specified ID.
+    long maxId = mTweetList.get(mTweetList.size()-1).id - 1;
+    populateTimeline(maxId);
   }
 
   private void getUser() {
@@ -137,7 +158,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
 
   // Send an API request to get the timeline JSON
   // Fill the listview by creating the tweet objects from JSON
-  private void populateTimeline() {
+  private void populateTimeline(final long maxId) {
     mClient.getHomeTimeline(maxId, new JsonHttpResponseHandler() {
       @Override
       public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
@@ -147,7 +168,11 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
           List<Tweet> tweetResponseList = deserializer.fromJSONArrayToList(response);
           if (tweetResponseList != null) {
             Log.d(TAG, "------ size: " + tweetResponseList.size());
-            setMaxId(tweetResponseList);
+            if (maxId == -1) {
+              int listSize = mTweetList.size();
+              mTweetList.clear();
+              mAdapter.notifyItemRangeRemoved(0, listSize);
+            }
 
             int curSize = mTweetList.size();
             mTweetList.addAll(tweetResponseList);
@@ -156,22 +181,23 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
         } catch (JSONException e) {
           ErrorHandler.handleAppException(e, "Exception from populating Twitter timeline");
         }
+
+        handleSwipeRefresh();
       }
 
       @Override
       public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+        handleSwipeRefresh();
+
         ErrorHandler.logAppError(errorResponse.toString());
         ErrorHandler.displayError(TimelineActivity.this, AppConstants.DEFAULT_ERROR_MESSAGE);
       }
     });
   }
 
-  private void setMaxId(List<Tweet> tweetList) {
-    for(Tweet tweet : tweetList) {
-      // max_id - Returns results with an ID less than (that is, older than) or equal to the specified ID.
-      if (maxId < tweet.id) {
-        maxId = tweet.id;
-      }
+  private void handleSwipeRefresh() {
+    if (swipeContainer.isRefreshing()) {
+      swipeContainer.setRefreshing(false);
     }
   }
 

@@ -7,6 +7,7 @@ import org.scribe.builder.api.TwitterApi;
 import android.content.Context;
 import android.util.Log;
 
+import com.codepath.apps.twitterclient.util.AppConstants;
 import com.codepath.oauth.OAuthBaseClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -54,7 +55,7 @@ public class TwitterClient extends OAuthBaseClient {
 
     String apiUrl = getApiUrl("statuses/home_timeline.json");
     RequestParams params = new RequestParams();
-    params.put("count", 6);
+    params.put("count", AppConstants.TWEET_FETCH_COUNT);
     if (maxId != -1) {
       params.put("max_id", maxId);
     }

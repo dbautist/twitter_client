@@ -25,7 +25,7 @@
         android:id="@+id/ivProfilePhoto"
         style="@style/ProfilePhoto"
         android:layout_marginRight="10dp"
-        tools:src="@drawable/ic_launcher"/>
+        tools:src="@drawable/twitter_logo_white_on_blue"/>
 
     <TextView
         android:id="@+id/tvName"
@@ -34,6 +34,7 @@
         android:layout_toEndOf="@+id/ivProfilePhoto"
         android:layout_toRightOf="@+id/ivProfilePhoto"
         android:text="@{tweet.user.name}"
+        android:textSize="@dimen/largeText"
         tools:text="Dianne Askew"/>
 
     <TextView
@@ -43,6 +44,7 @@
         android:layout_alignStart="@+id/tvName"
         android:layout_below="@+id/tvName"
         android:text="@{tweet.user.screenName}"
+        android:textSize="@dimen/mediumText"
         tools:text="\@dianne_askew"/>
 
     <TextView
@@ -52,6 +54,7 @@
         android:layout_alignStart="@+id/ivProfilePhoto"
         android:layout_below="@+id/ivProfilePhoto"
         android:text="@{tweet.text}"
+        android:textSize="@dimen/largeText"
         tools:text="New Text"/>
 
     <TextView
@@ -60,36 +63,122 @@
         android:layout_alignLeft="@+id/tvText"
         android:layout_alignStart="@+id/tvText"
         android:layout_below="@+id/tvText"
-        android:text="@{tweet.createdAt}"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/mediumText"
         tools:text="7:53PM"/>
 
     <TextView
         android:id="@+id/tvDate"
         style="@style/InfoText"
+        android:layout_alignTop="@+id/tvTime"
         android:layout_below="@+id/tvText"
         android:layout_marginLeft="10dp"
         android:layout_toEndOf="@+id/tvTime"
         android:layout_toRightOf="@+id/tvTime"
-        android:text="04 Aug 16"/>
+        android:text="04 Aug 16"
+        android:textSize="@dimen/mediumText"/>
 
-    <Button
-        android:id="@+id/btReply"
-        style="@style/TweetButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:enabled="false"
-        android:text="@string/reply"/>
-    <!--         android:enabled="@{TextUtils.isEmpty(tweet.replyTweet) ? false : true}" -->
+    <View
+        android:id="@+id/line1"
+        style="@style/HorizontalLine"
+        android:layout_below="@+id/tvTime"/>
+
+
+    <TextView
+        android:id="@+id/tvRetweetCount"
+        style="@style/InfoText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/line1"
+        android:text="@{Integer.toString(tweet.retweetCount)}"
+        android:textColor="@color/dark_gray"
+        android:textStyle="bold"
+        tools:text="9"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/InfoText"
+        android:layout_alignTop="@+id/tvRetweetCount"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/tvRetweetCount"
+        android:layout_toRightOf="@+id/tvRetweetCount"
+        android:text="@string/retweet"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/tvNumLikes"
+        style="@style/InfoText"
+        android:layout_alignTop="@+id/tvRetweetCount"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="@{Integer.toString(tweet.favoriteCount)}"
+        android:textColor="@color/dark_gray"
+        android:textStyle="bold"
+        tools:text="2"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/InfoText"
+        android:layout_alignTop="@+id/tvRetweetCount"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/tvNumLikes"
+        android:layout_toRightOf="@+id/tvNumLikes"
+        android:text="@string/likes"
+        android:textAllCaps="true"/>
+
+    <View
+        android:id="@+id/line2"
+        style="@style/HorizontalLine"
+        android:layout_below="@+id/tvRetweetCount"/>
 
     <EditText
+        style="@style/TweetComposeText"
         android:id="@+id/etReplyText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/btReply"
-        android:layout_toLeftOf="@+id/btReply"
-        android:layout_toStartOf="@+id/btReply"
+        android:layout_above="@+id/view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:hint="@{@string/replyTo + tweet.user.name}"
+        android:lines="3"
+        android:gravity="bottom|left"
+        android:maxLines="3"
+        android:background="@color/extra_extra_light_gray"
         tools:text="Reply to Dianne Askew"/>
+
+    <View
+        android:id="@+id/view"
+        style="@style/HorizontalLine"
+        android:background="@color/primary"
+        android:layout_above="@+id/buttonLayout"/>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/extra_extra_light_gray"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/tvCharsLeft"
+          style="@style/InfoText"
+          android:text="@string/tweetLimit"
+          android:layout_marginRight="10dp"
+          android:textColor="@color/dark_gray"/>
+
+      <Button
+          android:id="@+id/btReply"
+          style="@style/TweetButton"
+          android:enabled="false"
+          android:text="@string/reply"/>
+      <!--         android:enabled="@{TextUtils.isEmpty(tweet.replyTweet) ? false : true}" -->
+    </LinearLayout>
+
+
   </RelativeLayout>
 </layout>

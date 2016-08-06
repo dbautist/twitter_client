@@ -6,6 +6,7 @@
     <item name="colorPrimary">@color/primary</item>
     <item name="colorPrimaryDark">@color/primary_dark</item>
     <item name="colorAccent">@color/primary</item>
+    <item name = "android:windowBackground">@color/extra_extra_light_gray</item>
   </style>
 
   <style name="AppTheme.NoActionBar">
@@ -27,21 +28,21 @@
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textColor">@color/secondary</item>
     <item name="android:textStyle">bold</item>
-    <item name="android:textSize">16sp</item>
+    <item name="android:textSize">@dimen/mediumText</item>
   </style>
 
   <style name="SecondaryText">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textColor">@color/light_gray</item>
-    <item name="android:textSize">16sp</item>
+    <item name="android:textSize">@dimen/mediumText</item>
   </style>
 
   <style name="InfoText">
     <item name="android:layout_width">wrap_content</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textColor">@color/light_gray</item>
-    <item name="android:textSize">14sp</item>
+    <item name="android:textSize">@dimen/smallText</item>
   </style>
 
   <style name="TweetText">
@@ -49,7 +50,7 @@
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textColor">@color/dark_gray</item>
     <item name="android:autoLink">all</item>
-    <item name="android:textSize">16sp</item>
+    <item name="android:textSize">@dimen/mediumText</item>
     <item name="android:linksClickable">true</item>
     <item name="android:layout_marginTop">10dp</item>
   </style>
@@ -58,7 +59,7 @@
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:textColor">@color/dark_gray</item>
-    <item name="android:textSize">16sp</item>
+    <item name="android:textSize">@dimen/mediumText</item>
     <item name="android:background">@android:color/transparent</item>
     <item name="android:gravity">top|left</item>
     <item name="android:inputType">textMultiLine</item>
@@ -87,5 +88,14 @@
   <style name="DetailActionButton">
     <item name="android:layout_width">@dimen/detail_action_button_size</item>
     <item name="android:layout_height">@dimen/detail_action_button_size</item>
+  </style>
+
+  <style name="HorizontalLine">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/extra_light_gray</item>
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:layout_marginBottom">10dp</item>
+    <item name="android:layout_alignParentLeft">true</item>
   </style>
 </resources>

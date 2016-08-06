@@ -9,4 +9,8 @@
   <dimen name="item_action_button_size">20dp</dimen>
   <dimen name="detail_action_button_size">30dp</dimen>
 
+  <dimen name="largeText">20sp</dimen>
+  <dimen name="mediumText">16sp</dimen>
+  <dimen name="smallText">14sp</dimen>
+
 </resources>

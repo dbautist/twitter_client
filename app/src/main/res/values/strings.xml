@@ -10,4 +10,6 @@
   <string name="statusHint">What\'s happening?</string>
   <string name="reply">Reply</string>
   <string name="replyTo">Reply to \</string>
+  <string name="retweet">Retweets</string>
+  <string name="likes">Likes</string>
 </resources>

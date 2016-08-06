@@ -2,7 +2,7 @@ package com.codepath.apps.twitterclient.models;
 
 import android.util.Log;
 
-import com.codepath.apps.twitterclient.util.TwitterUtil;
+import com.codepath.apps.twitterclient.util.DateUtil;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -37,7 +37,7 @@ public class Tweet implements JSONSerializable {
     text = jsonObject.getString("text");
     id = jsonObject.getLong("id");
     createdAt = jsonObject.getString("created_at");
-    relativeTimestamp = TwitterUtil.getRelativeTimeAgo(createdAt);
+    relativeTimestamp = DateUtil.getRelativeTimeAgo(createdAt);
     favorited = jsonObject.getBoolean("favorited");
     favoriteCount = jsonObject.getInt("favorite_count");
     retweeted = jsonObject.getBoolean("retweeted");

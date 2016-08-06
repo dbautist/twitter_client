@@ -2,6 +2,7 @@ package com.codepath.apps.twitterclient.activities;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
@@ -22,6 +24,7 @@ import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.apps.twitterclient.network.JSONDeserializer;
 import com.codepath.apps.twitterclient.network.TwitterClient;
 import com.codepath.apps.twitterclient.util.AppConstants;
+import com.codepath.apps.twitterclient.util.DateUtil;
 import com.codepath.apps.twitterclient.util.ErrorHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
@@ -43,9 +46,16 @@ public class TweetDetailActivity extends AppCompatActivity {
   EditText etReplyText;
   @BindView(R.id.btReply)
   Button btReply;
+  @BindView(R.id.tvTime)
+  TextView tvTime;
+  @BindView(R.id.tvDate)
+  TextView tvDate;
+  @BindView(R.id.tvCharsLeft)
+  TextView tvCharsLeft;
 
   private TwitterClient mClient;
   private Tweet mTweet;
+  private int maxCharLength;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +65,7 @@ public class TweetDetailActivity extends AppCompatActivity {
     ButterKnife.bind(this);
 
     mClient = TwitterApplication.getRestClient();
+    maxCharLength = Integer.parseInt(getResources().getString(R.string.tweetLimit));
 
     ActionBar actionBar = getSupportActionBar();
     actionBar.setDisplayHomeAsUpEnabled(true);
@@ -66,12 +77,14 @@ public class TweetDetailActivity extends AppCompatActivity {
       binding.setTweet(mTweet);
       initTweetDetails();
     } else {
-
+      // TODO: handle error
     }
-
   }
 
   private void initTweetDetails() {
+    tvDate.setText(DateUtil.getFormattedDate(this, mTweet.createdAt));
+    tvTime.setText(DateUtil.getFormattedTime(this, mTweet.createdAt));
+
     etReplyText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
       @Override
       public void onFocusChange(View v, boolean hasFocus) {
@@ -95,11 +108,17 @@ public class TweetDetailActivity extends AppCompatActivity {
 
       @Override
       public void afterTextChanged(Editable s) {
-        if (s.length() > 0) {
-          btReply.setEnabled(true);
-        } else {
-          btReply.setEnabled(false);
+        int remainingChar = maxCharLength - s.length();
+        tvCharsLeft.setText(Integer.toString(remainingChar));
+        boolean isEnabled = true;
+        int charTextColor = R.color.dark_gray;
+        if (remainingChar < 0) {
+          charTextColor = R.color.error;
+          isEnabled = false;
         }
+
+        tvCharsLeft.setTextColor(ContextCompat.getColor(TweetDetailActivity.this, charTextColor));
+        btReply.setEnabled(isEnabled);
       }
     });
 

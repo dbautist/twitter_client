@@ -2,6 +2,11 @@ package com.codepath.apps.twitterclient.models;
 
 import android.util.Log;
 
+import com.activeandroid.Model;
+import com.activeandroid.annotation.Column;
+import com.activeandroid.annotation.Table;
+import com.activeandroid.query.Select;
+import com.activeandroid.util.SQLiteUtils;
 import com.codepath.apps.twitterclient.network.JSONDeserializer;
 import com.codepath.apps.twitterclient.util.DateUtil;
 
@@ -13,36 +18,56 @@ import org.parceler.Parcel;
 import java.util.HashMap;
 import java.util.List;
 
-@Parcel
-public class Tweet implements JSONSerializable {
+@Table(name = "Tweet")
+@Parcel(analyze = {Tweet.class})
+public class Tweet extends Model implements JSONSerializable {
   private static final String TAG = Tweet.class.getSimpleName();
-  private HashMap<String, String> timeMap;
 
-  public String text;
+  @Column(name = "TweetId")
   public long id;
+
+  @Column(name = "Text")
+  public String text;
+
+  @Column(name = "CreatedAt")
   public String createdAt;
-  public String relativeTimestamp;
+
+  @Column(name = "DisplayTimeStamp")
   public String displayTimestamp;
+
+  @Column(name = "Favorited")
   public boolean favorited;
+
+  @Column(name = "FavoriteCount")
   public int favoriteCount;
+
+  @Column(name = "Retweeted")
   public boolean retweeted;
+
+  @Column(name = "RetweetCount")
   public int retweetCount;
+
+  @Column(name = "ReplyTweet")
   public String replyTweet;
+
+  @Column(name = "User", onUpdate = Column.ForeignKeyAction.CASCADE, onDelete = Column.ForeignKeyAction.CASCADE)
   public User user;
+
+  @Column(name = "Media", onUpdate = Column.ForeignKeyAction.CASCADE, onDelete = Column.ForeignKeyAction.CASCADE)
   public Media media;
 
   // empty constructor needed by the Parceler library
   public Tweet() {
+    super();
   }
 
   @Override
   public void configureFromJSON(JSONObject jsonObject) throws JSONException {
     Log.d(TAG, "tweet response: " + jsonObject.toString());
 
-    text = jsonObject.getString("text");
     id = jsonObject.getLong("id");
+    text = jsonObject.getString("text");
     createdAt = jsonObject.getString("created_at");
-    relativeTimestamp = DateUtil.getRelativeTimeAgo(createdAt);
     favorited = jsonObject.getBoolean("favorited");
     favoriteCount = jsonObject.getInt("favorite_count");
     retweeted = jsonObject.getBoolean("retweeted");
@@ -72,6 +97,7 @@ public class Tweet implements JSONSerializable {
   }
 
   private void setDisplayTimestamp() {
+    String relativeTimestamp = DateUtil.getRelativeTimeAgo(createdAt);
     // hacky - remove 'ago' then only grab the first letter of the time
     String timestamp = relativeTimestamp.replace("ago", "");
     String[] time = timestamp.split(" ");
@@ -86,7 +112,10 @@ public class Tweet implements JSONSerializable {
     str.append("id=").append(id).append(";\n");
     str.append("text=").append(text).append(";\n");
     str.append("createdAt=").append(createdAt).append(";\n");
-    str.append("user=").append(user.toString()).append(";\n");
+
+    if (user != null) {
+      str.append("user=").append(user.toString()).append(";\n");
+    }
 
     if (media != null) {
       str.append("media=").append(media.toString()).append(";\n");

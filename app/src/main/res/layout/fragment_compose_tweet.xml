@@ -37,7 +37,7 @@
   <TextView
       android:id="@+id/tvName"
       style="@style/SecondaryText"
-      android:layout_above="@+id/tvScreenName"
+      android:layout_alignTop="@+id/ivProfilePhoto"
       android:layout_toLeftOf="@+id/ivProfilePhoto"
       android:layout_toStartOf="@+id/ivProfilePhoto"
       tools:text="Dianne Askew"/>
@@ -47,10 +47,9 @@
       style="@style/SecondaryText"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_alignBottom="@+id/ivProfilePhoto"
-      android:layout_alignEnd="@+id/tvName"
-      android:layout_alignRight="@+id/tvName"
-      android:layout_marginBottom="10dp"
+      android:layout_below="@+id/tvName"
+      android:layout_toLeftOf="@+id/ivProfilePhoto"
+      android:layout_toStartOf="@+id/ivProfilePhoto"
       tools:text="\@dianne_askew"/>
 
   <View

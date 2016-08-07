@@ -19,6 +19,7 @@ import com.codepath.apps.twitterclient.databinding.ItemMediaTweetBinding;
 import com.codepath.apps.twitterclient.databinding.ItemTweetBinding;
 import com.codepath.apps.twitterclient.models.Media;
 import com.codepath.apps.twitterclient.models.Tweet;
+import com.codepath.apps.twitterclient.network.NetworkUtil;
 import com.codepath.apps.twitterclient.util.DeviceDimensionsHelper;
 import com.codepath.apps.twitterclient.util.views.DividerItemDecoration;
 
@@ -43,7 +44,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
   @Override
   public int getItemViewType(int position) {
     Tweet tweet = mTweetList.get(position);
-    if (tweet.media == null) {
+    if (!NetworkUtil.isOnline() || tweet.media == null) {
       return TYPE_TWEET;
     } else {
       return TYPE_TWEET_MEDIA;

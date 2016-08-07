@@ -1,27 +1,41 @@
 package com.codepath.apps.twitterclient.models;
 
+import com.activeandroid.Model;
+import com.activeandroid.annotation.Column;
+import com.activeandroid.annotation.Table;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
 
 // https://dev.twitter.com/overview/api/entities-in-twitter-objects#media
-@Parcel
-public class Media implements JSONSerializable {
-  public enum ResizeType {
-    Crop,
-    Fit
-  }
-
+@Table(name = "Media")
+@Parcel(analyze = {Media.class})
+public class Media extends Model implements JSONSerializable {
+  @Column(name = "MediaId")
   public long id;
-  public String mediaUrl;
-  public String url;
-  public String type;
-  public int width;
-  public int height;
-  public String resizeStr;
-  public ResizeType resize;
 
-  public Media() {}
+  @Column(name = "MediaUrl")
+  public String mediaUrl;
+
+  @Column(name = "Url")
+  public String url;
+
+  @Column(name = "Type")
+  public String type;
+
+  @Column(name = "Width")
+  public int width;
+
+  @Column(name = "Height")
+  public int height;
+
+  @Column(name = "ResizeStr")
+  public String resizeStr;
+
+  public Media() {
+    super();
+  }
 
   @Override
   public void configureFromJSON(JSONObject jsonObject) throws JSONException {
@@ -36,13 +50,6 @@ public class Media implements JSONSerializable {
         width = smallObj.getInt("w");
         height = smallObj.getInt("h");
         resizeStr = smallObj.getString("resize");
-        if (resizeStr != null) {
-          if (resizeStr.equalsIgnoreCase("fit")) {
-            resize = ResizeType.Fit;
-          } else if (resizeStr.equalsIgnoreCase("crop")) {
-            resize = ResizeType.Crop;
-          }
-        }
       }
     }
   }

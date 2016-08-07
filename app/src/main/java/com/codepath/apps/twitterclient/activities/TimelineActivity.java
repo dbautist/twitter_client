@@ -16,8 +16,10 @@ import com.codepath.apps.twitterclient.TwitterApplication;
 import com.codepath.apps.twitterclient.adapters.TweetsAdapter;
 import com.codepath.apps.twitterclient.fragments.ComposeDialogFragment;
 import com.codepath.apps.twitterclient.models.Tweet;
+import com.codepath.apps.twitterclient.models.TweetManager;
 import com.codepath.apps.twitterclient.models.User;
 import com.codepath.apps.twitterclient.network.JSONDeserializer;
+import com.codepath.apps.twitterclient.network.NetworkUtil;
 import com.codepath.apps.twitterclient.network.TwitterClient;
 import com.codepath.apps.twitterclient.util.AppConstants;
 import com.codepath.apps.twitterclient.util.ErrorHandler;
@@ -50,6 +52,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
   FloatingActionButton fabComposeTweet;
 
   private TwitterClient mClient;
+  private TweetManager mTweetManager;
   private TweetsAdapter mAdapter;
   private List<Tweet> mTweetList;
   private User mCurrentUser;
@@ -67,6 +70,8 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
     }
 
     mClient = TwitterApplication.getRestClient();
+    mTweetManager = TweetManager.getInstance();
+    setCurrentUser();
     initSwipeRefreshLayout();
     initTweetList();
   }
@@ -103,6 +108,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
         customLoadMoreDataFromApi(page);
       }
     });
+
     ItemClickSupport.addTo(rvTweets).setOnItemClickListener(
         new ItemClickSupport.OnItemClickListener() {
           @Override
@@ -114,46 +120,22 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
           }
         });
 
-    getUser();
-    populateTimeline(-1);
+    if (!NetworkUtil.isOnline()) {
+      List<Tweet> offlineTweetList = mTweetManager.getStoredTweetList();
+      if (offlineTweetList != null) {
+        mTweetList.addAll(offlineTweetList);
+        mAdapter.notifyItemRangeInserted(0, offlineTweetList.size());
+      }
+    } else {
+      populateTimeline(-1);
+    }
   }
 
   private void customLoadMoreDataFromApi(int page) {
     Log.d(TAG, "------ customLoadMoreDataFromApi:page=" + page);
     // Returns results with an ID less than (that is, older than) or equal to the specified ID.
-    long maxId = mTweetList.get(mTweetList.size()-1).id - 1;
+    long maxId = mTweetList.get(mTweetList.size() - 1).id - 1;
     populateTimeline(maxId);
-  }
-
-  private void getUser() {
-    mClient.getUser(new JsonHttpResponseHandler() {
-      @Override
-      public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-        Log.d(TAG, "getUser onSuccess: " + response.toString());
-        JSONDeserializer<User> deserializer = new JSONDeserializer<>(User.class);
-        mCurrentUser = deserializer.configureJSONObject(response);
-        if (mCurrentUser == null) {
-          ErrorHandler.logAppError("current user is NULL");
-        } else {
-          Log.d(TAG, "USER: " + mCurrentUser.toString());
-        }
-      }
-
-      @Override
-      public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
-        ErrorHandler.logAppError("getUser onFailure1: " + responseString);
-      }
-
-      @Override
-      public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
-        ErrorHandler.logAppError("getUser onFailure2: " + errorResponse.toString());
-      }
-
-      @Override
-      public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
-        ErrorHandler.logAppError("getUser onFailure3");
-      }
-    });
   }
 
   // Send an API request to get the timeline JSON
@@ -172,11 +154,15 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
               int listSize = mTweetList.size();
               mTweetList.clear();
               mAdapter.notifyItemRangeRemoved(0, listSize);
+
+              mTweetManager.clearTweetList();
             }
 
             int curSize = mTweetList.size();
             mTweetList.addAll(tweetResponseList);
             mAdapter.notifyItemRangeInserted(curSize, tweetResponseList.size());
+
+            mTweetManager.storeTweetList(mTweetList);
           }
         } catch (JSONException e) {
           ErrorHandler.handleAppException(e, "Exception from populating Twitter timeline");
@@ -188,8 +174,10 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
       @Override
       public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
         handleSwipeRefresh();
+        if (errorResponse != null) {
+          ErrorHandler.logAppError(errorResponse.toString());
+        }
 
-        ErrorHandler.logAppError(errorResponse.toString());
         ErrorHandler.displayError(TimelineActivity.this, AppConstants.DEFAULT_ERROR_MESSAGE);
       }
     });
@@ -199,6 +187,56 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
     if (swipeContainer.isRefreshing()) {
       swipeContainer.setRefreshing(false);
     }
+  }
+
+
+  private void setCurrentUser() {
+    mCurrentUser = User.getExistingUser();
+    if (mCurrentUser != null) {
+      Log.d(TAG, "Existing user from DB");
+      setUserInfo();
+    } else {
+      getUser();
+    }
+  }
+
+  private void setUserInfo() {
+    Log.d(TAG, "User: " + mCurrentUser.toString());
+    getSupportActionBar().setTitle(mCurrentUser.screenName);
+  }
+
+  private void getUser() {
+    Log.d(TAG, "Fetching user from the server");
+
+    mClient.getUser(new JsonHttpResponseHandler() {
+      @Override
+      public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+        Log.d(TAG, "getUser onSuccess: " + response.toString());
+        JSONDeserializer<User> deserializer = new JSONDeserializer<>(User.class);
+        mCurrentUser = deserializer.configureJSONObject(response);
+        if (mCurrentUser == null) {
+          ErrorHandler.logAppError("current user is NULL");
+        } else {
+          User.saveUser(mCurrentUser);
+          setUserInfo();
+        }
+      }
+
+      @Override
+      public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+        ErrorHandler.logAppError("getUser onFailure1: " + responseString);
+      }
+
+      @Override
+      public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+        ErrorHandler.logAppError("getUser onFailure2: " + errorResponse.toString());
+      }
+
+      @Override
+      public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
+        ErrorHandler.logAppError("getUser onFailure3");
+      }
+    });
   }
 
   @OnClick(R.id.fabComposeTweet)

@@ -97,6 +97,7 @@ public class ComposeDialogFragment extends DialogFragment {
     } else {
       ErrorHandler.logAppError("user is null");
     }
+
     etMessage.addTextChangedListener(new TextWatcher() {
       @Override
       public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -140,19 +141,17 @@ public class ComposeDialogFragment extends DialogFragment {
     tvName.setText(mUser.name);
     tvScreenName.setText(mUser.screenName);
 
-    Glide.with(getActivity()).load(mUser.profileImageUrl) // .placeholder(R.drawable.loading_placeholder)
+    Glide.with(getActivity()).load(mUser.profileImageUrl)
         .fitCenter().centerCrop()
         .into(ivProfilePhoto);
   }
 
   @OnClick(R.id.btTweet)
   public void postTweet() {
-    // TODO: Check if tweet is empty or exceeded 140chars
-
     mClient.postStatus(etMessage.getText().toString(), -1, new JsonHttpResponseHandler() {
       @Override
       public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-        Log.d(TAG, "----- tweet successful: " + response.toString());
+        Log.d(TAG, "Compose tweet successful: " + response.toString());
         JSONDeserializer<Tweet> deserializer = new JSONDeserializer<>(Tweet.class);
         Tweet statusTweet = deserializer.configureJSONObject(response);
         if (statusTweet != null) {

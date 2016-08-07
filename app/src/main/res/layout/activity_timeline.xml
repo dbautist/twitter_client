@@ -26,7 +26,8 @@
       android:layout_height="wrap_content"
       android:layout_gravity="bottom|right"
       android:layout_margin="@dimen/fab_margin"
-      android:src="@drawable/compose"
+      app:backgroundTint="@color/primary_dark"
+      android:src="@drawable/compose2"
       app:layout_anchor="@id/rvTweets"
       app:layout_anchorGravity="bottom|right|end"/>
 </android.support.design.widget.CoordinatorLayout>

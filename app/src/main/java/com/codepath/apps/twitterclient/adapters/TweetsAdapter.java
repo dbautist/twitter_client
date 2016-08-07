@@ -44,7 +44,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
   @Override
   public int getItemViewType(int position) {
     Tweet tweet = mTweetList.get(position);
-    if (!NetworkUtil.isOnline() || tweet.media == null) {
+    if (tweet.media == null) {
       return TYPE_TWEET;
     } else {
       return TYPE_TWEET_MEDIA;
@@ -72,7 +72,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
   public void onBindViewHolder(TweetsAdapter.ViewHolder holder, int position) {
 
     Tweet tweet = mTweetList.get(position);
-    Log.d(TAG, "------------ tweet[" + position + "]:\n" + tweet.toString());
+    Log.d(TAG, "tweet[" + position + "]:\n" + tweet.toString());
 
     int type = getItemViewType(position);
     if (type == TYPE_TWEET) {

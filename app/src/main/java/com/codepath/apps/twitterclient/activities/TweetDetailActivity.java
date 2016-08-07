@@ -15,6 +15,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -29,6 +30,7 @@ import com.codepath.apps.twitterclient.network.JSONDeserializer;
 import com.codepath.apps.twitterclient.network.TwitterClient;
 import com.codepath.apps.twitterclient.util.AppConstants;
 import com.codepath.apps.twitterclient.util.DateUtil;
+import com.codepath.apps.twitterclient.util.DeviceDimensionsHelper;
 import com.codepath.apps.twitterclient.util.ErrorHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
@@ -62,6 +64,8 @@ public class TweetDetailActivity extends AppCompatActivity {
   ImageView ivMedia;
   @BindView(R.id.vReplyTweet)
   View vReplyTweet;
+  @BindView(R.id.btFavorite)
+  Button btFavorite;
 
   private ActivityTweetDetailBinding mBinding;
   private TwitterClient mClient;
@@ -88,13 +92,12 @@ public class TweetDetailActivity extends AppCompatActivity {
       mBinding.setTweet(mTweet);
       initTweetDetails();
     } else {
-      // TODO: handle error
+      ErrorHandler.logAppError("Tweet is NULL");
+      ErrorHandler.displayError(this, AppConstants.DEFAULT_ERROR_MESSAGE);
     }
   }
 
   private void initTweetDetails() {
-    Log.d(TAG, "---- initTweetDetails");
-
     vReplyTweet.setVisibility(View.GONE);
     tvDate.setText(DateUtil.getFormattedDate(this, mTweet.createdAt));
     tvTime.setText(DateUtil.getFormattedTime(this, mTweet.createdAt));
@@ -103,11 +106,20 @@ public class TweetDetailActivity extends AppCompatActivity {
     if (tweetMedia != null) {
       ivMedia.setVisibility(View.VISIBLE);
 
-      Log.d(TAG, "Media width: " + tweetMedia.width + "; height: " + tweetMedia.height);
-      DrawableTypeRequest drawableTypeRequest = Glide.with(this).load(mTweet.media.mediaUrl);
-      drawableTypeRequest.override(tweetMedia.width, tweetMedia.height);
-      drawableTypeRequest.fitCenter().centerCrop();
-      drawableTypeRequest.into(ivMedia);
+      int displayWidth = DeviceDimensionsHelper.getDisplayWidth(this);
+      int mediaWidth = tweetMedia.width;
+      int mediaHeight = tweetMedia.height;
+
+      float scale = (float)displayWidth / (float)mediaWidth;
+      float displayHeight = mediaHeight * scale;
+
+      Log.d(TAG, " mediaWidth: " + mediaWidth
+          + "; mediaHeight: " + mediaHeight
+          + "; displayWidth: " + displayWidth + " displayHeight: " + displayHeight);
+
+      Glide.with(this).load(mTweet.media.mediaUrl)
+          .override(displayWidth, (int) displayHeight)
+          .into(ivMedia);
     }
 
     etReplyText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -153,27 +165,53 @@ public class TweetDetailActivity extends AppCompatActivity {
       }
     });
 
-    Glide.with(this).load(mTweet.user.profileImageUrl) // .placeholder(R.drawable.loading_placeholder)
+    Glide.with(this).load(mTweet.user.profileImageUrl)
         .fitCenter().centerCrop()
         .into(ivProfilePhoto);
   }
 
   @OnClick(R.id.btReplyTweet)
   public void replyTweet() {
-    Log.d(TAG, "---- replyTweet");
+    Log.d(TAG, "Replying to tweet");
 
     mClient.postStatus(etReplyText.getText().toString(), mTweet.id, new JsonHttpResponseHandler() {
       @Override
       public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
-        Log.d(TAG, "----- tweet reply successful: " + response.toString());
+        Log.d(TAG, "Tweet reply successful: " + response.toString());
         JSONDeserializer<Tweet> deserializer = new JSONDeserializer<>(Tweet.class);
         Tweet replyTweet = deserializer.configureJSONObject(response);
         if (replyTweet != null) {
-          Log.d(TAG, "------ reply success");
           handleSuccess(replyTweet);
         } else {
           handleError("Error from deserializing JSON response");
         }
+      }
+
+      @Override
+      public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+        handleError("onFailure1: " + responseString);
+      }
+
+      @Override
+      public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+        handleError("onFailure2: " + errorResponse.toString());
+      }
+
+      @Override
+      public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
+        handleError("onFailure3");
+      }
+    });
+  }
+
+  @OnClick(R.id.btFavorite)
+  public void markFavorite() {
+    Log.d(TAG, "Marking tweet favorite");
+    mClient.markFavorites(mTweet.id, new JsonHttpResponseHandler() {
+      @Override
+      public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+        Log.d(TAG, "favorites successful");
+        btFavorite.setBackground(ContextCompat.getDrawable(TweetDetailActivity.this, R.drawable.favorite_on));
       }
 
       @Override
@@ -198,8 +236,6 @@ public class TweetDetailActivity extends AppCompatActivity {
     InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
     imm.hideSoftInputFromWindow(etReplyText.getWindowToken(), 0);
     etReplyText.setText("");
-    etReplyText.setLines(1);
-    etReplyText.setSelection(0);
     etReplyText.clearFocus();
 
     if (buttonLayout.getVisibility() == View.VISIBLE) {
@@ -211,7 +247,7 @@ public class TweetDetailActivity extends AppCompatActivity {
     vReplyTweet.setVisibility(View.VISIBLE);
     mBinding.vReplyTweet.setTweet(replyTweet);
     if (replyTweet.user != null) {
-      Glide.with(this).load(replyTweet.user.profileImageUrl) // .placeholder(R.drawable.loading_placeholder)
+      Glide.with(this).load(replyTweet.user.profileImageUrl)
           .fitCenter().centerCrop()
           .into(replyLayout.ivProfilePhoto);
     }

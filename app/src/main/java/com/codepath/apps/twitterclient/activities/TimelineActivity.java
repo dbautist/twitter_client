@@ -86,7 +86,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
 
     // Configure the refreshing colors
     swipeContainer.setColorSchemeResources(R.color.primary,
-        R.color.primary,
+        R.color.primary_dark,
         R.color.light_gray,
         R.color.extra_light_gray);
 
@@ -132,7 +132,6 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
   }
 
   private void customLoadMoreDataFromApi(int page) {
-    Log.d(TAG, "------ customLoadMoreDataFromApi:page=" + page);
     // Returns results with an ID less than (that is, older than) or equal to the specified ID.
     long maxId = mTweetList.get(mTweetList.size() - 1).id - 1;
     populateTimeline(maxId);
@@ -144,12 +143,12 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
     mClient.getHomeTimeline(maxId, new JsonHttpResponseHandler() {
       @Override
       public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-        Log.d(TAG, "====== onSuccess: " + response.toString());
+        Log.d(TAG, "populateTimeline onSuccess: " + response.toString());
         try {
           JSONDeserializer<Tweet> deserializer = new JSONDeserializer<>(Tweet.class);
           List<Tweet> tweetResponseList = deserializer.fromJSONArrayToList(response);
           if (tweetResponseList != null) {
-            Log.d(TAG, "------ size: " + tweetResponseList.size());
+            Log.d(TAG, "tweet size: " + tweetResponseList.size());
             if (maxId == -1) {
               int listSize = mTweetList.size();
               mTweetList.clear();
@@ -241,7 +240,6 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
 
   @OnClick(R.id.fabComposeTweet)
   public void composeTweet() {
-    Log.d(TAG, "======== compose tweet");
     FragmentManager fm = getSupportFragmentManager();
     ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance(mCurrentUser);
     composeDialogFragment.show(fm, "fragment_compose");
@@ -249,7 +247,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeDialog
 
   @Override
   public void onUpdateStatusSuccess(Tweet status) {
-    Log.d(TAG, "-------- compose success: " + status.text);
+    Log.d(TAG, "Compose tweet success: " + status.text);
     if (status != null) {
       // Add to the beginning of the list and scroll to the top
       mTweetList.add(0, status);

@@ -42,11 +42,11 @@ public class JSONDeserializer <T extends JSONSerializable> {
       obj.configureFromJSON(json);
       return obj;
     } catch (InstantiationException e) {
-      ErrorHandler.handleAppException(e, TAG+"InstantiationException");
+      ErrorHandler.handleAppException(e, TAG+" InstantiationException");
     } catch (IllegalAccessException e) {
-      ErrorHandler.handleAppException(e, TAG+"IllegalAccessException");
+      ErrorHandler.handleAppException(e, TAG+" IllegalAccessException");
     } catch (JSONException e) {
-      ErrorHandler.handleAppException(e, TAG+"JSONException");
+      ErrorHandler.handleAppException(e, TAG+" JSONException");
     }
 
     return null;

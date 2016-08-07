@@ -58,6 +58,8 @@ public class TwitterClient extends OAuthBaseClient {
     params.put("count", AppConstants.TWEET_FETCH_COUNT);
     if (maxId != -1) {
       params.put("max_id", maxId);
+    } else {
+      params.put("since_id", 1);
     }
     getClient().get(apiUrl, params, handler);
   }

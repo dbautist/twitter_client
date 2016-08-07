@@ -22,7 +22,7 @@
 
     <activity
         android:name=".activities.LoginActivity"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
@@ -39,7 +39,9 @@
             android:scheme="oauth"/>
       </intent-filter>
     </activity>
-    <activity android:name=".activities.TimelineActivity"/>
+    <activity
+        android:name=".activities.TimelineActivity"
+        android:launchMode="singleTop"/>
     <activity
         android:name=".activities.TweetDetailActivity"
         android:parentActivityName=".activities.TimelineActivity"

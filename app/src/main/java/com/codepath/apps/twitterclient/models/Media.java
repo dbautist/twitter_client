@@ -31,7 +31,7 @@ public class Media implements JSONSerializable {
 
     JSONObject sizesObj = jsonObject.getJSONObject("sizes");
     if (sizesObj != null) {
-      JSONObject smallObj = sizesObj.getJSONObject("small");
+      JSONObject smallObj = sizesObj.getJSONObject("large");
       if (smallObj != null) {
         width = smallObj.getInt("w");
         height = smallObj.getInt("h");

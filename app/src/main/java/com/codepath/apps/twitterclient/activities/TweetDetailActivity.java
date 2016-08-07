@@ -20,15 +20,18 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.DrawableTypeRequest;
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.TwitterApplication;
 import com.codepath.apps.twitterclient.databinding.ActivityTweetDetailBinding;
+import com.codepath.apps.twitterclient.models.Media;
 import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.apps.twitterclient.network.JSONDeserializer;
 import com.codepath.apps.twitterclient.network.TwitterClient;
 import com.codepath.apps.twitterclient.util.AppConstants;
 import com.codepath.apps.twitterclient.util.DateUtil;
+import com.codepath.apps.twitterclient.util.DeviceDimensionsHelper;
 import com.codepath.apps.twitterclient.util.ErrorHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
@@ -99,18 +102,21 @@ public class TweetDetailActivity extends AppCompatActivity {
     tvDate.setText(DateUtil.getFormattedDate(this, mTweet.createdAt));
     tvTime.setText(DateUtil.getFormattedTime(this, mTweet.createdAt));
 
-    if (mTweet.media != null) {
+    Media tweetMedia = mTweet.media;
+    if (tweetMedia != null) {
       ivMedia.setVisibility(View.VISIBLE);
-      Glide.with(this).load(mTweet.media.mediaUrl) // .placeholder(R.drawable.loading_placeholder)
-          .centerCrop()
-          .into(ivMedia);
+
+      Log.d(TAG, "Media width: " + tweetMedia.width + "; height: " + tweetMedia.height);
+      DrawableTypeRequest drawableTypeRequest = Glide.with(this).load(mTweet.media.mediaUrl);
+      drawableTypeRequest.override(tweetMedia.width, tweetMedia.height);
+      drawableTypeRequest.fitCenter().centerCrop();
+      drawableTypeRequest.into(ivMedia);
     }
 
     etReplyText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
       @Override
       public void onFocusChange(View v, boolean hasFocus) {
         if (hasFocus) {
-          etReplyText.setLines(3);
           if (TextUtils.isEmpty(etReplyText.getText())) {
             etReplyText.setText(mTweet.user.screenName + " ");
             etReplyText.setSelection(etReplyText.getText().length());
@@ -192,7 +198,7 @@ public class TweetDetailActivity extends AppCompatActivity {
 
   private void handleSuccess(Tweet replyTweet) {
     // hide keyboard
-    InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+    InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
     imm.hideSoftInputFromWindow(etReplyText.getWindowToken(), 0);
     etReplyText.setText("");
     etReplyText.setLines(1);

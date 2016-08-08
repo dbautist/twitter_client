@@ -1,9 +1,9 @@
 
-# Project 3 - *Name of App Here*
+# Project 3 - *MyTweet*
 
-**Name of your app** is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
+**MyTweet** is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **X** hours spent in total
+Time spent: **22** hours spent in total
 
 ## User Stories
 
@@ -45,22 +45,25 @@ The following **bonus** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] User can favorite a tweet
+* [x] From the twitter timeline, customize button color if a tweet is 'favorited' or 'retweeted'
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
+![Twitter Walkthrough](twitter_demo.gif)
 
 
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## Open-source libraries used
 
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
-- [Picasso](http://square.github.io/picasso/) - Image loading and caching library for Android
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
+- [Parceler](http://parceler.org/) - Serializing Java objects between Contexts
+- [Butterknife](http://jakewharton.github.io/butterknife/) - Reduce view boilerplate
+- [ActiveAndroid](https://github.com/pardom/ActiveAndroid) - Persist offline data
+
 
 ## License
 

@@ -64,9 +64,27 @@ public class TwitterClient extends OAuthBaseClient {
     getClient().get(apiUrl, params, handler);
   }
 
+  // HomeTimeline - Gets us the home timeline
+  // GET statuses/mentions_timeline.json
+  public void getMentionsTimeline(long maxId, AsyncHttpResponseHandler handler) {
+    Log.d(TAG, "------mentions_timeline = max_id: " + maxId);
+
+    String apiUrl = getApiUrl("statuses/mentions_timeline.json");
+    RequestParams params = new RequestParams();
+    params.put("count", AppConstants.TWEET_FETCH_COUNT);
+    if (maxId != -1) {
+      params.put("max_id", maxId);
+    } else {
+      params.put("since_id", 1);
+    }
+    getClient().get(apiUrl, params, handler);
+  }
+
   // POST statuses/update.json
   // post status or reply to tweet when `in_reply_to_status_id` is set
   public void postStatus(String status, long replyStatusId, AsyncHttpResponseHandler handler) {
+    Log.d(TAG, "postStatus: replyStatusId=" + replyStatusId + " ;status=" + status);
+
     String apiUrl = getApiUrl("statuses/update.json");
     RequestParams params = new RequestParams();
     params.put("status", status);

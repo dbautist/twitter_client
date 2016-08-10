@@ -1,0 +1,4187 @@
+[
+  {
+    "created_at": "Wed Aug 10 00:34:01 +0000 2016",
+    "id": 763171508550307841,
+    "id_str": "763171508550307841",
+    "text": "Dessert belgian waffles https://t.co/hmaIu2bgRm",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 763171506289508352,
+          "id_str": "763171506289508352",
+          "indices": [
+            24,
+            47
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdUcQcWAAAwgwJ.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdUcQcWAAAwgwJ.jpg",
+          "url": "https://t.co/hmaIu2bgRm",
+          "display_url": "pic.twitter.com/hmaIu2bgRm",
+          "expanded_url": "http://twitter.com/ItsFoodPorn/status/763171508550307841/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 500,
+              "h": 375,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 500,
+              "h": 375,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 500,
+              "h": 375,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763171506289508352,
+          "id_str": "763171506289508352",
+          "indices": [
+            24,
+            47
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdUcQcWAAAwgwJ.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdUcQcWAAAwgwJ.jpg",
+          "url": "https://t.co/hmaIu2bgRm",
+          "display_url": "pic.twitter.com/hmaIu2bgRm",
+          "expanded_url": "http://twitter.com/ItsFoodPorn/status/763171508550307841/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 500,
+              "h": 375,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 500,
+              "h": 375,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 500,
+              "h": 375,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 834316544,
+      "id_str": "834316544",
+      "name": "FoodPorn",
+      "screen_name": "ItsFoodPorn",
+      "location": "",
+      "description": "Feed Your Eyes. Your Daily Food Porn. We DO NOT own content posted. Everything is submissions. Content will be removed by owners request foodontwitter@gmail.com",
+      "url": "https://t.co/siY6AV1Gpg",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/siY6AV1Gpg",
+              "expanded_url": "http://snapchat.com/add/itsfoodporn",
+              "display_url": "snapchat.com/add/itsfoodporn",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2264538,
+      "friends_count": 365,
+      "listed_count": 3801,
+      "created_at": "Wed Sep 19 23:15:00 +0000 2012",
+      "favourites_count": 2384,
+      "utc_offset": -10800,
+      "time_zone": "Atlantic Time (Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 15788,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "FCFCFC",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/506549048304619520/el4NB7ql.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/506549048304619520/el4NB7ql.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/737420820570644481/vm3MKA-H_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/737420820570644481/vm3MKA-H_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/834316544/1450317990",
+      "profile_link_color": "131414",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "C0DFEC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 256,
+    "favorite_count": 330,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "fr"
+  },
+  {
+    "created_at": "Wed Aug 10 00:30:14 +0000 2016",
+    "id": 763170556237664257,
+    "id_str": "763170556237664257",
+    "text": "Who ordered fried chicken, and who was all bout the chocolate at this year’s @sfoutsidelands https://t.co/S9i0e2Dfef",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "sfoutsidelands",
+          "name": "ranger dave",
+          "id": 26601342,
+          "id_str": "26601342",
+          "indices": [
+            77,
+            92
+          ]
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://t.co/S9i0e2Dfef",
+          "expanded_url": "http://sf.eater.com/2016/8/9/12417350/outside-lands-bands-food-drink-2016",
+          "display_url": "sf.eater.com/2016/8/9/12417…",
+          "indices": [
+            93,
+            116
+          ]
+        }
+      ]
+    },
+    "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 16510537,
+      "id_str": "16510537",
+      "name": "Eater SF",
+      "screen_name": "eatersf",
+      "location": "San Francisco, CA",
+      "description": "Food news and dining guides for San Francisco.",
+      "url": "http://t.co/WCU7a256C9",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/WCU7a256C9",
+              "expanded_url": "http://sf.eater.com",
+              "display_url": "sf.eater.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 92217,
+      "friends_count": 380,
+      "listed_count": 2310,
+      "created_at": "Mon Sep 29 12:13:11 +0000 2008",
+      "favourites_count": 206,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 14063,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F4FAFB",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/513847070982037504/yiy7tFP7_normal.png",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/513847070982037504/yiy7tFP7_normal.png",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/16510537/1411345646",
+      "profile_link_color": "336B3A",
+      "profile_sidebar_border_color": "336B3A",
+      "profile_sidebar_fill_color": "CCD3FF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 00:30:03 +0000 2016",
+    "id": 763170509680803841,
+    "id_str": "763170509680803841",
+    "text": "Dinner plans? Join @AndrewZimmern as he heads to Cyprus for all of the pork belly on tonight's #BizarreFoods, 9|8c! https://t.co/fuvjyPKca4",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "BizarreFoods",
+          "indices": [
+            95,
+            108
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "andrewzimmern",
+          "name": "Andrew Zimmern",
+          "id": 17008726,
+          "id_str": "17008726",
+          "indices": [
+            19,
+            33
+          ]
+        }
+      ],
+      "urls": [],
+      "media": [
+        {
+          "id": 763170505155162112,
+          "id_str": "763170505155162112",
+          "indices": [
+            116,
+            139
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdTh-7UMAA_USn.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdTh-7UMAA_USn.jpg",
+          "url": "https://t.co/fuvjyPKca4",
+          "display_url": "pic.twitter.com/fuvjyPKca4",
+          "expanded_url": "http://twitter.com/travelchannel/status/763170509680803841/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 453,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 850,
+              "h": 566,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 850,
+              "h": 566,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763170505155162112,
+          "id_str": "763170505155162112",
+          "indices": [
+            116,
+            139
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdTh-7UMAA_USn.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdTh-7UMAA_USn.jpg",
+          "url": "https://t.co/fuvjyPKca4",
+          "display_url": "pic.twitter.com/fuvjyPKca4",
+          "expanded_url": "http://twitter.com/travelchannel/status/763170509680803841/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 453,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 850,
+              "h": 566,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 850,
+              "h": 566,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://www.scrippsnetworksinteractive.com/\" rel=\"nofollow\">Scripps Networks</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 14363353,
+      "id_str": "14363353",
+      "name": "Travel Channel",
+      "screen_name": "travelchannel",
+      "location": "Worldwide",
+      "description": "The official Twitter account of Travel Channel (US). Follow us to talk about all things travel!",
+      "url": "http://t.co/v5zIooJJbW",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/v5zIooJJbW",
+              "expanded_url": "http://www.travelchannel.com",
+              "display_url": "travelchannel.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2111770,
+      "friends_count": 3699,
+      "listed_count": 11620,
+      "created_at": "Fri Apr 11 18:31:13 +0000 2008",
+      "favourites_count": 3589,
+      "utc_offset": -14400,
+      "time_zone": "Eastern Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": true,
+      "statuses_count": 19085,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000161216971/JJ6VZ-EM.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000161216971/JJ6VZ-EM.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/739892143771127808/fybNpgxu_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/739892143771127808/fybNpgxu_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/14363353/1466610583",
+      "profile_link_color": "ED0439",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "DDFFCC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 3,
+    "favorite_count": 3,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 00:24:02 +0000 2016",
+    "id": 763168998641004544,
+    "id_str": "763168998641004544",
+    "text": "RT @CommonWhiteGrls: The most important account on Twitter has to be @AnimalBabyPix 😭🐶🐷🐢🐒 https://t.co/BOMGQoLDN1",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "CommonWhiteGrls",
+          "name": "Common White Girl",
+          "id": 75821706,
+          "id_str": "75821706",
+          "indices": [
+            3,
+            19
+          ]
+        },
+        {
+          "screen_name": "AnimalBabyPix",
+          "name": "Animal Baby Pix",
+          "id": 337509625,
+          "id_str": "337509625",
+          "indices": [
+            69,
+            83
+          ]
+        }
+      ],
+      "urls": [],
+      "media": [
+        {
+          "id": 762103351723061248,
+          "id_str": "762103351723061248",
+          "indices": [
+            90,
+            113
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpOI9emWcAAJIeG.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpOI9emWcAAJIeG.jpg",
+          "url": "https://t.co/BOMGQoLDN1",
+          "display_url": "pic.twitter.com/BOMGQoLDN1",
+          "expanded_url": "http://twitter.com/CommonWhiteGrls/status/762103371981529088/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 397,
+              "h": 680,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 598,
+              "h": 1024,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 598,
+              "h": 1024,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 762103371981529088,
+          "source_status_id_str": "762103371981529088",
+          "source_user_id": 75821706,
+          "source_user_id_str": "75821706"
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 762103351723061248,
+          "id_str": "762103351723061248",
+          "indices": [
+            90,
+            113
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpOI9emWcAAJIeG.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpOI9emWcAAJIeG.jpg",
+          "url": "https://t.co/BOMGQoLDN1",
+          "display_url": "pic.twitter.com/BOMGQoLDN1",
+          "expanded_url": "http://twitter.com/CommonWhiteGrls/status/762103371981529088/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 397,
+              "h": 680,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 598,
+              "h": 1024,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 598,
+              "h": 1024,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 762103371981529088,
+          "source_status_id_str": "762103371981529088",
+          "source_user_id": 75821706,
+          "source_user_id_str": "75821706"
+        },
+        {
+          "id": 762103351739834368,
+          "id_str": "762103351739834368",
+          "indices": [
+            90,
+            113
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpOI9eqWYAAVyPX.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpOI9eqWYAAVyPX.jpg",
+          "url": "https://t.co/BOMGQoLDN1",
+          "display_url": "pic.twitter.com/BOMGQoLDN1",
+          "expanded_url": "http://twitter.com/CommonWhiteGrls/status/762103371981529088/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 600,
+              "h": 1024,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 398,
+              "h": 680,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 600,
+              "h": 1024,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            }
+          },
+          "source_status_id": 762103371981529088,
+          "source_status_id_str": "762103371981529088",
+          "source_user_id": 75821706,
+          "source_user_id_str": "75821706"
+        },
+        {
+          "id": 762103351744028674,
+          "id_str": "762103351744028674",
+          "indices": [
+            90,
+            113
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpOI9erWYAIb9EQ.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpOI9erWYAIb9EQ.jpg",
+          "url": "https://t.co/BOMGQoLDN1",
+          "display_url": "pic.twitter.com/BOMGQoLDN1",
+          "expanded_url": "http://twitter.com/CommonWhiteGrls/status/762103371981529088/photo/1",
+          "type": "photo",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 392,
+              "h": 680,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 590,
+              "h": 1024,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 590,
+              "h": 1024,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 762103371981529088,
+          "source_status_id_str": "762103371981529088",
+          "source_user_id": 75821706,
+          "source_user_id_str": "75821706"
+        },
+        {
+          "id": 762103351735640068,
+          "id_str": "762103351735640068",
+          "indices": [
+            90,
+            113
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpOI9epWYAQrluw.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpOI9epWYAQrluw.jpg",
+          "url": "https://t.co/BOMGQoLDN1",
+          "display_url": "pic.twitter.com/BOMGQoLDN1",
+          "expanded_url": "http://twitter.com/CommonWhiteGrls/status/762103371981529088/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 600,
+              "h": 1024,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 398,
+              "h": 680,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 600,
+              "h": 1024,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            }
+          },
+          "source_status_id": 762103371981529088,
+          "source_status_id_str": "762103371981529088",
+          "source_user_id": 75821706,
+          "source_user_id_str": "75821706"
+        }
+      ]
+    },
+    "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 834316544,
+      "id_str": "834316544",
+      "name": "FoodPorn",
+      "screen_name": "ItsFoodPorn",
+      "location": "",
+      "description": "Feed Your Eyes. Your Daily Food Porn. We DO NOT own content posted. Everything is submissions. Content will be removed by owners request foodontwitter@gmail.com",
+      "url": "https://t.co/siY6AV1Gpg",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/siY6AV1Gpg",
+              "expanded_url": "http://snapchat.com/add/itsfoodporn",
+              "display_url": "snapchat.com/add/itsfoodporn",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2264538,
+      "friends_count": 365,
+      "listed_count": 3801,
+      "created_at": "Wed Sep 19 23:15:00 +0000 2012",
+      "favourites_count": 2384,
+      "utc_offset": -10800,
+      "time_zone": "Atlantic Time (Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 15788,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "FCFCFC",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/506549048304619520/el4NB7ql.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/506549048304619520/el4NB7ql.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/737420820570644481/vm3MKA-H_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/737420820570644481/vm3MKA-H_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/834316544/1450317990",
+      "profile_link_color": "131414",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "C0DFEC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Sun Aug 07 01:49:37 +0000 2016",
+      "id": 762103371981529088,
+      "id_str": "762103371981529088",
+      "text": "The most important account on Twitter has to be @AnimalBabyPix 😭🐶🐷🐢🐒 https://t.co/BOMGQoLDN1",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "AnimalBabyPix",
+            "name": "Animal Baby Pix",
+            "id": 337509625,
+            "id_str": "337509625",
+            "indices": [
+              48,
+              62
+            ]
+          }
+        ],
+        "urls": [],
+        "media": [
+          {
+            "id": 762103351723061248,
+            "id_str": "762103351723061248",
+            "indices": [
+              69,
+              92
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpOI9emWcAAJIeG.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpOI9emWcAAJIeG.jpg",
+            "url": "https://t.co/BOMGQoLDN1",
+            "display_url": "pic.twitter.com/BOMGQoLDN1",
+            "expanded_url": "http://twitter.com/CommonWhiteGrls/status/762103371981529088/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 397,
+                "h": 680,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 598,
+                "h": 1024,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 598,
+                "h": 1024,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 762103351723061248,
+            "id_str": "762103351723061248",
+            "indices": [
+              69,
+              92
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpOI9emWcAAJIeG.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpOI9emWcAAJIeG.jpg",
+            "url": "https://t.co/BOMGQoLDN1",
+            "display_url": "pic.twitter.com/BOMGQoLDN1",
+            "expanded_url": "http://twitter.com/CommonWhiteGrls/status/762103371981529088/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 397,
+                "h": 680,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 598,
+                "h": 1024,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 598,
+                "h": 1024,
+                "resize": "fit"
+              }
+            }
+          },
+          {
+            "id": 762103351739834368,
+            "id_str": "762103351739834368",
+            "indices": [
+              69,
+              92
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpOI9eqWYAAVyPX.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpOI9eqWYAAVyPX.jpg",
+            "url": "https://t.co/BOMGQoLDN1",
+            "display_url": "pic.twitter.com/BOMGQoLDN1",
+            "expanded_url": "http://twitter.com/CommonWhiteGrls/status/762103371981529088/photo/1",
+            "type": "photo",
+            "sizes": {
+              "large": {
+                "w": 600,
+                "h": 1024,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 398,
+                "h": 680,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 600,
+                "h": 1024,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              }
+            }
+          },
+          {
+            "id": 762103351744028674,
+            "id_str": "762103351744028674",
+            "indices": [
+              69,
+              92
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpOI9erWYAIb9EQ.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpOI9erWYAIb9EQ.jpg",
+            "url": "https://t.co/BOMGQoLDN1",
+            "display_url": "pic.twitter.com/BOMGQoLDN1",
+            "expanded_url": "http://twitter.com/CommonWhiteGrls/status/762103371981529088/photo/1",
+            "type": "photo",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "small": {
+                "w": 392,
+                "h": 680,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 590,
+                "h": 1024,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 590,
+                "h": 1024,
+                "resize": "fit"
+              }
+            }
+          },
+          {
+            "id": 762103351735640068,
+            "id_str": "762103351735640068",
+            "indices": [
+              69,
+              92
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpOI9epWYAQrluw.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpOI9epWYAQrluw.jpg",
+            "url": "https://t.co/BOMGQoLDN1",
+            "display_url": "pic.twitter.com/BOMGQoLDN1",
+            "expanded_url": "http://twitter.com/CommonWhiteGrls/status/762103371981529088/photo/1",
+            "type": "photo",
+            "sizes": {
+              "large": {
+                "w": 600,
+                "h": 1024,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 398,
+                "h": 680,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 600,
+                "h": 1024,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              }
+            }
+          }
+        ]
+      },
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 75821706,
+        "id_str": "75821706",
+        "name": "Common White Girl",
+        "screen_name": "CommonWhiteGrls",
+        "location": "Starbucks ",
+        "description": "If you fall under any of my tweets, congratulations, you're white. *we don't own content posted*",
+        "url": "https://t.co/ntUVU599EZ",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/ntUVU599EZ",
+                "expanded_url": "https://www.snapchat.com/add/perfectmale",
+                "display_url": "snapchat.com/add/perfectmale",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1020160,
+        "friends_count": 0,
+        "listed_count": 2382,
+        "created_at": "Sun Sep 20 16:35:48 +0000 2009",
+        "favourites_count": 119,
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 9480,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": true,
+        "profile_background_color": "FFFFFF",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/677344946463092736/EsE0b0fV_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/677344946463092736/EsE0b0fV_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/75821706/1450326680",
+        "profile_link_color": "000000",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 82,
+      "favorite_count": 220,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "possibly_sensitive_appealable": false,
+      "lang": "en"
+    },
+    "is_quote_status": false,
+    "retweet_count": 82,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 00:23:03 +0000 2016",
+    "id": 763168747452567552,
+    "id_str": "763168747452567552",
+    "text": "RT @AnimalBabyPix: A Blastoise has been spotted in real life 🐢 https://t.co/SUAzE0rYEw",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "AnimalBabyPix",
+          "name": "Animal Baby Pix",
+          "id": 337509625,
+          "id_str": "337509625",
+          "indices": [
+            3,
+            17
+          ]
+        }
+      ],
+      "urls": [],
+      "media": [
+        {
+          "id": 762064967818481664,
+          "id_str": "762064967818481664",
+          "indices": [
+            63,
+            86
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpNmDPaXEAA-2s-.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpNmDPaXEAA-2s-.jpg",
+          "url": "https://t.co/SUAzE0rYEw",
+          "display_url": "pic.twitter.com/SUAzE0rYEw",
+          "expanded_url": "http://twitter.com/AnimalBabyPix/status/762064970465050624/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 510,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 762064970465050624,
+          "source_status_id_str": "762064970465050624",
+          "source_user_id": 337509625,
+          "source_user_id_str": "337509625"
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 762064967818481664,
+          "id_str": "762064967818481664",
+          "indices": [
+            63,
+            86
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpNmDPaXEAA-2s-.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpNmDPaXEAA-2s-.jpg",
+          "url": "https://t.co/SUAzE0rYEw",
+          "display_url": "pic.twitter.com/SUAzE0rYEw",
+          "expanded_url": "http://twitter.com/AnimalBabyPix/status/762064970465050624/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 510,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 762064970465050624,
+          "source_status_id_str": "762064970465050624",
+          "source_user_id": 337509625,
+          "source_user_id_str": "337509625"
+        },
+        {
+          "id": 762064967239622656,
+          "id_str": "762064967239622656",
+          "indices": [
+            63,
+            86
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpNmDNQWYAAjJg1.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpNmDNQWYAAjJg1.jpg",
+          "url": "https://t.co/SUAzE0rYEw",
+          "display_url": "pic.twitter.com/SUAzE0rYEw",
+          "expanded_url": "http://twitter.com/AnimalBabyPix/status/762064970465050624/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 510,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 762064970465050624,
+          "source_status_id_str": "762064970465050624",
+          "source_user_id": 337509625,
+          "source_user_id_str": "337509625"
+        },
+        {
+          "id": 762064967176691712,
+          "id_str": "762064967176691712",
+          "indices": [
+            63,
+            86
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpNmDNBWIAAAtmI.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpNmDNBWIAAAtmI.jpg",
+          "url": "https://t.co/SUAzE0rYEw",
+          "display_url": "pic.twitter.com/SUAzE0rYEw",
+          "expanded_url": "http://twitter.com/AnimalBabyPix/status/762064970465050624/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 510,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 762064970465050624,
+          "source_status_id_str": "762064970465050624",
+          "source_user_id": 337509625,
+          "source_user_id_str": "337509625"
+        },
+        {
+          "id": 762064967365455873,
+          "id_str": "762064967365455873",
+          "indices": [
+            63,
+            86
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpNmDNuWcAER6ji.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpNmDNuWcAER6ji.jpg",
+          "url": "https://t.co/SUAzE0rYEw",
+          "display_url": "pic.twitter.com/SUAzE0rYEw",
+          "expanded_url": "http://twitter.com/AnimalBabyPix/status/762064970465050624/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 510,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 762064970465050624,
+          "source_status_id_str": "762064970465050624",
+          "source_user_id": 337509625,
+          "source_user_id_str": "337509625"
+        }
+      ]
+    },
+    "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 834316544,
+      "id_str": "834316544",
+      "name": "FoodPorn",
+      "screen_name": "ItsFoodPorn",
+      "location": "",
+      "description": "Feed Your Eyes. Your Daily Food Porn. We DO NOT own content posted. Everything is submissions. Content will be removed by owners request foodontwitter@gmail.com",
+      "url": "https://t.co/siY6AV1Gpg",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/siY6AV1Gpg",
+              "expanded_url": "http://snapchat.com/add/itsfoodporn",
+              "display_url": "snapchat.com/add/itsfoodporn",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2264538,
+      "friends_count": 365,
+      "listed_count": 3801,
+      "created_at": "Wed Sep 19 23:15:00 +0000 2012",
+      "favourites_count": 2384,
+      "utc_offset": -10800,
+      "time_zone": "Atlantic Time (Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 15788,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "FCFCFC",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/506549048304619520/el4NB7ql.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/506549048304619520/el4NB7ql.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/737420820570644481/vm3MKA-H_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/737420820570644481/vm3MKA-H_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/834316544/1450317990",
+      "profile_link_color": "131414",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "C0DFEC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Sat Aug 06 23:17:02 +0000 2016",
+      "id": 762064970465050624,
+      "id_str": "762064970465050624",
+      "text": "A Blastoise has been spotted in real life 🐢 https://t.co/SUAzE0rYEw",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [],
+        "media": [
+          {
+            "id": 762064967818481664,
+            "id_str": "762064967818481664",
+            "indices": [
+              44,
+              67
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpNmDPaXEAA-2s-.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpNmDPaXEAA-2s-.jpg",
+            "url": "https://t.co/SUAzE0rYEw",
+            "display_url": "pic.twitter.com/SUAzE0rYEw",
+            "expanded_url": "http://twitter.com/AnimalBabyPix/status/762064970465050624/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 680,
+                "h": 510,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 900,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1200,
+                "h": 900,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 762064967818481664,
+            "id_str": "762064967818481664",
+            "indices": [
+              44,
+              67
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpNmDPaXEAA-2s-.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpNmDPaXEAA-2s-.jpg",
+            "url": "https://t.co/SUAzE0rYEw",
+            "display_url": "pic.twitter.com/SUAzE0rYEw",
+            "expanded_url": "http://twitter.com/AnimalBabyPix/status/762064970465050624/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 680,
+                "h": 510,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 900,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1200,
+                "h": 900,
+                "resize": "fit"
+              }
+            }
+          },
+          {
+            "id": 762064967239622656,
+            "id_str": "762064967239622656",
+            "indices": [
+              44,
+              67
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpNmDNQWYAAjJg1.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpNmDNQWYAAjJg1.jpg",
+            "url": "https://t.co/SUAzE0rYEw",
+            "display_url": "pic.twitter.com/SUAzE0rYEw",
+            "expanded_url": "http://twitter.com/AnimalBabyPix/status/762064970465050624/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 680,
+                "h": 510,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 900,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1200,
+                "h": 900,
+                "resize": "fit"
+              }
+            }
+          },
+          {
+            "id": 762064967176691712,
+            "id_str": "762064967176691712",
+            "indices": [
+              44,
+              67
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpNmDNBWIAAAtmI.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpNmDNBWIAAAtmI.jpg",
+            "url": "https://t.co/SUAzE0rYEw",
+            "display_url": "pic.twitter.com/SUAzE0rYEw",
+            "expanded_url": "http://twitter.com/AnimalBabyPix/status/762064970465050624/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 680,
+                "h": 510,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 900,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1200,
+                "h": 900,
+                "resize": "fit"
+              }
+            }
+          },
+          {
+            "id": 762064967365455873,
+            "id_str": "762064967365455873",
+            "indices": [
+              44,
+              67
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpNmDNuWcAER6ji.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpNmDNuWcAER6ji.jpg",
+            "url": "https://t.co/SUAzE0rYEw",
+            "display_url": "pic.twitter.com/SUAzE0rYEw",
+            "expanded_url": "http://twitter.com/AnimalBabyPix/status/762064970465050624/photo/1",
+            "type": "photo",
+            "sizes": {
+              "small": {
+                "w": 680,
+                "h": 510,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1200,
+                "h": 900,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 900,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 337509625,
+        "id_str": "337509625",
+        "name": "Animal Baby Pix",
+        "screen_name": "AnimalBabyPix",
+        "location": "",
+        "description": "The cutest tweets imaginable. Follow us for instant happiness! ☺️ *We own no content posted* Snapchat: AnimalBabyPix",
+        "url": null,
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 225988,
+        "friends_count": 26,
+        "listed_count": 266,
+        "created_at": "Mon Jul 18 04:13:15 +0000 2011",
+        "favourites_count": 584,
+        "utc_offset": -18000,
+        "time_zone": "Quito",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 2232,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/885109421/52d560f16908beeebf0e2640b11fd69f.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/885109421/52d560f16908beeebf0e2640b11fd69f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/448933545998680064/r_MFGnDg_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/448933545998680064/r_MFGnDg_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/337509625/1368294419",
+        "profile_link_color": "000000",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 494,
+      "favorite_count": 697,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "possibly_sensitive_appealable": false,
+      "lang": "en"
+    },
+    "is_quote_status": false,
+    "retweet_count": 494,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 00:23:00 +0000 2016",
+    "id": 763168735960195072,
+    "id_str": "763168735960195072",
+    "text": "RT @AnimalBabyPix: when u catch someone staring at you\nhttps://t.co/JoA6WJEj89",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "AnimalBabyPix",
+          "name": "Animal Baby Pix",
+          "id": 337509625,
+          "id_str": "337509625",
+          "indices": [
+            3,
+            17
+          ]
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://t.co/JoA6WJEj89",
+          "expanded_url": "https://vine.co/v/MPL7Z1iADJg",
+          "display_url": "vine.co/v/MPL7Z1iADJg",
+          "indices": [
+            55,
+            78
+          ]
+        }
+      ]
+    },
+    "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 834316544,
+      "id_str": "834316544",
+      "name": "FoodPorn",
+      "screen_name": "ItsFoodPorn",
+      "location": "",
+      "description": "Feed Your Eyes. Your Daily Food Porn. We DO NOT own content posted. Everything is submissions. Content will be removed by owners request foodontwitter@gmail.com",
+      "url": "https://t.co/siY6AV1Gpg",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/siY6AV1Gpg",
+              "expanded_url": "http://snapchat.com/add/itsfoodporn",
+              "display_url": "snapchat.com/add/itsfoodporn",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2264538,
+      "friends_count": 365,
+      "listed_count": 3801,
+      "created_at": "Wed Sep 19 23:15:00 +0000 2012",
+      "favourites_count": 2384,
+      "utc_offset": -10800,
+      "time_zone": "Atlantic Time (Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 15788,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "FCFCFC",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/506549048304619520/el4NB7ql.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/506549048304619520/el4NB7ql.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/737420820570644481/vm3MKA-H_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/737420820570644481/vm3MKA-H_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/834316544/1450317990",
+      "profile_link_color": "131414",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "C0DFEC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Sat Aug 06 00:07:03 +0000 2016",
+      "id": 761715170523709442,
+      "id_str": "761715170523709442",
+      "text": "when u catch someone staring at you\nhttps://t.co/JoA6WJEj89",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/JoA6WJEj89",
+            "expanded_url": "https://vine.co/v/MPL7Z1iADJg",
+            "display_url": "vine.co/v/MPL7Z1iADJg",
+            "indices": [
+              36,
+              59
+            ]
+          }
+        ]
+      },
+      "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 337509625,
+        "id_str": "337509625",
+        "name": "Animal Baby Pix",
+        "screen_name": "AnimalBabyPix",
+        "location": "",
+        "description": "The cutest tweets imaginable. Follow us for instant happiness! ☺️ *We own no content posted* Snapchat: AnimalBabyPix",
+        "url": null,
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 225988,
+        "friends_count": 26,
+        "listed_count": 266,
+        "created_at": "Mon Jul 18 04:13:15 +0000 2011",
+        "favourites_count": 584,
+        "utc_offset": -18000,
+        "time_zone": "Quito",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 2232,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/885109421/52d560f16908beeebf0e2640b11fd69f.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/885109421/52d560f16908beeebf0e2640b11fd69f.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/448933545998680064/r_MFGnDg_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/448933545998680064/r_MFGnDg_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/337509625/1368294419",
+        "profile_link_color": "000000",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 558,
+      "favorite_count": 834,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "possibly_sensitive_appealable": false,
+      "lang": "en"
+    },
+    "is_quote_status": false,
+    "retweet_count": 558,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 00:15:09 +0000 2016",
+    "id": 763166762498007042,
+    "id_str": "763166762498007042",
+    "text": "This startup wants to shake up the travel biz by turning you (and everyone else) into a travel agent: https://t.co/m8TFeqTcCk #BBCinbrief",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "BBCinbrief",
+          "indices": [
+            126,
+            137
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/m8TFeqTcCk",
+          "expanded_url": "https://techcrunch.com/2016/08/09/trvl/",
+          "display_url": "techcrunch.com/2016/08/09/trv…",
+          "indices": [
+            102,
+            125
+          ]
+        }
+      ]
+    },
+    "source": "<a href=\"https://ads.twitter.com\" rel=\"nofollow\">Twitter Ads</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 173992307,
+      "id_str": "173992307",
+      "name": "BBC Travel",
+      "screen_name": "BBC_Travel",
+      "location": "",
+      "description": "Discover new cultures. Embark on new adventures. Celebrate. Explore. Engage. BBC Travel: Inspiring you to fall in love with the world.",
+      "url": "http://t.co/fLbUuq1LXB",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/fLbUuq1LXB",
+              "expanded_url": "http://www.bbc.com/travel",
+              "display_url": "bbc.com/travel",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 774959,
+      "friends_count": 458,
+      "listed_count": 7462,
+      "created_at": "Mon Aug 02 21:22:06 +0000 2010",
+      "favourites_count": 4122,
+      "utc_offset": -14400,
+      "time_zone": "Eastern Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": true,
+      "statuses_count": 32923,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000167174818/KbDV3nEB.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000167174818/KbDV3nEB.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/724781487099400193/-rzMXS9O_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/724781487099400193/-rzMXS9O_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/173992307/1469655309",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 10,
+    "favorite_count": 8,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 00:15:03 +0000 2016",
+    "id": 763166735780503552,
+    "id_str": "763166735780503552",
+    "text": "A 19-year-old earned 1 million miles by hacking United Airlines: https://t.co/vvezRxpMby https://t.co/z7lebJX5SW",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/vvezRxpMby",
+          "expanded_url": "http://tandl.me/2b4OMYx",
+          "display_url": "tandl.me/2b4OMYx",
+          "indices": [
+            65,
+            88
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 763166734060838912,
+          "id_str": "763166734060838912",
+          "indices": [
+            89,
+            112
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdQGegXYAAOu1Z.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdQGegXYAAOu1Z.jpg",
+          "url": "https://t.co/z7lebJX5SW",
+          "display_url": "pic.twitter.com/z7lebJX5SW",
+          "expanded_url": "http://twitter.com/TravelLeisure/status/763166735780503552/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 1024,
+              "h": 640,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 425,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1024,
+              "h": 640,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763166734060838912,
+          "id_str": "763166734060838912",
+          "indices": [
+            89,
+            112
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdQGegXYAAOu1Z.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdQGegXYAAOu1Z.jpg",
+          "url": "https://t.co/z7lebJX5SW",
+          "display_url": "pic.twitter.com/z7lebJX5SW",
+          "expanded_url": "http://twitter.com/TravelLeisure/status/763166735780503552/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 1024,
+              "h": 640,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 425,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1024,
+              "h": 640,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://trueanthem.com/\" rel=\"nofollow\">trueAnthem</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 16211434,
+      "id_str": "16211434",
+      "name": "Travel + Leisure",
+      "screen_name": "TravelLeisure",
+      "location": "New York, NY",
+      "description": "Your connection to the world of travel, brought to you by our editors. Questions? Stories? Please share! Social media terms: http://t.co/EZJig77Mz1",
+      "url": "http://t.co/vmvNyo6nXZ",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/vmvNyo6nXZ",
+              "expanded_url": "http://www.travelandleisure.com",
+              "display_url": "travelandleisure.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "http://t.co/EZJig77Mz1",
+              "expanded_url": "http://tandl.me/socialmedia",
+              "display_url": "tandl.me/socialmedia",
+              "indices": [
+                125,
+                147
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 2364897,
+      "friends_count": 946,
+      "listed_count": 0,
+      "created_at": "Tue Sep 09 21:16:34 +0000 2008",
+      "favourites_count": 13348,
+      "utc_offset": -14400,
+      "time_zone": "Eastern Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": true,
+      "statuses_count": 57645,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "131516",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/558699763046948864/IeByC5nB.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/558699763046948864/IeByC5nB.jpeg",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/3704055283/7830ca91dc1c7e34a27100568e628a93_normal.png",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/3704055283/7830ca91dc1c7e34a27100568e628a93_normal.png",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/16211434/1428429270",
+      "profile_link_color": "FA0824",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "EFEFEF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 25,
+    "favorite_count": 13,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 00:01:49 +0000 2016",
+    "id": 763163404156669952,
+    "id_str": "763163404156669952",
+    "text": "Day Around The Bay: Running Low On Gas Stations https://t.co/Sf423HRnBK https://t.co/tXLmPU8yU9",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/Sf423HRnBK",
+          "expanded_url": "http://sfist.com/2016/08/09/day_around_the_bay_running_low_on_g.php",
+          "display_url": "sfist.com/2016/08/09/day…",
+          "indices": [
+            48,
+            71
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 763163393947688960,
+          "id_str": "763163393947688960",
+          "indices": [
+            72,
+            95
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdNEDnVYAAvEgH.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdNEDnVYAAvEgH.jpg",
+          "url": "https://t.co/tXLmPU8yU9",
+          "display_url": "pic.twitter.com/tXLmPU8yU9",
+          "expanded_url": "http://twitter.com/SFist/status/763163404156669952/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 640,
+              "h": 360,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 640,
+              "h": 360,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 640,
+              "h": 360,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763163393947688960,
+          "id_str": "763163393947688960",
+          "indices": [
+            72,
+            95
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdNEDnVYAAvEgH.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdNEDnVYAAvEgH.jpg",
+          "url": "https://t.co/tXLmPU8yU9",
+          "display_url": "pic.twitter.com/tXLmPU8yU9",
+          "expanded_url": "http://twitter.com/SFist/status/763163404156669952/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 640,
+              "h": 360,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 640,
+              "h": 360,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 640,
+              "h": 360,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 14093707,
+      "id_str": "14093707",
+      "name": "SFist",
+      "screen_name": "SFist",
+      "location": "San Francisco",
+      "description": "Everything else you need to know about SF & the Bay Area. Edited by @jaybarmann, @eveb, @calaesthetic, and @warrenmarcusson. Hit us up: tips@sfist.com.",
+      "url": "http://t.co/sNoNw2Ueja",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/sNoNw2Ueja",
+              "expanded_url": "http://sfist.com",
+              "display_url": "sfist.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 209821,
+      "friends_count": 1750,
+      "listed_count": 3624,
+      "created_at": "Fri Mar 07 06:47:45 +0000 2008",
+      "favourites_count": 1057,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": true,
+      "statuses_count": 27064,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/140151812/SFist07.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/140151812/SFist07.jpg",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/51584619/SFist07_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/51584619/SFist07_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/14093707/1347986745",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 6,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 00:00:16 +0000 2016",
+    "id": 763163017286647808,
+    "id_str": "763163017286647808",
+    "text": "Get facts, photos, and travel tips for the Great Wall of China https://t.co/rYxmbMBBb3",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/rYxmbMBBb3",
+          "expanded_url": "http://on.natgeo.com/2b6J1eg",
+          "display_url": "on.natgeo.com/2b6J1eg",
+          "indices": [
+            63,
+            86
+          ]
+        }
+      ]
+    },
+    "source": "<a href=\"http://www.spredfast.com\" rel=\"nofollow\">Spredfast app</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 36184220,
+      "id_str": "36184220",
+      "name": "NatGeoTravel",
+      "screen_name": "NatGeoTravel",
+      "location": "Washington, D.C. ",
+      "description": "Your guide to traveling with passion and purpose",
+      "url": "https://t.co/QeMVl4Y5z5",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/QeMVl4Y5z5",
+              "expanded_url": "http://NatGeoTravel.com",
+              "display_url": "NatGeoTravel.com",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2539815,
+      "friends_count": 226,
+      "listed_count": 14932,
+      "created_at": "Tue Apr 28 21:10:42 +0000 2009",
+      "favourites_count": 24259,
+      "utc_offset": -14400,
+      "time_zone": "Eastern Time (US & Canada)",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 25308,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "0A0A0A",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/708410265310728192/uvTYmBUt.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/708410265310728192/uvTYmBUt.jpg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/716991198091542530/HcQrz2qA_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/716991198091542530/HcQrz2qA_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/36184220/1466116015",
+      "profile_link_color": "0D9BBF",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "DFE6E4",
+      "profile_text_color": "4D454D",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 20,
+    "favorite_count": 19,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Tue Aug 09 23:57:58 +0000 2016",
+    "id": 763162439043080192,
+    "id_str": "763162439043080192",
+    "text": "Where to go on a date in the Castro https://t.co/Yc6KAvQcxS",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/Yc6KAvQcxS",
+          "expanded_url": "http://sf.eater.com/maps/best-date-spots-castro-restaurants-bars-cafes",
+          "display_url": "sf.eater.com/maps/best-date…",
+          "indices": [
+            36,
+            59
+          ]
+        }
+      ]
+    },
+    "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 16510537,
+      "id_str": "16510537",
+      "name": "Eater SF",
+      "screen_name": "eatersf",
+      "location": "San Francisco, CA",
+      "description": "Food news and dining guides for San Francisco.",
+      "url": "http://t.co/WCU7a256C9",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/WCU7a256C9",
+              "expanded_url": "http://sf.eater.com",
+              "display_url": "sf.eater.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 92217,
+      "friends_count": 380,
+      "listed_count": 2310,
+      "created_at": "Mon Sep 29 12:13:11 +0000 2008",
+      "favourites_count": 206,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 14063,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F4FAFB",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/513847070982037504/yiy7tFP7_normal.png",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/513847070982037504/yiy7tFP7_normal.png",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/16510537/1411345646",
+      "profile_link_color": "336B3A",
+      "profile_sidebar_border_color": "336B3A",
+      "profile_sidebar_fill_color": "CCD3FF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Tue Aug 09 23:48:43 +0000 2016",
+    "id": 763160110071894016,
+    "id_str": "763160110071894016",
+    "text": "UC Davis chancellor Linda Katehi resigns following investigation. https://t.co/6cny4dExWS https://t.co/mNrXVOjFR2",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/6cny4dExWS",
+          "expanded_url": "http://sfist.com/2016/08/09/uc_davis_chancellor_linda_katehi_re.php",
+          "display_url": "sfist.com/2016/08/09/uc_…",
+          "indices": [
+            66,
+            89
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 763159919306518528,
+          "id_str": "763159919306518528",
+          "indices": [
+            90,
+            113
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdJ5zkUsAAby6n.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdJ5zkUsAAby6n.jpg",
+          "url": "https://t.co/mNrXVOjFR2",
+          "display_url": "pic.twitter.com/mNrXVOjFR2",
+          "expanded_url": "http://twitter.com/SFist/status/763160110071894016/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 640,
+              "h": 429,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 640,
+              "h": 429,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 640,
+              "h": 429,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763159919306518528,
+          "id_str": "763159919306518528",
+          "indices": [
+            90,
+            113
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdJ5zkUsAAby6n.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdJ5zkUsAAby6n.jpg",
+          "url": "https://t.co/mNrXVOjFR2",
+          "display_url": "pic.twitter.com/mNrXVOjFR2",
+          "expanded_url": "http://twitter.com/SFist/status/763160110071894016/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 640,
+              "h": 429,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 640,
+              "h": 429,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 640,
+              "h": 429,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 14093707,
+      "id_str": "14093707",
+      "name": "SFist",
+      "screen_name": "SFist",
+      "location": "San Francisco",
+      "description": "Everything else you need to know about SF & the Bay Area. Edited by @jaybarmann, @eveb, @calaesthetic, and @warrenmarcusson. Hit us up: tips@sfist.com.",
+      "url": "http://t.co/sNoNw2Ueja",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/sNoNw2Ueja",
+              "expanded_url": "http://sfist.com",
+              "display_url": "sfist.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 209821,
+      "friends_count": 1750,
+      "listed_count": 3624,
+      "created_at": "Fri Mar 07 06:47:45 +0000 2008",
+      "favourites_count": 1057,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": true,
+      "statuses_count": 27064,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/140151812/SFist07.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/140151812/SFist07.jpg",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/51584619/SFist07_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/51584619/SFist07_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/14093707/1347986745",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 3,
+    "favorite_count": 4,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Tue Aug 09 23:45:09 +0000 2016",
+    "id": 763159212696276992,
+    "id_str": "763159212696276992",
+    "text": "Italy will now fine you if you try to save a spot at the beach. https://t.co/PaRd4nOGcX #BBCinbrief @atlasobscura https://t.co/lWRfvibvM4",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "BBCinbrief",
+          "indices": [
+            88,
+            99
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "atlasobscura",
+          "name": "Atlas Obscura",
+          "id": 57047586,
+          "id_str": "57047586",
+          "indices": [
+            100,
+            113
+          ]
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://t.co/PaRd4nOGcX",
+          "expanded_url": "http://www.atlasobscura.com/articles/italy-will-now-fine-you-if-you-try-to-save-a-spot-at-the-beach?utm_source=facebook.com&utm_medium=atlas-page",
+          "display_url": "atlasobscura.com/articles/italy…",
+          "indices": [
+            64,
+            87
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 763111820752064512,
+          "id_str": "763111820752064512",
+          "indices": [
+            114,
+            137
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpceKGfUEAAFN2E.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpceKGfUEAAFN2E.jpg",
+          "url": "https://t.co/lWRfvibvM4",
+          "display_url": "pic.twitter.com/lWRfvibvM4",
+          "expanded_url": "http://twitter.com/BBC_Travel/status/763159212696276992/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 800,
+              "h": 600,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 510,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 800,
+              "h": 600,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763111820752064512,
+          "id_str": "763111820752064512",
+          "indices": [
+            114,
+            137
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpceKGfUEAAFN2E.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpceKGfUEAAFN2E.jpg",
+          "url": "https://t.co/lWRfvibvM4",
+          "display_url": "pic.twitter.com/lWRfvibvM4",
+          "expanded_url": "http://twitter.com/BBC_Travel/status/763159212696276992/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 800,
+              "h": 600,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 510,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 800,
+              "h": 600,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"https://ads.twitter.com\" rel=\"nofollow\">Twitter Ads</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 173992307,
+      "id_str": "173992307",
+      "name": "BBC Travel",
+      "screen_name": "BBC_Travel",
+      "location": "",
+      "description": "Discover new cultures. Embark on new adventures. Celebrate. Explore. Engage. BBC Travel: Inspiring you to fall in love with the world.",
+      "url": "http://t.co/fLbUuq1LXB",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/fLbUuq1LXB",
+              "expanded_url": "http://www.bbc.com/travel",
+              "display_url": "bbc.com/travel",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 774959,
+      "friends_count": 458,
+      "listed_count": 7462,
+      "created_at": "Mon Aug 02 21:22:06 +0000 2010",
+      "favourites_count": 4122,
+      "utc_offset": -14400,
+      "time_zone": "Eastern Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": true,
+      "statuses_count": 32923,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000167174818/KbDV3nEB.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000167174818/KbDV3nEB.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/724781487099400193/-rzMXS9O_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/724781487099400193/-rzMXS9O_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/173992307/1469655309",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 19,
+    "favorite_count": 4,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Tue Aug 09 23:45:06 +0000 2016",
+    "id": 763159199132053504,
+    "id_str": "763159199132053504",
+    "text": "Would you travel with your ex and new significant other? These celebs did: https://t.co/rT0H56mxS7 https://t.co/9DCuvc6U7A",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/rT0H56mxS7",
+          "expanded_url": "http://tandl.me/2aXRFZU",
+          "display_url": "tandl.me/2aXRFZU",
+          "indices": [
+            75,
+            98
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 763159196703551492,
+          "id_str": "763159196703551492",
+          "indices": [
+            99,
+            122
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdJPvqWcAQi78a.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdJPvqWcAQi78a.jpg",
+          "url": "https://t.co/9DCuvc6U7A",
+          "display_url": "pic.twitter.com/9DCuvc6U7A",
+          "expanded_url": "http://twitter.com/TravelLeisure/status/763159199132053504/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1024,
+              "h": 640,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1024,
+              "h": 640,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 425,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763159196703551492,
+          "id_str": "763159196703551492",
+          "indices": [
+            99,
+            122
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdJPvqWcAQi78a.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdJPvqWcAQi78a.jpg",
+          "url": "https://t.co/9DCuvc6U7A",
+          "display_url": "pic.twitter.com/9DCuvc6U7A",
+          "expanded_url": "http://twitter.com/TravelLeisure/status/763159199132053504/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1024,
+              "h": 640,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1024,
+              "h": 640,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 425,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://trueanthem.com/\" rel=\"nofollow\">trueAnthem</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 16211434,
+      "id_str": "16211434",
+      "name": "Travel + Leisure",
+      "screen_name": "TravelLeisure",
+      "location": "New York, NY",
+      "description": "Your connection to the world of travel, brought to you by our editors. Questions? Stories? Please share! Social media terms: http://t.co/EZJig77Mz1",
+      "url": "http://t.co/vmvNyo6nXZ",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/vmvNyo6nXZ",
+              "expanded_url": "http://www.travelandleisure.com",
+              "display_url": "travelandleisure.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": [
+            {
+              "url": "http://t.co/EZJig77Mz1",
+              "expanded_url": "http://tandl.me/socialmedia",
+              "display_url": "tandl.me/socialmedia",
+              "indices": [
+                125,
+                147
+              ]
+            }
+          ]
+        }
+      },
+      "protected": false,
+      "followers_count": 2364897,
+      "friends_count": 946,
+      "listed_count": 0,
+      "created_at": "Tue Sep 09 21:16:34 +0000 2008",
+      "favourites_count": 13348,
+      "utc_offset": -14400,
+      "time_zone": "Eastern Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": true,
+      "statuses_count": 57645,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "131516",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/558699763046948864/IeByC5nB.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/558699763046948864/IeByC5nB.jpeg",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/3704055283/7830ca91dc1c7e34a27100568e628a93_normal.png",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/3704055283/7830ca91dc1c7e34a27100568e628a93_normal.png",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/16211434/1428429270",
+      "profile_link_color": "FA0824",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "EFEFEF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 21,
+    "favorite_count": 15,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Tue Aug 09 23:45:05 +0000 2016",
+    "id": 763159193649942528,
+    "id_str": "763159193649942528",
+    "text": "On #ChoppedJunior at 8|7c, the young chefs cook for judges @ChefGruel, @ManeetChauhan and actress @MeghanMarkle. https://t.co/sHeCkAMDfA",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "ChoppedJunior",
+          "indices": [
+            3,
+            17
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "ChefGruel",
+          "name": "Chef Andrew Gruel",
+          "id": 2839374404,
+          "id_str": "2839374404",
+          "indices": [
+            59,
+            69
+          ]
+        },
+        {
+          "screen_name": "ManeetChauhan",
+          "name": "Maneet Chauhan",
+          "id": 467210122,
+          "id_str": "467210122",
+          "indices": [
+            71,
+            85
+          ]
+        },
+        {
+          "screen_name": "meghanmarkle",
+          "name": "Meghan Markle",
+          "id": 274184658,
+          "id_str": "274184658",
+          "indices": [
+            98,
+            111
+          ]
+        }
+      ],
+      "urls": [],
+      "media": [
+        {
+          "id": 763159188243570688,
+          "id_str": "763159188243570688",
+          "indices": [
+            113,
+            136
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdJPQJVYAA1nXY.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdJPQJVYAA1nXY.jpg",
+          "url": "https://t.co/sHeCkAMDfA",
+          "display_url": "pic.twitter.com/sHeCkAMDfA",
+          "expanded_url": "http://twitter.com/FoodNetwork/status/763159193649942528/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 2048,
+              "h": 1536,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 510,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763159188243570688,
+          "id_str": "763159188243570688",
+          "indices": [
+            113,
+            136
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdJPQJVYAA1nXY.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdJPQJVYAA1nXY.jpg",
+          "url": "https://t.co/sHeCkAMDfA",
+          "display_url": "pic.twitter.com/sHeCkAMDfA",
+          "expanded_url": "http://twitter.com/FoodNetwork/status/763159193649942528/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 2048,
+              "h": 1536,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 510,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 900,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://www.scrippsnetworksinteractive.com/\" rel=\"nofollow\">Scripps Networks</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 20710809,
+      "id_str": "20710809",
+      "name": "Food Network",
+      "screen_name": "FoodNetwork",
+      "location": "",
+      "description": "",
+      "url": "http://t.co/uvWJVHTUX2",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/uvWJVHTUX2",
+              "expanded_url": "http://www.foodnetwork.com/",
+              "display_url": "foodnetwork.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 4143313,
+      "friends_count": 24818,
+      "listed_count": 20604,
+      "created_at": "Thu Feb 12 19:54:38 +0000 2009",
+      "favourites_count": 21285,
+      "utc_offset": -14400,
+      "time_zone": "Eastern Time (US & Canada)",
+      "geo_enabled": false,
+      "verified": true,
+      "statuses_count": 37272,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/469968722682064897/hraLjM_c.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/469968722682064897/hraLjM_c.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/760114437323886592/nf6KfbZ0_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/760114437323886592/nf6KfbZ0_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/20710809/1470060361",
+      "profile_link_color": "1E7AAC",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "FFFBE5",
+      "profile_text_color": "3D3D3D",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 13,
+    "favorite_count": 44,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Tue Aug 09 23:43:02 +0000 2016",
+    "id": 763158680837685248,
+    "id_str": "763158680837685248",
+    "text": "Chicken Parm Sandwich https://t.co/8TVPTsHbPX",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 763158679399038980,
+          "id_str": "763158679399038980",
+          "indices": [
+            22,
+            45
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdIxojWAAQtpqY.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdIxojWAAQtpqY.jpg",
+          "url": "https://t.co/8TVPTsHbPX",
+          "display_url": "pic.twitter.com/8TVPTsHbPX",
+          "expanded_url": "http://twitter.com/ItsFoodPorn/status/763158680837685248/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 544,
+              "h": 680,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 589,
+              "h": 736,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 589,
+              "h": 736,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763158679399038980,
+          "id_str": "763158679399038980",
+          "indices": [
+            22,
+            45
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdIxojWAAQtpqY.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdIxojWAAQtpqY.jpg",
+          "url": "https://t.co/8TVPTsHbPX",
+          "display_url": "pic.twitter.com/8TVPTsHbPX",
+          "expanded_url": "http://twitter.com/ItsFoodPorn/status/763158680837685248/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 544,
+              "h": 680,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 589,
+              "h": 736,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 589,
+              "h": 736,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 834316544,
+      "id_str": "834316544",
+      "name": "FoodPorn",
+      "screen_name": "ItsFoodPorn",
+      "location": "",
+      "description": "Feed Your Eyes. Your Daily Food Porn. We DO NOT own content posted. Everything is submissions. Content will be removed by owners request foodontwitter@gmail.com",
+      "url": "https://t.co/siY6AV1Gpg",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/siY6AV1Gpg",
+              "expanded_url": "http://snapchat.com/add/itsfoodporn",
+              "display_url": "snapchat.com/add/itsfoodporn",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2264538,
+      "friends_count": 365,
+      "listed_count": 3801,
+      "created_at": "Wed Sep 19 23:15:00 +0000 2012",
+      "favourites_count": 2384,
+      "utc_offset": -10800,
+      "time_zone": "Atlantic Time (Canada)",
+      "geo_enabled": true,
+      "verified": false,
+      "statuses_count": 15788,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "FCFCFC",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/506549048304619520/el4NB7ql.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/506549048304619520/el4NB7ql.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/737420820570644481/vm3MKA-H_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/737420820570644481/vm3MKA-H_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/834316544/1450317990",
+      "profile_link_color": "131414",
+      "profile_sidebar_border_color": "FFFFFF",
+      "profile_sidebar_fill_color": "C0DFEC",
+      "profile_text_color": "333333",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 745,
+    "favorite_count": 1235,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Tue Aug 09 23:39:23 +0000 2016",
+    "id": 763157761303584768,
+    "id_str": "763157761303584768",
+    "text": "The SFist To-Do List: 12 Cool Things To Check Out This Week https://t.co/xx6n3vvdK0 https://t.co/oWCm7agUIj",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/xx6n3vvdK0",
+          "expanded_url": "http://sfist.com/2016/08/09/the_sfist_to-do_list_12_cool_things_67.php",
+          "display_url": "sfist.com/2016/08/09/the…",
+          "indices": [
+            60,
+            83
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 763157752524836864,
+          "id_str": "763157752524836864",
+          "indices": [
+            84,
+            107
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdH7rrUEAApPea.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdH7rrUEAApPea.jpg",
+          "url": "https://t.co/oWCm7agUIj",
+          "display_url": "pic.twitter.com/oWCm7agUIj",
+          "expanded_url": "http://twitter.com/SFist/status/763157761303584768/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 640,
+              "h": 480,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 640,
+              "h": 480,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 640,
+              "h": 480,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763157752524836864,
+          "id_str": "763157752524836864",
+          "indices": [
+            84,
+            107
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdH7rrUEAApPea.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdH7rrUEAApPea.jpg",
+          "url": "https://t.co/oWCm7agUIj",
+          "display_url": "pic.twitter.com/oWCm7agUIj",
+          "expanded_url": "http://twitter.com/SFist/status/763157761303584768/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 640,
+              "h": 480,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 640,
+              "h": 480,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 640,
+              "h": 480,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 14093707,
+      "id_str": "14093707",
+      "name": "SFist",
+      "screen_name": "SFist",
+      "location": "San Francisco",
+      "description": "Everything else you need to know about SF & the Bay Area. Edited by @jaybarmann, @eveb, @calaesthetic, and @warrenmarcusson. Hit us up: tips@sfist.com.",
+      "url": "http://t.co/sNoNw2Ueja",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/sNoNw2Ueja",
+              "expanded_url": "http://sfist.com",
+              "display_url": "sfist.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 209821,
+      "friends_count": 1750,
+      "listed_count": 3624,
+      "created_at": "Fri Mar 07 06:47:45 +0000 2008",
+      "favourites_count": 1057,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": true,
+      "statuses_count": 27064,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/140151812/SFist07.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/140151812/SFist07.jpg",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/51584619/SFist07_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/51584619/SFist07_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/14093707/1347986745",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Tue Aug 09 23:30:36 +0000 2016",
+    "id": 763155551333322752,
+    "id_str": "763155551333322752",
+    "text": "Iran's miraculous desert glacier https://t.co/blbCn7Q8VY https://t.co/mF2vUscRBO",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/blbCn7Q8VY",
+          "expanded_url": "http://bbc.in/2aG6mQm",
+          "display_url": "bbc.in/2aG6mQm",
+          "indices": [
+            33,
+            56
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 763155548137226240,
+          "id_str": "763155548137226240",
+          "indices": [
+            57,
+            80
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdF7XsWgAA9vqO.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdF7XsWgAA9vqO.jpg",
+          "url": "https://t.co/mF2vUscRBO",
+          "display_url": "pic.twitter.com/mF2vUscRBO",
+          "expanded_url": "http://twitter.com/BBC_Travel/status/763155551333322752/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 1280,
+              "h": 720,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 675,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 383,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763155548137226240,
+          "id_str": "763155548137226240",
+          "indices": [
+            57,
+            80
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdF7XsWgAA9vqO.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdF7XsWgAA9vqO.jpg",
+          "url": "https://t.co/mF2vUscRBO",
+          "display_url": "pic.twitter.com/mF2vUscRBO",
+          "expanded_url": "http://twitter.com/BBC_Travel/status/763155551333322752/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 1280,
+              "h": 720,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 675,
+              "resize": "fit"
+            },
+            "small": {
+              "w": 680,
+              "h": 383,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 173992307,
+      "id_str": "173992307",
+      "name": "BBC Travel",
+      "screen_name": "BBC_Travel",
+      "location": "",
+      "description": "Discover new cultures. Embark on new adventures. Celebrate. Explore. Engage. BBC Travel: Inspiring you to fall in love with the world.",
+      "url": "http://t.co/fLbUuq1LXB",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/fLbUuq1LXB",
+              "expanded_url": "http://www.bbc.com/travel",
+              "display_url": "bbc.com/travel",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 774959,
+      "friends_count": 458,
+      "listed_count": 7462,
+      "created_at": "Mon Aug 02 21:22:06 +0000 2010",
+      "favourites_count": 4122,
+      "utc_offset": -14400,
+      "time_zone": "Eastern Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": true,
+      "statuses_count": 32923,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000167174818/KbDV3nEB.jpeg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000167174818/KbDV3nEB.jpeg",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/724781487099400193/-rzMXS9O_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/724781487099400193/-rzMXS9O_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/173992307/1469655309",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 18,
+    "favorite_count": 6,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "es"
+  },
+  {
+    "created_at": "Tue Aug 09 23:29:52 +0000 2016",
+    "id": 763155363663343617,
+    "id_str": "763155363663343617",
+    "text": "Anchor Steam week approaches, and more events to get on your radar https://t.co/oYAMxreVqx https://t.co/wdNkEwYvfI",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/oYAMxreVqx",
+          "expanded_url": "http://sf.eater.com/2016/8/9/12418386/anchor-steam-week-san-francisco?utm_campaign=sf.eater&utm_content=chorus&utm_medium=social&utm_source=twitter",
+          "display_url": "sf.eater.com/2016/8/9/12418…",
+          "indices": [
+            67,
+            90
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 763155361872408577,
+          "id_str": "763155361872408577",
+          "indices": [
+            91,
+            114
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdFwhzW8AEdni2.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdFwhzW8AEdni2.jpg",
+          "url": "https://t.co/wdNkEwYvfI",
+          "display_url": "pic.twitter.com/wdNkEwYvfI",
+          "expanded_url": "http://twitter.com/eatersf/status/763155363663343617/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 383,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 1050,
+              "h": 591,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1050,
+              "h": 591,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763155361872408577,
+          "id_str": "763155361872408577",
+          "indices": [
+            91,
+            114
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdFwhzW8AEdni2.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdFwhzW8AEdni2.jpg",
+          "url": "https://t.co/wdNkEwYvfI",
+          "display_url": "pic.twitter.com/wdNkEwYvfI",
+          "expanded_url": "http://twitter.com/eatersf/status/763155363663343617/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 383,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 1050,
+              "h": 591,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1050,
+              "h": 591,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://www.sbnation.com\" rel=\"nofollow\">SB Nation</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 16510537,
+      "id_str": "16510537",
+      "name": "Eater SF",
+      "screen_name": "eatersf",
+      "location": "San Francisco, CA",
+      "description": "Food news and dining guides for San Francisco.",
+      "url": "http://t.co/WCU7a256C9",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/WCU7a256C9",
+              "expanded_url": "http://sf.eater.com",
+              "display_url": "sf.eater.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 92217,
+      "friends_count": 380,
+      "listed_count": 2310,
+      "created_at": "Mon Sep 29 12:13:11 +0000 2008",
+      "favourites_count": 206,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 14063,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F4FAFB",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/513847070982037504/yiy7tFP7_normal.png",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/513847070982037504/yiy7tFP7_normal.png",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/16510537/1411345646",
+      "profile_link_color": "336B3A",
+      "profile_sidebar_border_color": "336B3A",
+      "profile_sidebar_fill_color": "CCD3FF",
+      "profile_text_color": "333333",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 1,
+    "favorite_count": 6,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Tue Aug 09 23:19:11 +0000 2016",
+    "id": 763152677723213825,
+    "id_str": "763152677723213825",
+    "text": "PG&E Fined Only $3 Million In San Bruno Criminal Case, Convicted On 6 of 12 Charges https://t.co/fu4vYG0gyI https://t.co/PTtbFkBjwH",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [
+        {
+          "url": "https://t.co/fu4vYG0gyI",
+          "expanded_url": "http://sfist.com/2016/08/09/pge_convicted_on_6_charges_in_san_b.php",
+          "display_url": "sfist.com/2016/08/09/pge…",
+          "indices": [
+            88,
+            111
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 763152669229711360,
+          "id_str": "763152669229711360",
+          "indices": [
+            112,
+            135
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdDTy7UAAAOChZ.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdDTy7UAAAOChZ.jpg",
+          "url": "https://t.co/PTtbFkBjwH",
+          "display_url": "pic.twitter.com/PTtbFkBjwH",
+          "expanded_url": "http://twitter.com/SFist/status/763152677723213825/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 640,
+              "h": 465,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 640,
+              "h": 465,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 640,
+              "h": 465,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763152669229711360,
+          "id_str": "763152669229711360",
+          "indices": [
+            112,
+            135
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpdDTy7UAAAOChZ.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpdDTy7UAAAOChZ.jpg",
+          "url": "https://t.co/PTtbFkBjwH",
+          "display_url": "pic.twitter.com/PTtbFkBjwH",
+          "expanded_url": "http://twitter.com/SFist/status/763152677723213825/photo/1",
+          "type": "photo",
+          "sizes": {
+            "large": {
+              "w": 640,
+              "h": 465,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 640,
+              "h": 465,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 640,
+              "h": 465,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 14093707,
+      "id_str": "14093707",
+      "name": "SFist",
+      "screen_name": "SFist",
+      "location": "San Francisco",
+      "description": "Everything else you need to know about SF & the Bay Area. Edited by @jaybarmann, @eveb, @calaesthetic, and @warrenmarcusson. Hit us up: tips@sfist.com.",
+      "url": "http://t.co/sNoNw2Ueja",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "http://t.co/sNoNw2Ueja",
+              "expanded_url": "http://sfist.com",
+              "display_url": "sfist.com",
+              "indices": [
+                0,
+                22
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 209821,
+      "friends_count": 1750,
+      "listed_count": 3624,
+      "created_at": "Fri Mar 07 06:47:45 +0000 2008",
+      "favourites_count": 1057,
+      "utc_offset": -25200,
+      "time_zone": "Pacific Time (US & Canada)",
+      "geo_enabled": true,
+      "verified": true,
+      "statuses_count": 27064,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/140151812/SFist07.jpg",
+      "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/140151812/SFist07.jpg",
+      "profile_background_tile": true,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/51584619/SFist07_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/51584619/SFist07_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/14093707/1347986745",
+      "profile_link_color": "0084B4",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 6,
+    "favorite_count": 6,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "possibly_sensitive_appealable": false,
+    "lang": "en"
+  }
+]

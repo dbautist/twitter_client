@@ -10,6 +10,7 @@ import java.util.List;
 public class TweetManager {
   private static final String TAG = TweetManager.class.getSimpleName();
   private static TweetManager mInstance;
+  private User mCurrentUser;
 
   public static TweetManager getInstance() {
     if (mInstance == null) {
@@ -44,5 +45,13 @@ public class TweetManager {
 
   public void clearTweetList() {
     SQLiteUtils.execSql("DELETE FROM Tweet");
+  }
+
+  public void setCurrentUser(User user) {
+    mCurrentUser = user;
+  }
+
+  public User getCurrentUser() {
+    return mCurrentUser;
   }
 }

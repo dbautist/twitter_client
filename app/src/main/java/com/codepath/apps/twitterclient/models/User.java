@@ -38,23 +38,6 @@ public class User extends Model implements JSONSerializable {
     profileImageUrl = jsonObject.getString("profile_image_url");
   }
 
-  // Save this user to the database
-  public static void saveUser(User user) {
-    user.save();
-  }
-
-  // Get the existing user from the database
-  public static User getExistingUser() {
-    List<User> userList = new Select()
-        .from(User.class).execute();
-
-    if (userList != null && userList.size() > 0) {
-      return userList.get(0);
-    } else {
-      return null;
-    }
-  }
-
   @Override
   public String toString() {
     StringBuilder str = new StringBuilder();

@@ -13,7 +13,20 @@
       android:layout_alignParentRight="true"
       android:layout_alignParentTop="true"
       android:layout_marginLeft="10dp"
+      android:layout_marginBottom="40dp"
       tools:src="@drawable/twitter_logo_white_on_blue"/>
+
+  <TextView
+      android:id="@+id/tvReplyPlaceholder"
+      style="@style/InfoText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_below="@+id/ivProfilePhoto"
+      android:layout_marginBottom="10dp"
+      android:visibility="gone"
+      tools:text="In reply to Dianne Askew"/>
 
   <EditText
       android:id="@+id/etMessage"
@@ -21,8 +34,7 @@
       android:layout_above="@+id/view"
       android:layout_alignParentLeft="true"
       android:layout_alignParentStart="true"
-      android:layout_below="@+id/btClose"
-      android:layout_marginTop="40dp"
+      android:layout_below="@+id/tvReplyPlaceholder"
       android:hint="@string/statusHint"/>
 
   <Button
@@ -76,4 +88,6 @@
       android:layout_alignParentRight="true"
       android:enabled="false"
       android:text="@string/tweet"/>
+
+
 </RelativeLayout>

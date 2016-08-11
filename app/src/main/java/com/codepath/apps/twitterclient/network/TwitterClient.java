@@ -80,6 +80,15 @@ public class TwitterClient extends OAuthBaseClient {
     getClient().get(apiUrl, params, handler);
   }
 
+  public void getUserTimeline(long userId, AsyncHttpResponseHandler handler) {
+    Log.d(TAG, "------user_timeline = userId: " + userId);
+
+    String apiUrl = getApiUrl("statuses/user_timeline.json");
+    RequestParams params = new RequestParams();
+    params.put("user_id", userId);
+    getClient().get(apiUrl, params, handler);
+  }
+
   // POST statuses/update.json
   // post status or reply to tweet when `in_reply_to_status_id` is set
   public void postStatus(String status, long replyStatusId, AsyncHttpResponseHandler handler) {

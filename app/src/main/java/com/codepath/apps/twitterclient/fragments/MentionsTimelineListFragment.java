@@ -1,24 +1,18 @@
 package com.codepath.apps.twitterclient.fragments;
 
-import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.View;
 
-import com.codepath.apps.twitterclient.activities.TweetDetailActivity;
 import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.apps.twitterclient.network.JSONDeserializer;
 import com.codepath.apps.twitterclient.util.AppConstants;
 import com.codepath.apps.twitterclient.util.ErrorHandler;
-import com.codepath.apps.twitterclient.util.views.ItemClickSupport;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.parceler.Parcels;
 
 import java.util.List;
 
@@ -54,20 +48,6 @@ public class MentionsTimelineListFragment extends TweetsListFragment{
   }
 
   @Override
-  protected void setItemClickListener() {
-    ItemClickSupport.addTo(rvTweets).setOnItemClickListener(
-        new ItemClickSupport.OnItemClickListener() {
-          @Override
-          public void onItemClicked(RecyclerView recyclerView, int position, View v) {
-            Tweet tweet = mTweetList.get(position);
-            Intent intent = new Intent(mContext, TweetDetailActivity.class);
-            intent.putExtra(AppConstants.TWEET_EXTRA, Parcels.wrap(tweet));
-            startActivity(intent);
-          }
-        });
-  }
-
-  @Override
   protected void setOfflineListener() {
     // no support for timeline
   }
@@ -86,6 +66,8 @@ public class MentionsTimelineListFragment extends TweetsListFragment{
   }
 
   private void fetchMentionsTimeline(final long maxId) {
+//    populateFromJson();
+
     mClient.getMentionsTimeline(maxId, new JsonHttpResponseHandler() {
       @Override
       public void onSuccess(int statusCode, Header[] headers, JSONArray response) {

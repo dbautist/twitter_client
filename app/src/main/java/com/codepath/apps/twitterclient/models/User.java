@@ -26,6 +26,18 @@ public class User extends Model implements JSONSerializable {
   @Column(name = "ProfileImageUrl")
   public String profileImageUrl;
 
+  @Column(name = "Description")
+  public String description;
+
+  @Column(name = "FollowersCount")
+  public int followersCount;
+
+  @Column(name = "FollowingCount")
+  public int followingCount;
+
+  @Column(name = "BackgroundImageUrl")
+  public String backgroundImageUrl;
+
   public User() {
     super();
   }
@@ -35,7 +47,11 @@ public class User extends Model implements JSONSerializable {
     name = jsonObject.getString("name");
     uid = jsonObject.getLong("id");
     screenName = "@" + jsonObject.getString("screen_name");
+    description = jsonObject.getString("description");
+    followersCount = jsonObject.getInt("followers_count");
+    followingCount = jsonObject.getInt("friends_count");
     profileImageUrl = jsonObject.getString("profile_image_url");
+    backgroundImageUrl = jsonObject.getString("profile_background_image_url");
   }
 
   @Override
@@ -43,7 +59,9 @@ public class User extends Model implements JSONSerializable {
     StringBuilder str = new StringBuilder();
     str.append("name=").append(name).append(";\n");
     str.append("screenName=").append(screenName).append(";\n");
-    str.append("profileImageUrl=").append(profileImageUrl);
+    str.append("followersCount=").append(followersCount).append(";\n");
+    str.append("followingCount=").append(followingCount).append(";\n");
+    str.append("profileImageUrl=").append(profileImageUrl).append(";\n");;
 
     return str.toString();
   }

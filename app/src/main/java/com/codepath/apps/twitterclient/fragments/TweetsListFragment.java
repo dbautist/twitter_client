@@ -1,6 +1,7 @@
 package com.codepath.apps.twitterclient.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -15,16 +16,20 @@ import android.view.ViewGroup;
 
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.TwitterApplication;
+import com.codepath.apps.twitterclient.activities.TweetDetailActivity;
 import com.codepath.apps.twitterclient.adapters.TweetsAdapter;
 import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.apps.twitterclient.models.TweetManager;
 import com.codepath.apps.twitterclient.network.JSONDeserializer;
 import com.codepath.apps.twitterclient.network.TwitterClient;
+import com.codepath.apps.twitterclient.util.AppConstants;
 import com.codepath.apps.twitterclient.util.views.DividerItemDecoration;
 import com.codepath.apps.twitterclient.util.views.EndlessRecyclerViewScrollListener;
+import com.codepath.apps.twitterclient.util.views.ItemClickSupport;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.parceler.Parcels;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -78,8 +83,6 @@ public abstract class TweetsListFragment extends Fragment implements ComposeDial
 
   protected abstract void setTweetList();
 
-  protected abstract void setItemClickListener();
-
   protected abstract void setOfflineListener();
 
   private void initSwipeRefreshLayout() {
@@ -91,6 +94,19 @@ public abstract class TweetsListFragment extends Fragment implements ComposeDial
         R.color.light_gray,
         R.color.extra_light_gray);
 
+  }
+
+  private void setItemClickListener() {
+    ItemClickSupport.addTo(rvTweets).setOnItemClickListener(
+        new ItemClickSupport.OnItemClickListener() {
+          @Override
+          public void onItemClicked(RecyclerView recyclerView, int position, View v) {
+            Tweet tweet = mTweetList.get(position);
+            Intent intent = new Intent(mContext, TweetDetailActivity.class);
+            intent.putExtra(AppConstants.TWEET_EXTRA, Parcels.wrap(tweet));
+            startActivity(intent);
+          }
+        });
   }
 
   private void initTweetList() {

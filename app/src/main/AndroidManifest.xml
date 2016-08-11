@@ -49,10 +49,16 @@
         android:name=".activities.TweetDetailActivity"
         android:parentActivityName=".activities.TimelineActivity"
         android:windowSoftInputMode="adjustResize">
+
       <!-- Parent activity meta-data to support 4.0 and lower -->
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".activities.TimelineActivity"/>
+    </activity>
+    <activity
+        android:name=".activities.ProfileActivity"
+        android:label="@string/title_activity_scrolling"
+        android:theme="@style/AppTheme.NoActionBar">
     </activity>
   </application>
 

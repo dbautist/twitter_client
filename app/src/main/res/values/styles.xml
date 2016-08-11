@@ -6,7 +6,7 @@
     <item name="colorPrimary">@color/primary</item>
     <item name="colorPrimaryDark">@color/primary_dark</item>
     <item name="colorAccent">@color/primary</item>
-    <item name = "android:windowBackground">@color/extra_extra_light_gray</item>
+    <item name="android:windowBackground">@color/extra_extra_light_gray</item>
   </style>
 
   <style name="AppTheme.NoActionBar">

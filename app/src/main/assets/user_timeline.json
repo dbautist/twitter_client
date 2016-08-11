@@ -1,0 +1,2677 @@
+[
+  {
+    "created_at": "Wed Aug 10 20:40:14 +0000 2016",
+    "id": 763475065119707136,
+    "id_str": "763475065119707136",
+    "text": "@diannebautista hello2",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "diannebautista",
+          "name": "Dianne Bautista",
+          "id": 145325807,
+          "id_str": "145325807",
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": 763474940158996480,
+    "in_reply_to_status_id_str": "763474940158996480",
+    "in_reply_to_user_id": 145325807,
+    "in_reply_to_user_id_str": "145325807",
+    "in_reply_to_screen_name": "diannebautista",
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 20:40:02 +0000 2016",
+    "id": 763475012175007744,
+    "id_str": "763475012175007744",
+    "text": "@diannebautista hello1",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "diannebautista",
+          "name": "Dianne Bautista",
+          "id": 145325807,
+          "id_str": "145325807",
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": 763474940158996480,
+    "in_reply_to_status_id_str": "763474940158996480",
+    "in_reply_to_user_id": 145325807,
+    "in_reply_to_user_id_str": "145325807",
+    "in_reply_to_screen_name": "diannebautista",
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 20:36:18 +0000 2016",
+    "id": 763474073133260800,
+    "id_str": "763474073133260800",
+    "text": "reply2",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 20:35:57 +0000 2016",
+    "id": 763473985707188224,
+    "id_str": "763473985707188224",
+    "text": "@diannebautista reply1",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "diannebautista",
+          "name": "Dianne Bautista",
+          "id": 145325807,
+          "id_str": "145325807",
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": 763473778164768768,
+    "in_reply_to_status_id_str": "763473778164768768",
+    "in_reply_to_user_id": 145325807,
+    "in_reply_to_user_id_str": "145325807",
+    "in_reply_to_screen_name": "diannebautista",
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 20:11:30 +0000 2016",
+    "id": 763467834223501312,
+    "id_str": "763467834223501312",
+    "text": "@diannebautista here",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "diannebautista",
+          "name": "Dianne Bautista",
+          "id": 145325807,
+          "id_str": "145325807",
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": 763466937519132673,
+    "in_reply_to_status_id_str": "763466937519132673",
+    "in_reply_to_user_id": 145325807,
+    "in_reply_to_user_id_str": "145325807",
+    "in_reply_to_screen_name": "diannebautista",
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 20:09:51 +0000 2016",
+    "id": 763467417737539584,
+    "id_str": "763467417737539584",
+    "text": "@diannebautista test1",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "diannebautista",
+          "name": "Dianne Bautista",
+          "id": 145325807,
+          "id_str": "145325807",
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": 763466937519132673,
+    "in_reply_to_status_id_str": "763466937519132673",
+    "in_reply_to_user_id": 145325807,
+    "in_reply_to_user_id_str": "145325807",
+    "in_reply_to_screen_name": "diannebautista",
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 20:08:17 +0000 2016",
+    "id": 763467024215322625,
+    "id_str": "763467024215322625",
+    "text": "@diannebautista reply1",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "diannebautista",
+          "name": "Dianne Bautista",
+          "id": 145325807,
+          "id_str": "145325807",
+          "indices": [
+            0,
+            15
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": 763466937519132673,
+    "in_reply_to_status_id_str": "763466937519132673",
+    "in_reply_to_user_id": 145325807,
+    "in_reply_to_user_id_str": "145325807",
+    "in_reply_to_screen_name": "diannebautista",
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 20:06:01 +0000 2016",
+    "id": 763466452317810688,
+    "id_str": "763466452317810688",
+    "text": "@dianne_askew again",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "dianne_askew",
+          "name": "Dianne Askew",
+          "id": 761354284315193345,
+          "id_str": "761354284315193345",
+          "indices": [
+            0,
+            13
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": 763465261055782913,
+    "in_reply_to_status_id_str": "763465261055782913",
+    "in_reply_to_user_id": 761354284315193345,
+    "in_reply_to_user_id_str": "761354284315193345",
+    "in_reply_to_screen_name": "dianne_askew",
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 20:04:57 +0000 2016",
+    "id": 763466182938636288,
+    "id_str": "763466182938636288",
+    "text": "@dianne_askew re0lying here",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "dianne_askew",
+          "name": "Dianne Askew",
+          "id": 761354284315193345,
+          "id_str": "761354284315193345",
+          "indices": [
+            0,
+            13
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": 763454758510141440,
+    "in_reply_to_status_id_str": "763454758510141440",
+    "in_reply_to_user_id": 761354284315193345,
+    "in_reply_to_user_id_str": "761354284315193345",
+    "in_reply_to_screen_name": "dianne_askew",
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 19:29:16 +0000 2016",
+    "id": 763457202975674368,
+    "id_str": "763457202975674368",
+    "text": "@dianne_askew how does this work?",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "dianne_askew",
+          "name": "Dianne Askew",
+          "id": 761354284315193345,
+          "id_str": "761354284315193345",
+          "indices": [
+            0,
+            13
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": 763454666986233856,
+    "in_reply_to_status_id_str": "763454666986233856",
+    "in_reply_to_user_id": 761354284315193345,
+    "in_reply_to_user_id_str": "761354284315193345",
+    "in_reply_to_screen_name": "dianne_askew",
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 18:03:21 +0000 2016",
+    "id": 763435584429842432,
+    "id_str": "763435584429842432",
+    "text": "Exploring the many temples of Bagan #askewbackpackers #rtw2014 #Myanmar #bagan https://t.co/jGNtFmevma",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "askewbackpackers",
+          "indices": [
+            36,
+            53
+          ]
+        },
+        {
+          "text": "rtw2014",
+          "indices": [
+            54,
+            62
+          ]
+        },
+        {
+          "text": "Myanmar",
+          "indices": [
+            63,
+            71
+          ]
+        },
+        {
+          "text": "bagan",
+          "indices": [
+            72,
+            78
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 763435580193583104,
+          "id_str": "763435580193583104",
+          "indices": [
+            79,
+            102
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphEnYZVMAAOOAU.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphEnYZVMAAOOAU.jpg",
+          "url": "https://t.co/jGNtFmevma",
+          "display_url": "pic.twitter.com/jGNtFmevma",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763435584429842432/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1159,
+              "h": 720,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 422,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1159,
+              "h": 720,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763435580193583104,
+          "id_str": "763435580193583104",
+          "indices": [
+            79,
+            102
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphEnYZVMAAOOAU.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphEnYZVMAAOOAU.jpg",
+          "url": "https://t.co/jGNtFmevma",
+          "display_url": "pic.twitter.com/jGNtFmevma",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763435584429842432/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1159,
+              "h": 720,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 422,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1159,
+              "h": 720,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 18:01:46 +0000 2016",
+    "id": 763435182162444288,
+    "id_str": "763435182162444288",
+    "text": "Chasing sunset in Santorini #askewbackpackers #rtw2014 #Greece https://t.co/wFwI7yGWNo",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "askewbackpackers",
+          "indices": [
+            28,
+            45
+          ]
+        },
+        {
+          "text": "rtw2014",
+          "indices": [
+            46,
+            54
+          ]
+        },
+        {
+          "text": "Greece",
+          "indices": [
+            55,
+            62
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 763435179339685892,
+          "id_str": "763435179339685892",
+          "indices": [
+            63,
+            86
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphEQDGUIAQVoEg.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphEQDGUIAQVoEg.jpg",
+          "url": "https://t.co/wFwI7yGWNo",
+          "display_url": "pic.twitter.com/wFwI7yGWNo",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763435182162444288/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1173,
+              "h": 600,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 348,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1173,
+              "h": 600,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763435179339685892,
+          "id_str": "763435179339685892",
+          "indices": [
+            63,
+            86
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphEQDGUIAQVoEg.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphEQDGUIAQVoEg.jpg",
+          "url": "https://t.co/wFwI7yGWNo",
+          "display_url": "pic.twitter.com/wFwI7yGWNo",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763435182162444288/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1173,
+              "h": 600,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 348,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1173,
+              "h": 600,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "in"
+  },
+  {
+    "created_at": "Wed Aug 10 18:01:06 +0000 2016",
+    "id": 763435018366558208,
+    "id_str": "763435018366558208",
+    "text": "Hot air ballooning in Capadoccia #askewbackpackers #rtw2014 #turkey https://t.co/NoFdzvJoS7",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "askewbackpackers",
+          "indices": [
+            33,
+            50
+          ]
+        },
+        {
+          "text": "rtw2014",
+          "indices": [
+            51,
+            59
+          ]
+        },
+        {
+          "text": "turkey",
+          "indices": [
+            60,
+            67
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 763435013605994496,
+          "id_str": "763435013605994496",
+          "indices": [
+            68,
+            91
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphEGZsUsAANKwJ.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphEGZsUsAANKwJ.jpg",
+          "url": "https://t.co/NoFdzvJoS7",
+          "display_url": "pic.twitter.com/NoFdzvJoS7",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763435018366558208/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1174,
+              "h": 720,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1174,
+              "h": 720,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 417,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763435013605994496,
+          "id_str": "763435013605994496",
+          "indices": [
+            68,
+            91
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphEGZsUsAANKwJ.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphEGZsUsAANKwJ.jpg",
+          "url": "https://t.co/NoFdzvJoS7",
+          "display_url": "pic.twitter.com/NoFdzvJoS7",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763435018366558208/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1174,
+              "h": 720,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1174,
+              "h": 720,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 417,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 17:59:03 +0000 2016",
+    "id": 763434500663545856,
+    "id_str": "763434500663545856",
+    "text": "Next stop: Alhambra #askewbackpackers #rtw2014 #Spain #Granada #alhambra https://t.co/RJO78HTkjI",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "askewbackpackers",
+          "indices": [
+            20,
+            37
+          ]
+        },
+        {
+          "text": "rtw2014",
+          "indices": [
+            38,
+            46
+          ]
+        },
+        {
+          "text": "Spain",
+          "indices": [
+            47,
+            53
+          ]
+        },
+        {
+          "text": "Granada",
+          "indices": [
+            54,
+            62
+          ]
+        },
+        {
+          "text": "alhambra",
+          "indices": [
+            63,
+            72
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 763434495013826560,
+          "id_str": "763434495013826560",
+          "indices": [
+            73,
+            96
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphDoNyUMAAwEo0.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphDoNyUMAAwEo0.jpg",
+          "url": "https://t.co/RJO78HTkjI",
+          "display_url": "pic.twitter.com/RJO78HTkjI",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763434500663545856/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 453,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1080,
+              "h": 720,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 1080,
+              "h": 720,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763434495013826560,
+          "id_str": "763434495013826560",
+          "indices": [
+            73,
+            96
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphDoNyUMAAwEo0.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphDoNyUMAAwEo0.jpg",
+          "url": "https://t.co/RJO78HTkjI",
+          "display_url": "pic.twitter.com/RJO78HTkjI",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763434500663545856/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 453,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1080,
+              "h": 720,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "medium": {
+              "w": 1080,
+              "h": 720,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 17:58:05 +0000 2016",
+    "id": 763434255556849664,
+    "id_str": "763434255556849664",
+    "text": "Hiking in Ronda #askewbackpackers #rtw2014 #Spain #ronda https://t.co/RmDXWdoBsQ",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "askewbackpackers",
+          "indices": [
+            16,
+            33
+          ]
+        },
+        {
+          "text": "rtw2014",
+          "indices": [
+            34,
+            42
+          ]
+        },
+        {
+          "text": "Spain",
+          "indices": [
+            43,
+            49
+          ]
+        },
+        {
+          "text": "ronda",
+          "indices": [
+            50,
+            56
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 763434250351673345,
+          "id_str": "763434250351673345",
+          "indices": [
+            57,
+            80
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphDZ-WUAAE7Ok0.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphDZ-WUAAE7Ok0.jpg",
+          "url": "https://t.co/RmDXWdoBsQ",
+          "display_url": "pic.twitter.com/RmDXWdoBsQ",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763434255556849664/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 498,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 879,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1310,
+              "h": 960,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763434250351673345,
+          "id_str": "763434250351673345",
+          "indices": [
+            57,
+            80
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphDZ-WUAAE7Ok0.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphDZ-WUAAE7Ok0.jpg",
+          "url": "https://t.co/RmDXWdoBsQ",
+          "display_url": "pic.twitter.com/RmDXWdoBsQ",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763434255556849664/photo/1",
+          "type": "photo",
+          "sizes": {
+            "small": {
+              "w": 680,
+              "h": 498,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 1200,
+              "h": 879,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "large": {
+              "w": 1310,
+              "h": 960,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "in"
+  },
+  {
+    "created_at": "Wed Aug 10 17:57:12 +0000 2016",
+    "id": 763434034592493568,
+    "id_str": "763434034592493568",
+    "text": "Exploring Italy #askewbackpackers #rtw2014 #Italy #orvieto https://t.co/NlM8fRgF4F",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "askewbackpackers",
+          "indices": [
+            16,
+            33
+          ]
+        },
+        {
+          "text": "rtw2014",
+          "indices": [
+            34,
+            42
+          ]
+        },
+        {
+          "text": "Italy",
+          "indices": [
+            43,
+            49
+          ]
+        },
+        {
+          "text": "orvieto",
+          "indices": [
+            50,
+            58
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 763434030301712384,
+          "id_str": "763434030301712384",
+          "indices": [
+            59,
+            82
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphDNKmUEAAD51W.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphDNKmUEAAD51W.jpg",
+          "url": "https://t.co/NlM8fRgF4F",
+          "display_url": "pic.twitter.com/NlM8fRgF4F",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763434034592493568/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1082,
+              "h": 640,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 402,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1082,
+              "h": 640,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763434030301712384,
+          "id_str": "763434030301712384",
+          "indices": [
+            59,
+            82
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphDNKmUEAAD51W.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphDNKmUEAAD51W.jpg",
+          "url": "https://t.co/NlM8fRgF4F",
+          "display_url": "pic.twitter.com/NlM8fRgF4F",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763434034592493568/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1082,
+              "h": 640,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 402,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1082,
+              "h": 640,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Wed Aug 10 17:56:21 +0000 2016",
+    "id": 763433819626057732,
+    "id_str": "763433819626057732",
+    "text": "Day trip to San Gimignano #askewbackpackers #rtw2014  #Italy https://t.co/sE7W1Bm4a6",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "askewbackpackers",
+          "indices": [
+            26,
+            43
+          ]
+        },
+        {
+          "text": "rtw2014",
+          "indices": [
+            44,
+            52
+          ]
+        },
+        {
+          "text": "Italy",
+          "indices": [
+            54,
+            60
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": [],
+      "media": [
+        {
+          "id": 763433814240571392,
+          "id_str": "763433814240571392",
+          "indices": [
+            61,
+            84
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphDAltUsAAfldI.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphDAltUsAAfldI.jpg",
+          "url": "https://t.co/sE7W1Bm4a6",
+          "display_url": "pic.twitter.com/sE7W1Bm4a6",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763433819626057732/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1197,
+              "h": 600,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1197,
+              "h": 600,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 341,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 763433814240571392,
+          "id_str": "763433814240571392",
+          "indices": [
+            61,
+            84
+          ],
+          "media_url": "http://pbs.twimg.com/media/CphDAltUsAAfldI.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CphDAltUsAAfldI.jpg",
+          "url": "https://t.co/sE7W1Bm4a6",
+          "display_url": "pic.twitter.com/sE7W1Bm4a6",
+          "expanded_url": "http://twitter.com/dianne_askew/status/763433819626057732/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 1197,
+              "h": 600,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1197,
+              "h": 600,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 341,
+              "resize": "fit"
+            }
+          }
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Mon Aug 08 00:42:53 +0000 2016",
+    "id": 762448966269018113,
+    "id_str": "762448966269018113",
+    "text": "Watching the Olympics and cheering for Team USA!",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 0,
+    "favorited": false,
+    "retweeted": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Mon Aug 08 00:32:19 +0000 2016",
+    "id": 762446303838113793,
+    "id_str": "762446303838113793",
+    "text": "RT @BBC_Travel: Ice cream around the world: from kulfi to spaghettieis. https://t.co/HHkSc3Wsfk #BBCinbrief @foodrepublic https://t.co/QwqD…",
+    "truncated": false,
+    "entities": {
+      "hashtags": [
+        {
+          "text": "BBCinbrief",
+          "indices": [
+            96,
+            107
+          ]
+        }
+      ],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "BBC_Travel",
+          "name": "BBC Travel",
+          "id": 173992307,
+          "id_str": "173992307",
+          "indices": [
+            3,
+            14
+          ]
+        },
+        {
+          "screen_name": "foodrepublic",
+          "name": "Food Republic",
+          "id": 197177555,
+          "id_str": "197177555",
+          "indices": [
+            108,
+            121
+          ]
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://t.co/HHkSc3Wsfk",
+          "expanded_url": "http://www.foodrepublic.com/2016/08/05/ice-cream-around-the-world-from-kulfi-to-spaghettieis/",
+          "display_url": "foodrepublic.com/2016/08/05/ice…",
+          "indices": [
+            72,
+            95
+          ]
+        }
+      ],
+      "media": [
+        {
+          "id": 762294709611933697,
+          "id_str": "762294709611933697",
+          "indices": [
+            122,
+            140
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpQ2_-SUMAE6WUF.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpQ2_-SUMAE6WUF.jpg",
+          "url": "https://t.co/QwqDg1EOeT",
+          "display_url": "pic.twitter.com/QwqDg1EOeT",
+          "expanded_url": "http://twitter.com/BBC_Travel/status/762434469752033284/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 972,
+              "h": 637,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 972,
+              "h": 637,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 446,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 762434469752033284,
+          "source_status_id_str": "762434469752033284",
+          "source_user_id": 173992307,
+          "source_user_id_str": "173992307"
+        }
+      ]
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "id": 762294709611933697,
+          "id_str": "762294709611933697",
+          "indices": [
+            122,
+            140
+          ],
+          "media_url": "http://pbs.twimg.com/media/CpQ2_-SUMAE6WUF.jpg",
+          "media_url_https": "https://pbs.twimg.com/media/CpQ2_-SUMAE6WUF.jpg",
+          "url": "https://t.co/QwqDg1EOeT",
+          "display_url": "pic.twitter.com/QwqDg1EOeT",
+          "expanded_url": "http://twitter.com/BBC_Travel/status/762434469752033284/photo/1",
+          "type": "photo",
+          "sizes": {
+            "medium": {
+              "w": 972,
+              "h": 637,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 972,
+              "h": 637,
+              "resize": "fit"
+            },
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 680,
+              "h": 446,
+              "resize": "fit"
+            }
+          },
+          "source_status_id": 762434469752033284,
+          "source_status_id_str": "762434469752033284",
+          "source_user_id": 173992307,
+          "source_user_id_str": "173992307"
+        }
+      ]
+    },
+    "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+    "in_reply_to_status_id": null,
+    "in_reply_to_status_id_str": null,
+    "in_reply_to_user_id": null,
+    "in_reply_to_user_id_str": null,
+    "in_reply_to_screen_name": null,
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "retweeted_status": {
+      "created_at": "Sun Aug 07 23:45:17 +0000 2016",
+      "id": 762434469752033284,
+      "id_str": "762434469752033284",
+      "text": "Ice cream around the world: from kulfi to spaghettieis. https://t.co/HHkSc3Wsfk #BBCinbrief @foodrepublic https://t.co/QwqDg1EOeT",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "BBCinbrief",
+            "indices": [
+              80,
+              91
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "foodrepublic",
+            "name": "Food Republic",
+            "id": 197177555,
+            "id_str": "197177555",
+            "indices": [
+              92,
+              105
+            ]
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://t.co/HHkSc3Wsfk",
+            "expanded_url": "http://www.foodrepublic.com/2016/08/05/ice-cream-around-the-world-from-kulfi-to-spaghettieis/",
+            "display_url": "foodrepublic.com/2016/08/05/ice…",
+            "indices": [
+              56,
+              79
+            ]
+          }
+        ],
+        "media": [
+          {
+            "id": 762294709611933697,
+            "id_str": "762294709611933697",
+            "indices": [
+              106,
+              129
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpQ2_-SUMAE6WUF.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpQ2_-SUMAE6WUF.jpg",
+            "url": "https://t.co/QwqDg1EOeT",
+            "display_url": "pic.twitter.com/QwqDg1EOeT",
+            "expanded_url": "http://twitter.com/BBC_Travel/status/762434469752033284/photo/1",
+            "type": "photo",
+            "sizes": {
+              "medium": {
+                "w": 972,
+                "h": 637,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 972,
+                "h": 637,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "small": {
+                "w": 680,
+                "h": 446,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 762294709611933697,
+            "id_str": "762294709611933697",
+            "indices": [
+              106,
+              129
+            ],
+            "media_url": "http://pbs.twimg.com/media/CpQ2_-SUMAE6WUF.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CpQ2_-SUMAE6WUF.jpg",
+            "url": "https://t.co/QwqDg1EOeT",
+            "display_url": "pic.twitter.com/QwqDg1EOeT",
+            "expanded_url": "http://twitter.com/BBC_Travel/status/762434469752033284/photo/1",
+            "type": "photo",
+            "sizes": {
+              "medium": {
+                "w": 972,
+                "h": 637,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 972,
+                "h": 637,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "small": {
+                "w": 680,
+                "h": 446,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "source": "<a href=\"https://ads.twitter.com\" rel=\"nofollow\">Twitter Ads</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 173992307,
+        "id_str": "173992307",
+        "name": "BBC Travel",
+        "screen_name": "BBC_Travel",
+        "location": "",
+        "description": "Discover new cultures. Embark on new adventures. Celebrate. Explore. Engage. BBC Travel: Inspiring you to fall in love with the world.",
+        "url": "http://t.co/fLbUuq1LXB",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/fLbUuq1LXB",
+                "expanded_url": "http://www.bbc.com/travel",
+                "display_url": "bbc.com/travel",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 775233,
+        "friends_count": 458,
+        "listed_count": 7467,
+        "created_at": "Mon Aug 02 21:22:06 +0000 2010",
+        "favourites_count": 4126,
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": true,
+        "statuses_count": 32939,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000167174818/KbDV3nEB.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000167174818/KbDV3nEB.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/724781487099400193/-rzMXS9O_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/724781487099400193/-rzMXS9O_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/173992307/1469655309",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": true,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 22,
+      "favorite_count": 38,
+      "favorited": true,
+      "retweeted": true,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    "is_quote_status": false,
+    "retweet_count": 22,
+    "favorite_count": 0,
+    "favorited": true,
+    "retweeted": true,
+    "possibly_sensitive": false,
+    "lang": "en"
+  },
+  {
+    "created_at": "Sun Aug 07 20:14:20 +0000 2016",
+    "id": 762381382467280898,
+    "id_str": "762381382467280898",
+    "text": "@TravelLeisure need one of those.",
+    "truncated": false,
+    "entities": {
+      "hashtags": [],
+      "symbols": [],
+      "user_mentions": [
+        {
+          "screen_name": "TravelLeisure",
+          "name": "Travel + Leisure",
+          "id": 16211434,
+          "id_str": "16211434",
+          "indices": [
+            0,
+            14
+          ]
+        }
+      ],
+      "urls": []
+    },
+    "source": "<a href=\"http://thecodepath.com\" rel=\"nofollow\">codepath_dianne2</a>",
+    "in_reply_to_status_id": 762370257067634689,
+    "in_reply_to_status_id_str": "762370257067634689",
+    "in_reply_to_user_id": 16211434,
+    "in_reply_to_user_id_str": "16211434",
+    "in_reply_to_screen_name": "TravelLeisure",
+    "user": {
+      "id": 761354284315193345,
+      "id_str": "761354284315193345",
+      "name": "Dianne Askew",
+      "screen_name": "dianne_askew",
+      "location": "",
+      "description": "shift cuff Fudd due an eh du us wwjd yet jet hsu ssn xu jag be wh jd wth v ms met Mei meh ms is jd me is key me is me ja IA my is is le ms is is me me is ms max",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 0,
+      "friends_count": 12,
+      "listed_count": 0,
+      "created_at": "Fri Aug 05 00:13:01 +0000 2016",
+      "favourites_count": 16,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 28,
+      "lang": "en",
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/762174511118585856/dIYGQ-Wa_normal.jpg",
+      "profile_link_color": "2B7BB9",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": false,
+      "follow_request_sent": false,
+      "notifications": false
+    },
+    "geo": null,
+    "coordinates": null,
+    "place": null,
+    "contributors": null,
+    "is_quote_status": false,
+    "retweet_count": 0,
+    "favorite_count": 1,
+    "favorited": true,
+    "retweeted": false,
+    "lang": "en"
+  }
+]

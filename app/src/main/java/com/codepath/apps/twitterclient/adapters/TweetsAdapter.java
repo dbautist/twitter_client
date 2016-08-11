@@ -1,7 +1,7 @@
 package com.codepath.apps.twitterclient.adapters;
 
-import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
@@ -14,17 +14,18 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.bumptech.glide.DrawableRequestBuilder;
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
+import com.codepath.apps.twitterclient.activities.ProfileActivity;
 import com.codepath.apps.twitterclient.databinding.ItemMediaTweetBinding;
 import com.codepath.apps.twitterclient.databinding.ItemTweetBinding;
 import com.codepath.apps.twitterclient.fragments.ComposeDialogFragment;
 import com.codepath.apps.twitterclient.models.Media;
 import com.codepath.apps.twitterclient.models.Tweet;
-import com.codepath.apps.twitterclient.network.NetworkUtil;
-import com.codepath.apps.twitterclient.util.DeviceDimensionsHelper;
-import com.codepath.apps.twitterclient.util.views.DividerItemDecoration;
+import com.codepath.apps.twitterclient.util.AppConstants;
+
+import org.parceler.Parcel;
+import org.parceler.Parcels;
 
 import java.util.List;
 
@@ -65,12 +66,15 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     if (viewType == TYPE_TWEET) {
       View view = LayoutInflater.from(parent.getContext())
           .inflate(R.layout.item_tweet, parent, false);
-      viewHolder = new TweetViewHolder(mFragmentManager, view);
+      viewHolder = new TweetViewHolder(view);
     } else {
       View view = LayoutInflater.from(parent.getContext())
           .inflate(R.layout.item_media_tweet, parent, false);
-      viewHolder = new TweetMediaViewHolder(mFragmentManager, view);
+      viewHolder = new TweetMediaViewHolder(view);
     }
+
+    viewHolder.setContext(mContext);
+    viewHolder.setFragmentManager(mFragmentManager);
 
     return viewHolder;
   }
@@ -127,6 +131,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
 
   public static class ViewHolder extends RecyclerView.ViewHolder {
     protected FragmentManager mFragmentManager;
+    protected Context mContext;
     protected Tweet mTweet;
 
     @BindView(R.id.ivProfilePhoto)
@@ -146,21 +151,34 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
 
     @OnClick(R.id.btReply)
     public void replyButtonClick(View view) {
-      int pos = getLayoutPosition();
-      Log.d("POS_DEBUG", String.valueOf(pos));
+      Log.d("POS_DEBUG", String.valueOf(getLayoutPosition()));
       Log.d("TWEET_DEBUG", mTweet.toString());
 
       ComposeDialogFragment composeDialogFragment = ComposeDialogFragment.newInstance(mTweet);
       composeDialogFragment.show(mFragmentManager, "fragment_compose");
+    }
+
+    @OnClick(R.id.ivProfilePhoto)
+    public void profilePhotoClick(View view) {
+      Intent intent = new Intent(mContext, ProfileActivity.class);
+      intent.putExtra(AppConstants.USER_EXTRA, Parcels.wrap(mTweet.user));
+      mContext.startActivity(intent);
+    }
+
+    public void setContext(Context context) {
+      this.mContext = context;
+    }
+
+    public void setFragmentManager(FragmentManager fragmentManager) {
+      this.mFragmentManager = fragmentManager;
     }
   }
 
   public static class TweetViewHolder extends ViewHolder {
     private ItemTweetBinding mBinding;
 
-    public TweetViewHolder(FragmentManager fragmentManager, View itemView) {
+    public TweetViewHolder(View itemView) {
       super(itemView);
-      mFragmentManager = fragmentManager;
       mBinding = DataBindingUtil.bind(itemView);
     }
 
@@ -177,9 +195,8 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     @BindView(R.id.ivMedia)
     ImageView ivMedia;
 
-    public TweetMediaViewHolder(FragmentManager fragmentManager, View itemView) {
+    public TweetMediaViewHolder(View itemView) {
       super(itemView);
-      mFragmentManager = fragmentManager;
       mBinding = DataBindingUtil.bind(itemView);
     }
 

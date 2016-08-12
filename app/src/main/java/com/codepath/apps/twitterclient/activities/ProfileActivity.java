@@ -1,5 +1,6 @@
 package com.codepath.apps.twitterclient.activities;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
@@ -7,13 +8,13 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.databinding.ActivityProfileBinding;
-import com.codepath.apps.twitterclient.fragments.HomeTimelineListFragment;
 import com.codepath.apps.twitterclient.fragments.UserTimelineFragment;
 import com.codepath.apps.twitterclient.models.User;
 import com.codepath.apps.twitterclient.util.AppConstants;
@@ -23,6 +24,7 @@ import org.parceler.Parcels;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class ProfileActivity extends AppCompatActivity {
@@ -40,6 +42,10 @@ public class ProfileActivity extends AppCompatActivity {
   TextView tvNumFollowers;
   @BindView(R.id.tvNumFollowing)
   TextView tvNumFollowing;
+  @BindView(R.id.tvFollowingText)
+  TextView tvFollowingText;
+  @BindView(R.id.tvFollowersText)
+  TextView tvFollowersText;
 
   private ActivityProfileBinding mBinding;
   private User mUser;
@@ -86,5 +92,20 @@ public class ProfileActivity extends AppCompatActivity {
     UserTimelineFragment fragment = UserTimelineFragment.newInstance(getSupportFragmentManager(), mUser);
     ft.replace(R.id.flUserFragment, fragment);
     ft.commit();
+  }
+
+  @OnClick(R.id.tvFollowingText)
+  public void onFollowingClick(View view) {
+    Intent intent = new Intent(this, UserListActivity.class);
+    intent.putExtra(AppConstants.USER_ID_EXTRA, mUser.uid);
+    startActivity(intent);
+  }
+
+  @OnClick(R.id.tvFollowersText)
+  public void onFollowersClick(View view) {
+    Intent intent = new Intent(this, UserListActivity.class);
+    intent.putExtra(AppConstants.USER_ID_EXTRA, mUser.uid);
+    intent.putExtra(AppConstants.FOLLOWERS_LIST_EXTRA, true);
+    startActivity(intent);
   }
 }

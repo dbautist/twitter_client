@@ -123,4 +123,22 @@ public class TwitterClient extends OAuthBaseClient {
 
     getClient().post(apiUrl, params, handler);
   }
+
+  // GET friends/list.json
+  public void getFriendsList(long userId, AsyncHttpResponseHandler handler) {
+    String apiUrl = getApiUrl("friends/list.json");
+    RequestParams params = new RequestParams();
+    params.put("user_id", userId);
+
+    getClient().get(apiUrl, params, handler);
+  }
+
+  // GET followers/list.json
+  public void getFollowersList(long userId, AsyncHttpResponseHandler handler) {
+    String apiUrl = getApiUrl("followers/list.json");
+    RequestParams params = new RequestParams();
+    params.put("user_id", userId);
+
+    getClient().get(apiUrl, params, handler);
+  }
 }

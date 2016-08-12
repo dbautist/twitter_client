@@ -44,13 +44,12 @@
     </activity>
     <activity
         android:name=".activities.TimelineActivity"
-        android:theme="@style/AppTheme.NoActionBar"
-        android:launchMode="singleTop"/>
-
+        android:launchMode="singleTop"
+        android:theme="@style/AppTheme.NoActionBar"/>
     <activity
         android:name=".activities.TweetDetailActivity"
-        android:windowSoftInputMode="adjustResize"
-        android:parentActivityName=".activities.TimelineActivity">
+        android:parentActivityName=".activities.TimelineActivity"
+        android:windowSoftInputMode="adjustResize">
 
       <!-- Parent activity meta-data to support 4.0 and lower -->
       <meta-data
@@ -59,9 +58,18 @@
     </activity>
     <activity
         android:name=".activities.ProfileActivity"
-        android:theme="@style/AppTheme.NoActionBar"
-        android:parentActivityName=".activities.TimelineActivity">
+        android:parentActivityName=".activities.TimelineActivity"
+        android:launchMode="singleTop"
+        android:theme="@style/AppTheme.NoActionBar">
 
+      <!-- Parent activity meta-data to support 4.0 and lower -->
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".activities.TimelineActivity"/>
+    </activity>
+    <activity
+        android:name=".activities.UserListActivity"
+        android:parentActivityName=".activities.ProfileActivity">
       <!-- Parent activity meta-data to support 4.0 and lower -->
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"

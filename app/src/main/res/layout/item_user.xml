@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <import type="android.view.View"/>
+
+    <variable
+        name="user"
+        type="com.codepath.apps.twitterclient.models.User"/>
+  </data>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/ivProfilePhoto"
+        style="@style/ProfilePhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        tools:src="@drawable/twitter_logo_white_on_blue"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/BoldPrimaryText"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivProfilePhoto"
+        android:layout_toRightOf="@+id/ivProfilePhoto"
+        android:text="@{user.name}"
+        tools:text="Dianne Bautista"/>
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        style="@style/SecondaryText"
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_below="@+id/tvName"
+        android:text="@{user.screenName}"
+        tools:text="\@dianne_askew"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        style="@style/TweetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_below="@+id/tvScreenName"
+        android:layout_marginTop="10dp"
+        android:text="@{user.description}"
+        tools:text="some description"/>
+
+    <ImageView
+        android:id="@+id/ivFollowingImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/follow"/>
+  </RelativeLayout>
+</layout>

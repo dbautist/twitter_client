@@ -11,4 +11,6 @@ public class AppConstants {
   // EXTRAS
   public static final String TWEET_EXTRA = "TWEET_EXTRA";
   public static final String USER_EXTRA = "USER_EXTRA";
+  public static final String USER_ID_EXTRA = "USER_ID_EXTRA";
+  public static final String FOLLOWERS_LIST_EXTRA = "FOLLOWERS_LIST_EXTRA";
 }

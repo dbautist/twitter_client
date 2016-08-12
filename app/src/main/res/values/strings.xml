@@ -13,5 +13,7 @@
   <string name="retweet">Retweets</string>
   <string name="likes">Likes</string>
   <string name="following">following</string>
+  <string name="following_title">Following</string>
   <string name="followers">followers</string>
+  <string name="followers_title">Followers</string>
 </resources>

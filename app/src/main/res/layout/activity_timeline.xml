@@ -1,25 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-  <com.astuetz.PagerSlidingTabStrip
-      android:id="@+id/tabs"
-      app:pstsShouldExpand="true"
-      android:layout_width="match_parent"
-      android:layout_height="48dp"
-      android:textSize="14sp"
-      android:textColor="@color/primary"
-      app:pstsIndicatorColor="@color/primary"
-      app:pstsTabPaddingLeftRight="14dp">
-  </com.astuetz.PagerSlidingTabStrip>
-
-  <android.support.v4.view.ViewPager
-      android:id="@+id/viewpager"
+  <android.support.design.widget.AppBarLayout
+      android:id="@+id/appBar"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:background="@android:color/white"/>
+      android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
 
-</LinearLayout>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        app:layout_collapseMode="pin">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/toolbarImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/twitter_logo_white_on_blue"/>
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="\@dianne_askew"
+            android:textColor="@android:color/white"/>
+      </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+  </android.support.design.widget.AppBarLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        app:pstsIndicatorColor="@color/primary"
+        app:pstsShouldExpand="true"
+        app:pstsTabPaddingLeftRight="14dp">
+    </com.astuetz.PagerSlidingTabStrip>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"/>
+  </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -44,7 +44,9 @@
     </activity>
     <activity
         android:name=".activities.TimelineActivity"
+        android:theme="@style/AppTheme.NoActionBar"
         android:launchMode="singleTop"/>
+
     <activity
         android:name=".activities.TweetDetailActivity"
         android:windowSoftInputMode="adjustResize"

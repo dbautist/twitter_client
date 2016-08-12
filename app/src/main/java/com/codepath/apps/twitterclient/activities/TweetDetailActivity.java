@@ -2,6 +2,7 @@ package com.codepath.apps.twitterclient.activities;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
@@ -18,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.DrawableTypeRequest;
 import com.bumptech.glide.Glide;
@@ -32,11 +34,14 @@ import com.codepath.apps.twitterclient.util.AppConstants;
 import com.codepath.apps.twitterclient.util.DateUtil;
 import com.codepath.apps.twitterclient.util.DeviceDimensionsHelper;
 import com.codepath.apps.twitterclient.util.ErrorHandler;
+import com.codepath.apps.twitterclient.util.views.PatternEditableBuilder;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.parceler.Parcels;
+
+import java.util.regex.Pattern;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -48,6 +53,8 @@ public class TweetDetailActivity extends AppCompatActivity {
 
   @BindView(R.id.ivProfilePhoto)
   ImageView ivProfilePhoto;
+  @BindView(R.id.tvText)
+  TextView tvText;
   @BindView(R.id.etReplyText)
   EditText etReplyText;
   @BindView(R.id.btReplyTweet)
@@ -101,6 +108,26 @@ public class TweetDetailActivity extends AppCompatActivity {
     vReplyTweet.setVisibility(View.GONE);
     tvDate.setText(DateUtil.getFormattedDate(this, mTweet.createdAt));
     tvTime.setText(DateUtil.getFormattedTime(this, mTweet.createdAt));
+
+    // Make mentions and tags clickable
+    tvText.setText(mTweet.text);
+    new PatternEditableBuilder().
+        addPattern(Pattern.compile("\\@(\\w+)"), ContextCompat.getColor(this, R.color.primary_dark),
+            new PatternEditableBuilder.SpannableClickedListener() {
+              @Override
+              public void onSpanClicked(String text) {
+                Toast.makeText(TweetDetailActivity.this, "Clicked username: " + text,
+                    Toast.LENGTH_SHORT).show();
+              }
+            }).
+        addPattern(Pattern.compile("\\#(\\w+)"), ContextCompat.getColor(this, R.color.primary_dark),
+            new PatternEditableBuilder.SpannableClickedListener() {
+              @Override
+              public void onSpanClicked(String text) {
+                Toast.makeText(TweetDetailActivity.this, "Clicked hashtag: " + text,
+                    Toast.LENGTH_SHORT).show();
+              }
+            }).into(tvText);
 
     Media tweetMedia = mTweet.media;
     if (tweetMedia != null) {

@@ -3,6 +3,7 @@ package com.codepath.apps.twitterclient.adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.graphics.Color;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
@@ -13,6 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
@@ -23,11 +26,13 @@ import com.codepath.apps.twitterclient.fragments.ComposeDialogFragment;
 import com.codepath.apps.twitterclient.models.Media;
 import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.apps.twitterclient.util.AppConstants;
+import com.codepath.apps.twitterclient.util.views.PatternEditableBuilder;
 
 import org.parceler.Parcel;
 import org.parceler.Parcels;
 
 import java.util.List;
+import java.util.regex.Pattern;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -100,6 +105,25 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
           .into(tweetMediaViewHolder.ivMedia);
     }
 
+    // Make mentions and tags clickable
+    new PatternEditableBuilder().
+        addPattern(Pattern.compile("\\@(\\w+)"), ContextCompat.getColor(mContext, R.color.primary_dark),
+            new PatternEditableBuilder.SpannableClickedListener() {
+              @Override
+              public void onSpanClicked(String text) {
+                Toast.makeText(mContext, "Clicked username: " + text,
+                    Toast.LENGTH_SHORT).show();
+              }
+            }).
+        addPattern(Pattern.compile("\\#(\\w+)"), ContextCompat.getColor(mContext, R.color.primary_dark),
+            new PatternEditableBuilder.SpannableClickedListener() {
+              @Override
+              public void onSpanClicked(String text) {
+                Toast.makeText(mContext, "Clicked hashtag: " + text,
+                    Toast.LENGTH_SHORT).show();
+              }
+            }).into(holder.tvText);
+
     if (TextUtils.isEmpty(mTweet.user.profileImageUrl)) {
       holder.ivProfilePhoto.setVisibility(View.GONE);
     } else {
@@ -134,6 +158,8 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     protected Context mContext;
     protected Tweet mTweet;
 
+    @BindView(R.id.tvText)
+    TextView tvText;
     @BindView(R.id.ivProfilePhoto)
     ImageView ivProfilePhoto;
     @BindView(R.id.btReply)

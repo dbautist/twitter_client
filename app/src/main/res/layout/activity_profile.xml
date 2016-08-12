@@ -110,8 +110,9 @@
           style="@style/TweetText"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_below="@id/ivProfileImage"
-          android:layout_alignLeft="@id/ivProfileImage"
+          android:layout_below="@+id/ivProfileImage"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
           android:text="@{user.description}"
           tools:text="some description"/>
 
@@ -124,7 +125,6 @@
           android:layout_alignStart="@+id/tvDescription"
           android:layout_below="@+id/tvDescription"
           android:layout_marginTop="10dp"
-          android:text="@{Integer.toString(user.followingCount)}"
           android:textColor="@color/secondary"
           android:textStyle="bold"
           tools:text="26"/>
@@ -135,7 +135,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_alignTop="@+id/tvNumFollowing"
-          android:layout_marginLeft="10dp"
+          android:layout_marginLeft="5dp"
           android:layout_marginRight="50dp"
           android:layout_toEndOf="@+id/tvNumFollowing"
           android:layout_toRightOf="@+id/tvNumFollowing"
@@ -150,7 +150,6 @@
           android:layout_alignTop="@+id/tvNumFollowing"
           android:layout_toEndOf="@+id/tvFollowingText"
           android:layout_toRightOf="@+id/tvFollowingText"
-          android:text="@{Integer.toString(user.followersCount)}"
           android:textColor="@color/secondary"
           android:textStyle="bold"
           tools:text="226k"/>
@@ -161,7 +160,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_alignTop="@+id/tvNumFollowing"
-          android:layout_marginLeft="10dp"
+          android:layout_marginLeft="5dp"
           android:layout_toEndOf="@+id/tvNumFollowers"
           android:layout_toRightOf="@+id/tvNumFollowers"
           android:text="@string/followers"

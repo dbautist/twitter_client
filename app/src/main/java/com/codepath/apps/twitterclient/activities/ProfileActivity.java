@@ -8,6 +8,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
@@ -16,6 +17,7 @@ import com.codepath.apps.twitterclient.fragments.HomeTimelineListFragment;
 import com.codepath.apps.twitterclient.fragments.UserTimelineFragment;
 import com.codepath.apps.twitterclient.models.User;
 import com.codepath.apps.twitterclient.util.AppConstants;
+import com.codepath.apps.twitterclient.util.NumUtil;
 
 import org.parceler.Parcels;
 
@@ -33,6 +35,10 @@ public class ProfileActivity extends AppCompatActivity {
   ImageView ivBackdrop;
   @BindView(R.id.ivProfileImage)
   ImageView ivProfileImage;
+  @BindView(R.id.tvNumFollowers)
+  TextView tvNumFollowers;
+  @BindView(R.id.tvNumFollowing)
+  TextView tvNumFollowing;
 
   private ActivityProfileBinding mBinding;
   private User mUser;
@@ -46,6 +52,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     toolbar.setTitle("");
     setSupportActionBar(toolbar);
+    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     mUser = Parcels.unwrap(getIntent().getParcelableExtra(AppConstants.USER_EXTRA));
     if (mUser != null) {
@@ -66,6 +73,10 @@ public class ProfileActivity extends AppCompatActivity {
           .fitCenter().centerCrop()
           .into(ivBackdrop);
     }
+
+    // Format numFollowers and numFollowing
+    tvNumFollowers.setText(NumUtil.format(mUser.followersCount));
+    tvNumFollowing.setText(NumUtil.format(mUser.followingCount));
   }
 
   private void initFragment() {

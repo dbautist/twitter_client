@@ -23,6 +23,7 @@ import org.parceler.Parcels;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class ProfileActivity extends AppCompatActivity {
   @BindView(R.id.appbar)
@@ -66,6 +67,7 @@ public class ProfileActivity extends AppCompatActivity {
   private void initUserDetails() {
     Glide.with(this).load(mUser.profileImageUrl)
         .fitCenter().centerCrop()
+        .bitmapTransform(new RoundedCornersTransformation(this, 5, 0))
         .into(ivProfileImage);
 
     if (mUser.backgroundImageUrl != null) {

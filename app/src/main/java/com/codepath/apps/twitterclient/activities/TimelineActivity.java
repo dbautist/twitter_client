@@ -31,6 +31,7 @@ import org.w3c.dom.Text;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cz.msebera.android.httpclient.Header;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class TimelineActivity extends AppCompatActivity {
   private static final String TAG = TimelineActivity.class.getSimpleName();
@@ -77,9 +78,10 @@ public class TimelineActivity extends AppCompatActivity {
       }
     });
 
-//    Glide.with(this).load(mCurrentUser.profileImageUrl)
-//        .fitCenter().centerCrop()
-//        .into(toolbarImage);
+    Glide.with(this).load(mCurrentUser.profileImageUrl)
+        .fitCenter().centerCrop()
+        .bitmapTransform(new RoundedCornersTransformation(this, 25, 0))
+        .into(toolbarImage);
 
     TextView toolbarTitle = (TextView) toolbar.findViewById(R.id.toolbarTitle);
     toolbarTitle.setText(mCurrentUser.screenName);

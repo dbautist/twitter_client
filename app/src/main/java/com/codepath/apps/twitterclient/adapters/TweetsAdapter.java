@@ -3,6 +3,7 @@ package com.codepath.apps.twitterclient.adapters;
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.content.ContextCompat;
@@ -18,6 +19,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
+import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.activities.ProfileActivity;
 import com.codepath.apps.twitterclient.databinding.ItemMediaTweetBinding;
@@ -37,6 +40,7 @@ import java.util.regex.Pattern;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder> {
   private static final String TAG = TweetsAdapter.class.getSimpleName();
@@ -143,6 +147,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
       if (mTweet.user != null) {
         Glide.with(mContext).load(mTweet.user.profileImageUrl) // .placeholder(R.drawable.loading_placeholder)
             .fitCenter().centerCrop()
+            .bitmapTransform(new RoundedCornersTransformation(mContext, 5, 0))
             .into(holder.ivProfilePhoto);
       }
     }

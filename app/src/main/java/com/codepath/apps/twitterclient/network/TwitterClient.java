@@ -80,12 +80,17 @@ public class TwitterClient extends OAuthBaseClient {
     getClient().get(apiUrl, params, handler);
   }
 
-  public void getUserTimeline(long userId, AsyncHttpResponseHandler handler) {
-    Log.d(TAG, "------user_timeline = userId: " + userId);
+  public void getUserTimeline(long userId, long maxId, AsyncHttpResponseHandler handler) {
+    Log.d(TAG, "------user_timeline = userId: " + userId + " maxId: " + maxId);
 
     String apiUrl = getApiUrl("statuses/user_timeline.json");
     RequestParams params = new RequestParams();
     params.put("user_id", userId);
+    if (maxId != -1) {
+      params.put("max_id", maxId);
+    } else {
+      params.put("since_id", 1);
+    }
     getClient().get(apiUrl, params, handler);
   }
 

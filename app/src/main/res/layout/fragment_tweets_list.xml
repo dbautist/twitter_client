@@ -20,6 +20,14 @@
         android:layout_alignParentTop="true"/>
   </android.support.v4.widget.SwipeRefreshLayout>
 
+  <com.wang.avi.AVLoadingIndicatorView
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_gravity="center"
+      android:id="@+id/pbLoading"
+      app:indicatorColor="@color/primary_dark"
+      app:indicatorName="BallPulseIndicator"/>
+
   <android.support.design.widget.FloatingActionButton
       android:id="@+id/fabComposeTweet"
       android:layout_width="wrap_content"

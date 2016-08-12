@@ -3,32 +3,21 @@ package com.codepath.apps.twitterclient.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
-import android.view.View;
 
 import com.codepath.apps.twitterclient.models.Tweet;
 import com.codepath.apps.twitterclient.models.User;
-import com.codepath.apps.twitterclient.network.JSONDeserializer;
 import com.codepath.apps.twitterclient.util.AppConstants;
-import com.codepath.apps.twitterclient.util.ErrorHandler;
-import com.loopj.android.http.JsonHttpResponseHandler;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.parceler.Parcels;
-
-import java.util.List;
-
-import cz.msebera.android.httpclient.Header;
 
 public class UserTimelineFragment extends TweetsListFragment {
   private static final String TAG = UserTimelineFragment.class.getSimpleName();
 
   private User mUser;
 
-  public UserTimelineFragment() {}
+  public UserTimelineFragment() {
+  }
 
   public static UserTimelineFragment newInstance(FragmentManager fragmentManager, User user) {
     UserTimelineFragment frag = new UserTimelineFragment();
@@ -47,31 +36,8 @@ public class UserTimelineFragment extends TweetsListFragment {
   }
 
   @Override
-  protected void setSwipeRefreshListener() {
-    swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-      @Override
-      public void onRefresh() {
-        fetchUserTimeline();
-      }
-    });
-  }
-
-  @Override
-  protected void setTweetList() {
-    // TODO: Remove after testing
-    loadJSONFromAsset("user_timeline.json");
-
-    fetchUserTimeline();
-  }
-
-  @Override
-  protected void setOfflineListener() {
-    // do nothing
-  }
-
-  @Override
-  protected void customLoadMoreDataFromApi(int page) {
-    fetchUserTimeline();
+  protected void populateTimeline() {
+    mClient.getUserTimeline(mUser.uid, mMaxId, mResponseHandler);
   }
 
   @Override
@@ -80,42 +46,27 @@ public class UserTimelineFragment extends TweetsListFragment {
     Log.d(TAG, "updateNewTweet");
   }
 
-  private void fetchUserTimeline() {
-//    populateFromJson();
+  @Override
+  protected void fetchOfflineData() {
+    // do nothing
+    Log.d(TAG, "fetchOfflineData");
+  }
 
-    mClient.getUserTimeline(mUser.uid, new JsonHttpResponseHandler() {
-      @Override
-      public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-        Log.d(TAG, "fetchUserTimeline onSuccess: " + response.toString());
-        try {
-          JSONDeserializer<Tweet> deserializer = new JSONDeserializer<>(Tweet.class);
-          List<Tweet> tweetResponseList = deserializer.fromJSONArrayToList(response);
-          if (tweetResponseList != null) {
-            Log.d(TAG, "tweet size: " + tweetResponseList.size());
+  @Override
+  protected void storeOfflineData() {
+    // do nothing
+    Log.d(TAG, "storeOfflineData");
+  }
 
-            int curSize = mTweetList.size();
-            mTweetList.addAll(tweetResponseList);
-            mAdapter.notifyItemRangeInserted(curSize, tweetResponseList.size());
+  @Override
+  protected void clearOfflineData() {
+    // do nothing
+    Log.d(TAG, "clearOfflineData");
+  }
 
-            mTweetManager.storeTweetList(mTweetList);
-          }
-        } catch (JSONException e) {
-          ErrorHandler.handleAppException(e, "Exception from populating mentions timeline");
-        }
-
-        handleSwipeRefresh();
-      }
-
-      @Override
-      public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject
-      errorResponse) {
-        handleSwipeRefresh();
-        if (errorResponse != null) {
-          ErrorHandler.logAppError(errorResponse.toString());
-        }
-
-        ErrorHandler.displayError(mContext, AppConstants.DEFAULT_ERROR_MESSAGE);
-      }
-    });
+  @Override
+  protected void setTestingData() {
+    Log.d(TAG, "setTestingData");
+    loadJSONFromAsset("user_timeline.json");
   }
 }

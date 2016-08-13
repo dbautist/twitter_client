@@ -60,7 +60,7 @@ public class TimelineActivity extends AppCompatActivity {
   }
 
   private void initViewPager() {
-    viewpager.setAdapter(new TimelinePagerAdapter(getSupportFragmentManager()));
+    viewpager.setAdapter(new TimelinePagerAdapter(this, getSupportFragmentManager()));
 
     // Give the PagerSlidingTabStrip the ViewPager
     tabs.setViewPager(viewpager);

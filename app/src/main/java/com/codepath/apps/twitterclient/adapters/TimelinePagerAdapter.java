@@ -1,25 +1,29 @@
 package com.codepath.apps.twitterclient.adapters;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.fragments.HomeTimelineListFragment;
 import com.codepath.apps.twitterclient.fragments.MentionsTimelineListFragment;
 
 public class TimelinePagerAdapter extends FragmentPagerAdapter {
-  final int PAGE_COUNT = 2;
   private String tabTitles[] = new String[] { "HOME", "MENTION"};
+
+  private Context mContext;
   private FragmentManager mFragmentManager;
 
-  public TimelinePagerAdapter(FragmentManager fm) {
+  public TimelinePagerAdapter(Context context, FragmentManager fm) {
     super(fm);
+    mContext = context;
     mFragmentManager = fm;
   }
 
   @Override
   public int getCount() {
-    return PAGE_COUNT;
+    return tabTitles.length;
   }
 
   @Override
@@ -36,6 +40,6 @@ public class TimelinePagerAdapter extends FragmentPagerAdapter {
   @Override
   public CharSequence getPageTitle(int position) {
     // Generate title based on item position
-    return tabTitles[position];
+    return "";
   }
 }

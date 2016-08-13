@@ -2,6 +2,7 @@ package com.codepath.apps.twitterclient.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
@@ -16,7 +17,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.astuetz.PagerSlidingTabStrip;
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.TwitterApplication;
@@ -41,11 +41,13 @@ import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 public class MainActivity extends AppCompatActivity
     implements NavigationView.OnNavigationItemSelectedListener {
   private static final String TAG = MainActivity.class.getSimpleName();
+  private int[] tabIcons = {R.drawable.home, R.drawable.mention};
+  private String tabTitles[] = new String[] { "Home", "Mentions"};
 
   @BindView(R.id.toolbar)
   Toolbar toolbar;
   @BindView(R.id.tabs)
-  PagerSlidingTabStrip tabs;
+  TabLayout tabs;
   @BindView(R.id.viewpager)
   ViewPager viewpager;
   @BindView(R.id.drawerLayout)
@@ -79,10 +81,37 @@ public class MainActivity extends AppCompatActivity
   }
 
   private void initViewPager() {
-    viewpager.setAdapter(new TimelinePagerAdapter(getSupportFragmentManager()));
+    viewpager.setAdapter(new TimelinePagerAdapter(this, getSupportFragmentManager()));
+    tabs.setupWithViewPager(viewpager);
 
-    // Give the PagerSlidingTabStrip the ViewPager
-    tabs.setViewPager(viewpager);
+    if (tabs != null) {
+      for (int i = 0; i < tabs.getTabCount(); i++) {
+        tabs.getTabAt(i).setIcon(tabIcons[i]);
+      }
+    }
+
+    setActionBarTitle(tabTitles[0]);
+    tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+      @Override
+      public void onTabSelected(TabLayout.Tab tab) {
+        Log.d(TAG, "tab: onTabSelected" + tab.getPosition());
+        setActionBarTitle(tabTitles[tab.getPosition()]);
+      }
+
+      @Override
+      public void onTabUnselected(TabLayout.Tab tab) {
+      }
+
+      @Override
+      public void onTabReselected(TabLayout.Tab tab) {
+      }
+    });
+  }
+
+  private void setActionBarTitle(String title){
+    if (getSupportActionBar() != null) {
+      getSupportActionBar().setTitle(title);
+    }
   }
 
   private void setNavHeader() {
@@ -108,15 +137,11 @@ public class MainActivity extends AppCompatActivity
         .into(ivProfilePhoto);
 
     ImageView ivBackdrop = (ImageView) view.findViewById(R.id.ivBackdrop);
-    if (mCurrentUser.backgroundImageUrl != null) {
-      Glide.with(this).load(mCurrentUser.backgroundImageUrl)
+    if (mCurrentUser.profileBannerUrl != null) {
+      Glide.with(this).load(mCurrentUser.profileBannerUrl)
           .fitCenter().centerCrop()
           .into(ivBackdrop);
     }
-
-    // Remove the '@'
-    String screenName = mCurrentUser.screenName.substring(1, mCurrentUser.screenName.length());
-    getSupportActionBar().setTitle(screenName);
   }
 
   private void getCurrentUser() {

@@ -25,5 +25,8 @@
   <string name="nav_lists">Lists</string>
   <string name="nav_message">Message</string>
 
+  <string name="tab_home">Home</string>
+  <string name="tab_mention">Mentions</string>
+
   <string name="action_settings">Settings</string>
 </resources>

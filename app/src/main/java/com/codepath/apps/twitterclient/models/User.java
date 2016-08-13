@@ -3,13 +3,10 @@ package com.codepath.apps.twitterclient.models;
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;
 import com.activeandroid.annotation.Table;
-import com.activeandroid.query.Select;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
-
-import java.util.List;
 
 @Table(name = "User")
 @Parcel(analyze = {User.class})   // add Parceler annotation here
@@ -35,8 +32,11 @@ public class User extends Model implements JSONSerializable {
   @Column(name = "FollowingCount")
   public int followingCount;
 
-  @Column(name = "BackgroundImageUrl")
-  public String backgroundImageUrl;
+  @Column(name = "ProfileBannerUrl")
+  public String profileBannerUrl;
+
+  @Column(name = "IsFollowing")
+  public boolean isFollowing;
 
   public User() {
     super();
@@ -51,7 +51,14 @@ public class User extends Model implements JSONSerializable {
     followersCount = jsonObject.getInt("followers_count");
     followingCount = jsonObject.getInt("friends_count");
     profileImageUrl = jsonObject.getString("profile_image_url");
-    backgroundImageUrl = jsonObject.getString("profile_banner_url") + "/mobile";
+    isFollowing = jsonObject.getBoolean("following");
+
+    try {
+      profileBannerUrl = jsonObject.getString("profile_banner_url") + "/mobile";
+    } catch(JSONException e) {
+      // don't throw an error
+    }
+
   }
 
   @Override
@@ -61,8 +68,9 @@ public class User extends Model implements JSONSerializable {
     str.append("screenName=").append(screenName).append(";\n");
     str.append("followersCount=").append(followersCount).append(";\n");
     str.append("followingCount=").append(followingCount).append(";\n");
+    str.append("isFollowing=").append(isFollowing).append(";\n");
     str.append("profileImageUrl=").append(profileImageUrl).append(";\n");;
-    str.append("backgroundImageUrl=").append(backgroundImageUrl).append(";\n");;
+    str.append("profileBannerUrl=").append(profileBannerUrl).append(";\n");;
 
     return str.toString();
   }

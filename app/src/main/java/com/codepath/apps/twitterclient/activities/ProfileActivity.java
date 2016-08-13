@@ -11,12 +11,14 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.databinding.ActivityProfileBinding;
 import com.codepath.apps.twitterclient.fragments.UserTimelineFragment;
+import com.codepath.apps.twitterclient.models.TweetManager;
 import com.codepath.apps.twitterclient.models.User;
 import com.codepath.apps.twitterclient.util.AppConstants;
 import com.codepath.apps.twitterclient.util.NumUtil;
@@ -49,6 +51,8 @@ public class ProfileActivity extends AppCompatActivity {
   TextView tvFollowingText;
   @BindView(R.id.tvFollowersText)
   TextView tvFollowersText;
+  @BindView(R.id.followingLayout)
+  LinearLayout followingLayout;
 
   private ActivityProfileBinding mBinding;
   private User mUser;
@@ -82,8 +86,8 @@ public class ProfileActivity extends AppCompatActivity {
         .bitmapTransform(new RoundedCornersTransformation(this, 5, 0))
         .into(ivProfileImage);
 
-    if (mUser.backgroundImageUrl != null) {
-      Glide.with(this).load(mUser.backgroundImageUrl)
+    if (mUser.profileBannerUrl != null) {
+      Glide.with(this).load(mUser.profileBannerUrl)
           .fitCenter().centerCrop()
           .into(ivBackdrop);
     }
@@ -91,6 +95,17 @@ public class ProfileActivity extends AppCompatActivity {
     // Format numFollowers and numFollowing
     tvNumFollowers.setText(NumUtil.format(mUser.followersCount));
     tvNumFollowing.setText(NumUtil.format(mUser.followingCount));
+
+    if(TweetManager.getInstance().getCurrentUser().uid == mUser.uid){
+      // hide the follow layout
+      followingLayout.setVisibility(View.GONE);
+    } else {
+      if (mUser.isFollowing) {
+        followingLayout.setVisibility(View.GONE);
+      } else {
+        followingLayout.setVisibility(View.VISIBLE);
+      }
+    }
   }
 
   private void initFragment() {

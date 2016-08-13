@@ -7,10 +7,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.codepath.apps.twitterclient.R;
 import com.codepath.apps.twitterclient.databinding.ItemUserBinding;
+import com.codepath.apps.twitterclient.models.TweetManager;
 import com.codepath.apps.twitterclient.models.User;
 
 import java.util.List;
@@ -45,6 +47,17 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
         .fitCenter().centerCrop()
         .bitmapTransform(new RoundedCornersTransformation(mContext, 5, 0))
         .into(holder.ivProfilePhoto);
+
+    if(TweetManager.getInstance().getCurrentUser().uid == mUser.uid){
+      // hide the follow layout
+      holder.followingLayout.setVisibility(View.GONE);
+    } else {
+      if (mUser.isFollowing) {
+        holder.followingLayout.setVisibility(View.GONE);
+      } else {
+        holder.followingLayout.setVisibility(View.VISIBLE);
+      }
+    }
   }
 
   @Override
@@ -57,6 +70,8 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
 
     @BindView(R.id.ivProfilePhoto)
     ImageView ivProfilePhoto;
+    @BindView(R.id.followingLayout)
+    LinearLayout followingLayout;
 
     public ViewHolder(View itemView) {
       super(itemView);

@@ -42,7 +42,7 @@ The following **bonus** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] Add a navigation drawer to navigate to the logged user's profile
 
 ## Video Walkthrough
 

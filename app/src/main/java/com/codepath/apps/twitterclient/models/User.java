@@ -51,7 +51,7 @@ public class User extends Model implements JSONSerializable {
     followersCount = jsonObject.getInt("followers_count");
     followingCount = jsonObject.getInt("friends_count");
     profileImageUrl = jsonObject.getString("profile_image_url");
-    backgroundImageUrl = jsonObject.getString("profile_background_image_url");
+    backgroundImageUrl = jsonObject.getString("profile_banner_url") + "/mobile";
   }
 
   @Override
@@ -62,6 +62,7 @@ public class User extends Model implements JSONSerializable {
     str.append("followersCount=").append(followersCount).append(";\n");
     str.append("followingCount=").append(followingCount).append(";\n");
     str.append("profileImageUrl=").append(profileImageUrl).append(";\n");;
+    str.append("backgroundImageUrl=").append(backgroundImageUrl).append(";\n");;
 
     return str.toString();
   }

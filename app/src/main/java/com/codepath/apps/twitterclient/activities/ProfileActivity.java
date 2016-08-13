@@ -8,6 +8,7 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,6 +29,8 @@ import butterknife.OnClick;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class ProfileActivity extends AppCompatActivity {
+  private static final String TAG = ProfileActivity.class.getSimpleName();
+
   @BindView(R.id.appbar)
   AppBarLayout appbar;
   @BindView(R.id.collapsing_toolbar)
@@ -63,6 +66,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     mUser = Parcels.unwrap(getIntent().getParcelableExtra(AppConstants.USER_EXTRA));
     if (mUser != null) {
+      Log.d(TAG, "User Profile: " + mUser.toString());
       mBinding.setUser(mUser);
       initUserDetails();
     }
@@ -71,7 +75,9 @@ public class ProfileActivity extends AppCompatActivity {
   }
 
   private void initUserDetails() {
-    Glide.with(this).load(mUser.profileImageUrl)
+    // Replace the normal profile image with the 'bigger' version
+    String profileUrl = mUser.profileImageUrl.replace("normal", "bigger");
+    Glide.with(this).load(profileUrl)
         .fitCenter().centerCrop()
         .bitmapTransform(new RoundedCornersTransformation(this, 5, 0))
         .into(ivProfileImage);

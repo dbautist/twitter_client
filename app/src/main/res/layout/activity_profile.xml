@@ -67,8 +67,8 @@
 
       <ImageView
           android:id="@+id/ivProfileImage"
-          android:layout_width="60dp"
-          android:layout_height="60dp"
+          android:layout_width="70dp"
+          android:layout_height="70dp"
           android:layout_alignParentLeft="true"
           android:layout_alignParentStart="true"
           android:layout_margin="10dp"
@@ -80,6 +80,7 @@
           android:layout_height="30dp"
           android:layout_alignParentEnd="true"
           android:layout_alignParentRight="true"
+          android:visibility="gone"
           android:layout_margin="10dp"
           android:background="@drawable/follow"/>
 
@@ -88,22 +89,23 @@
           style="@style/BoldPrimaryText"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@{user.name}"
-          tools:text="Dianne Askew"
-          android:layout_alignBottom="@+id/ivFollowingImage"
+          android:layout_marginTop="15dp"
+          android:layout_toEndOf="@+id/ivProfileImage"
           android:layout_toRightOf="@+id/ivProfileImage"
-          android:layout_toEndOf="@+id/ivProfileImage"/>
+          android:text="@{user.name}"
+          android:textSize="@dimen/largeText"
+          tools:text="Dianne Askew"/>
 
       <TextView
           android:id="@+id/tvScreenName"
           style="@style/SecondaryText"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@{user.screenName}"
-          tools:text="\@dianne_askew"
           android:layout_below="@+id/tvName"
+          android:layout_toEndOf="@+id/ivProfileImage"
           android:layout_toRightOf="@+id/ivProfileImage"
-          android:layout_toEndOf="@+id/ivProfileImage"/>
+          android:text="@{user.screenName}"
+          tools:text="\@dianne_askew"/>
 
       <TextView
           android:id="@+id/tvDescription"

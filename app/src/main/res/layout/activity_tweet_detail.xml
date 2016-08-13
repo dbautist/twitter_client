@@ -37,7 +37,7 @@
             android:id="@+id/ivProfilePhoto"
             style="@style/ProfilePhoto"
             android:layout_marginRight="10dp"
-            tools:src="@drawable/twitter_logo_white_on_blue"/>
+            tools:src="@drawable/favorite_on"/>
 
         <TextView
             android:id="@+id/tvName"
@@ -157,28 +157,24 @@
         <Button
             android:id="@+id/btReply"
             style="@style/DetailActionButton"
-            android:layout_marginLeft="20dp"
-            android:layout_alignLeft="@+id/tvText"
+            android:layout_marginLeft="50dp"
             android:layout_below="@+id/line2"
             android:background="@drawable/reply"/>
 
         <Button
             android:id="@+id/btRetweet"
             style="@style/DetailActionButton"
+            android:background="@drawable/retweet"
             android:layout_alignTop="@+id/btReply"
-            android:layout_marginLeft="50dp"
-            android:layout_toEndOf="@+id/btReply"
-            android:layout_toRightOf="@+id/btReply"
-            android:background="@drawable/retweet"/>
+            android:layout_centerHorizontal="true"/>
 
         <Button
             android:id="@+id/btFavorite"
             style="@style/DetailActionButton"
             android:background="@drawable/favorite"
             android:layout_alignTop="@+id/btReply"
-            android:layout_marginLeft="50dp"
-            android:layout_toEndOf="@+id/btRetweet"
-            android:layout_toRightOf="@+id/btRetweet"/>
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"/>
 
         <View
             android:id="@+id/line5"
@@ -223,6 +219,7 @@
         android:visibility="gone">
 
       <View
+          android:layout_marginTop="0dp"
           android:id="@+id/line4"
           style="@style/HorizontalLine"
           android:background="@color/primary"/>

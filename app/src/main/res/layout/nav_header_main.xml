@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/header"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_height"
+                android:background="@color/primary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+  <ImageView
+      android:id="@+id/ivBackdrop"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:src="@drawable/twitter_logo_white_on_blue"/>
+
+  <ImageView
+      android:id="@+id/ivProfilePhoto"
+      android:layout_height="60dp"
+      android:layout_width="60dp"
+      android:layout_above="@+id/tvName"
+      android:layout_alignLeft="@+id/tvScreenName"
+      android:layout_marginBottom="10dp"
+      tools:src="@drawable/favorite_on"/>
+
+  <TextView
+      android:id="@+id/tvName"
+      style="@style/BoldPrimaryText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/tvScreenName"
+      android:layout_alignLeft="@+id/tvScreenName"
+      android:text="Dianne Askew"
+      android:textColor="@android:color/white"/>
+
+  <TextView
+      android:id="@+id/tvScreenName"
+      style="@style/SecondaryText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:text="\@dianne_askew"
+      android:layout_marginLeft="10dp"
+      android:layout_marginBottom="10dp"
+      android:textColor="@android:color/white"/>
+
+</RelativeLayout>

@@ -16,4 +16,14 @@
   <string name="following_title">Following</string>
   <string name="followers">followers</string>
   <string name="followers_title">Followers</string>
+  <string name="title_activity_main">MainActivity</string>
+
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+  <string name="nav_profile">Profile</string>
+  <string name="nav_media">Media</string>
+  <string name="nav_lists">Lists</string>
+  <string name="nav_message">Message</string>
+
+  <string name="action_settings">Settings</string>
 </resources>

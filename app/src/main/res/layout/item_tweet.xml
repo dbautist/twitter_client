@@ -67,7 +67,7 @@
         style="@style/ItemActionButton"
         android:layout_alignLeft="@+id/tvName"
         android:layout_below="@+id/tvText"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/reply"/>
 
     <Button
@@ -75,8 +75,7 @@
         style="@style/ItemActionButton"
         android:layout_alignTop="@+id/btReply"
         android:layout_marginLeft="30dp"
-        android:layout_toEndOf="@+id/btReply"
-        android:layout_toRightOf="@+id/btReply"
+        android:layout_centerHorizontal="true"
         android:background="@drawable/retweet"/>
 
     <TextView
@@ -84,7 +83,6 @@
         style="@style/InfoText"
         android:layout_alignTop="@+id/btRetweet"
         android:layout_marginLeft="5dp"
-        android:layout_toEndOf="@+id/btRetweet"
         android:layout_toRightOf="@+id/btRetweet"
         android:text="@{Integer.toString(tweet.retweetCount)}"
         tools:text="15"/>
@@ -93,9 +91,7 @@
         android:id="@+id/btFavorite"
         style="@style/ItemActionButton"
         android:layout_alignTop="@+id/btReply"
-        android:layout_marginLeft="30dp"
-        android:layout_toEndOf="@+id/tvRetweetCount"
-        android:layout_toRightOf="@+id/tvRetweetCount"
+        android:layout_toLeftOf="@+id/tvFavoriteCount"
         android:background="@drawable/favorite"/>
 
     <TextView
@@ -103,8 +99,9 @@
         style="@style/InfoText"
         android:layout_alignTop="@+id/btFavorite"
         android:layout_marginLeft="5dp"
-        android:layout_toEndOf="@+id/btFavorite"
-        android:layout_toRightOf="@+id/btFavorite"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
         android:text="@{Integer.toString(tweet.favoriteCount)}"
         tools:text="15"/>
 

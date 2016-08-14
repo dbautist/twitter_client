@@ -1,8 +1,10 @@
 package com.codepath.apps.twitterclient.activities;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity
     ButterKnife.bind(this);
 
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+    toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.secondary));
     setSupportActionBar(toolbar);
     getSupportActionBar().setTitle("");
 
@@ -94,7 +97,9 @@ public class MainActivity extends AppCompatActivity
     tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
       @Override
       public void onTabSelected(TabLayout.Tab tab) {
-        Log.d(TAG, "tab: onTabSelected" + tab.getPosition());
+        int position = tab.getPosition();
+        Log.d(TAG, "tab: onTabSelected" + position);
+        viewpager.setCurrentItem(position);
         setActionBarTitle(tabTitles[tab.getPosition()]);
       }
 

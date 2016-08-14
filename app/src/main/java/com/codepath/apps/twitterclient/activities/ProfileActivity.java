@@ -2,10 +2,12 @@ package com.codepath.apps.twitterclient.activities;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -68,6 +70,9 @@ public class ProfileActivity extends AppCompatActivity {
     setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+    // Set to transparent so it's hidden when expanded
+    collapsing_toolbar.setExpandedTitleColor(Color.TRANSPARENT);
+
     mUser = Parcels.unwrap(getIntent().getParcelableExtra(AppConstants.USER_EXTRA));
     if (mUser != null) {
       Log.d(TAG, "User Profile: " + mUser.toString());
@@ -79,6 +84,9 @@ public class ProfileActivity extends AppCompatActivity {
   }
 
   private void initUserDetails() {
+    collapsing_toolbar.setTitle(mUser.name);
+    collapsing_toolbar.setCollapsedTitleTextColor(Color.WHITE);
+
     // Replace the normal profile image with the 'bigger' version
     String profileUrl = mUser.profileImageUrl.replace("normal", "bigger");
     Glide.with(this).load(profileUrl)
